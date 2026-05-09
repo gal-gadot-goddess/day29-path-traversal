@@ -1,0 +1,104 @@
+{
+  "algorithm": "dfs",
+  "title": "Cybernetic Veins",
+  "description": "Navigate the pulsating neural pathways of a futuristic city's central processing unit, seeking the fastest route.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 400,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 600,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 950
+    }
+  ],
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 12
+    }
+  ]
+}
