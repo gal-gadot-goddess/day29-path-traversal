@@ -1,0 +1,5 @@
+Title: Dijkstra's Shortest Path Algorithm - Day 29
+Description: Visualizing the most efficient way to find paths in a graph. Dijkstra's algorithm is the backbone of modern navigation and network routing. #Dijkstra #Algorithm #Pathfinding #Coding #Visualizer #KreggsCode #Day29
+Tags: Dijkstra, Pathfinding, Algorithm, Graph Theory, Computer Science, Coding, Visualization, AI
+Music: None
+Category: Education
