@@ -26,7 +26,7 @@ async function generateNewTopic() {
         - title: "A creative name for the sorting task (max 30 chars)"
         - description: "A brief educational hook about why we are sorting these items"
         - data: An array of 8 to 12 integers (values between 20 and 100) representing the items to be sorted.
-        - labels: An array of strings (same length as data, max 12 chars each) giving each value a short name (e.g., "Packet A").
+        - labels: An array of strings (same length Redwood, max 12 chars each) giving each value a short name (e.g., "Packet A").
 
         No markdown formatting.
         `;
@@ -111,6 +111,7 @@ async function main() {
         const targetPath = path.join(__dirname, '../src/data/current_topic.json');
         fs.writeFileSync(targetPath, JSON.stringify(topic, null, 2));
         console.log(`✅ New topic generated: [${topic.title}] using algorithm [${topic.algorithm}]`);
+        process.exit(0);
     } else {
         process.exit(1);
     }
@@ -153,4 +154,7 @@ function generateLocalTopic() {
     };
 }
 
-main();
+main().catch(err => {
+    console.error('❌ Global error in topic generator:', err);
+    process.exit(1);
+});

@@ -83,4 +83,7 @@ async function main() {
     }
 }
 
-main();
+main().catch(err => {
+    console.error('❌ Global error in metadata script:', err);
+    process.exit(1);
+});

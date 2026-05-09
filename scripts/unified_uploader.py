@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import hashlib
+import time
 from pathlib import Path
 
 # Add the root directory to sys.path
@@ -62,8 +63,12 @@ def main():
         print("❌ metadata.json not found. Run generate_ai_metadata.js first.")
         sys.exit(1)
 
-    with open(metadata_path, 'r', encoding='utf-8') as f:
-        metadata = json.load(f)
+    try:
+        with open(metadata_path, 'r', encoding='utf-8') as f:
+            metadata = json.load(f)
+    except Exception as e:
+        print(f"❌ Error reading metadata.json: {e}")
+        sys.exit(1)
 
     title = metadata.get('title', 'Algorithm Visualization')
     ig_caption = metadata.get('ig_caption', '')
@@ -85,8 +90,6 @@ def main():
     print(f"\n{'='*40}")
     print(f"🚀 PUBLISHING VIZ: {title}")
     print(f"{'='*40}")
-    print(f"📂 Video Path: {video_path}")
-    print(f"🔑 Content Hash: {content_hash}\n")
 
     # 1. Instagram Reel
     if not is_uploaded(history, content_hash, 'instagram_reel'):
@@ -96,8 +99,7 @@ def main():
             mark_uploaded(history, content_hash, 'instagram_reel')
             print("✅ Instagram Reel Success")
         except Exception as e: print(f"❌ Instagram Reel failed: {e}")
-    else: print("⏭️ Skipping Instagram Reel")
-
+    
     # 2. Instagram Story
     if not is_uploaded(history, content_hash, 'instagram_story'):
         print("📸 Starting Instagram Story...")
@@ -106,7 +108,6 @@ def main():
             mark_uploaded(history, content_hash, 'instagram_story')
             print("✅ Instagram Story Success")
         except Exception as e: print(f"❌ Instagram Story failed: {e}")
-    else: print("⏭️ Skipping Instagram Story")
 
     # 3. Facebook Reel
     if not is_uploaded(history, content_hash, 'facebook_reel'):
@@ -116,22 +117,15 @@ def main():
             mark_uploaded(history, content_hash, 'facebook_reel')
             print("✅ Facebook Reel Success")
         except Exception as e: print(f"❌ Facebook Reel failed: {e}")
-    else: print("⏭️ Skipping Facebook Reel")
 
     # 4. Facebook Story
     if not is_uploaded(history, content_hash, 'facebook_story'):
         print("📘 Starting Facebook Story...")
         try:
-            res = upload_to_facebook_story(str(video_path))
-            if isinstance(res, dict) and res.get('status') == 'success':
-                mark_uploaded(history, content_hash, 'facebook_story')
-                print("✅ Facebook Story Success")
-            else:
-                # Some versions of script return string on success. Marking if no exception
-                mark_uploaded(history, content_hash, 'facebook_story')
-                print(f"✅ Facebook Story Success (or warn: {res})")
+            upload_to_facebook_story(str(video_path))
+            mark_uploaded(history, content_hash, 'facebook_story')
+            print("✅ Facebook Story Success")
         except Exception as e: print(f"❌ Facebook Story failed: {e}")
-    else: print("⏭️ Skipping Facebook Story")
 
     # 5. Twitter / X
     if not is_uploaded(history, content_hash, 'twitter'):
@@ -144,19 +138,16 @@ def main():
             mark_uploaded(history, content_hash, 'twitter')
             print("✅ Twitter Success")
         except Exception as e: print(f"❌ Twitter failed: {e}")
-    else: print("⏭️ Skipping Twitter")
 
     # 6. YouTube Shorts
     if not is_uploaded(history, content_hash, 'youtube'):
         print("🎥 Starting YouTube Shorts...")
         try:
-            # extract clean tags list
             tags_list = [t.strip('#') for t in hashtags.split()] if hashtags else []
             upload_to_youtube(str(video_path), title[:100], yt_description, tags_list)
             mark_uploaded(history, content_hash, 'youtube')
             print("✅ YouTube Success")
         except Exception as e: print(f"❌ YouTube failed: {e}")
-    else: print("⏭️ Skipping YouTube")
 
     # 7. Threads
     if not is_uploaded(history, content_hash, 'threads'):
@@ -166,7 +157,6 @@ def main():
             mark_uploaded(history, content_hash, 'threads')
             print("✅ Threads Success")
         except Exception as e: print(f"❌ Threads failed: {e}")
-    else: print("⏭️ Skipping Threads")
     
     # 8. VK
     if not is_uploaded(history, content_hash, 'vk'):
@@ -176,24 +166,15 @@ def main():
             mark_uploaded(history, content_hash, 'vk')
             print("✅ VK Success")
         except Exception as e: print(f"❌ VK failed: {e}")
-    else: print("⏭️ Skipping VK")
 
     # 9. Telegram
     if not is_uploaded(history, content_hash, 'telegram'):
         print("✈️ Starting Telegram...")
         try:
-            res = upload_to_telegram(str(video_path), f"<b>{title}</b>\n\n{yt_description}")
-            if isinstance(res, dict) and res.get('status') != 'skipped':
-                mark_uploaded(history, content_hash, 'telegram')
-                print("✅ Telegram Success")
-            elif res is None:
-                # sometimes it returns none on success
-                mark_uploaded(history, content_hash, 'telegram')
-                print("✅ Telegram Success")
-            else:
-                 print(f"❌ Telegram failed (skipped): {res}")
+            upload_to_telegram(str(video_path), f"<b>{title}</b>\n\n{yt_description}")
+            mark_uploaded(history, content_hash, 'telegram')
+            print("✅ Telegram Success")
         except Exception as e: print(f"❌ Telegram failed: {e}")
-    else: print("⏭️ Skipping Telegram")
 
     print("\n✅ All platforms processed!")
 
