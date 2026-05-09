@@ -22,19 +22,23 @@ const AUDIO_FILE = randomAudio ? path.join(AUDIO_DIR, randomAudio) : null;
 
 async function run() {
     console.log('🚀 Starting Vite Server for Day 29...');
-    const viteProcess = exec('npm run dev', { cwd: __dirname });
+    // Use --host to ensure accessibility in all environments
+    const viteProcess = exec('npm run dev -- --host', { cwd: __dirname });
 
     let VITE_URL = 'http://localhost:5192/';
-    const urlDetected = new Promise(resolve => {
+    const urlDetected = new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => resolve(), 15000); // 15s fallback
         viteProcess.stdout.on('data', (data) => {
+            console.log(`[Vite] ${data.trim()}`);
             const match = data.match(/http:\/\/(127\.0\.0\.1|localhost|10\.[^:\s]+|172\.[^:\s]+):[0-9]+/);
             if (match) {
                 VITE_URL = match[0];
                 console.log(`📡 Detected URL: ${VITE_URL}`);
+                clearTimeout(timeout);
                 resolve();
             }
         });
-        setTimeout(() => resolve(), 10000);
+        viteProcess.stderr.on('data', (data) => console.error(`[Vite Error] ${data.trim()}`));
     });
 
     await urlDetected;
@@ -47,6 +51,7 @@ async function run() {
             '--no-sandbox',
             '--disable-setuid-sandbox',
             '--disable-gpu',
+            '--disable-dev-shm-usage',
             '--hide-scrollbars',
             '--mute-audio'
         ]
@@ -56,7 +61,15 @@ async function run() {
     await page.setViewport({ width: 1080, height: 1920 });
 
     console.log(`🔗 Navigating to ${VITE_URL}...`);
-    await page.goto(VITE_URL, { waitUntil: 'networkidle2', timeout: 30000 });
+    try {
+        await page.goto(VITE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+        console.log('✅ Page loaded.');
+    } catch (err) {
+        console.error('❌ Page load failed:', err.message);
+        await browser.close();
+        viteProcess.kill();
+        process.exit(1);
+    }
 
     const recorder = new PuppeteerScreenRecorder(page, {
         fps: 60,
@@ -68,21 +81,19 @@ async function run() {
     await recorder.start(VIDEO_ONLY);
 
     await page.evaluate(() => {
-        // @ts-ignore
         if (window.startAnimation) window.startAnimation();
     });
 
-    // --- SMART WAIT: Wait for the animation-complete marker ---
-    console.log('⏳ Waiting for algorithm to finish...');
+    console.log('⏳ Waiting for algorithm completion signal...');
     try {
-        await page.waitForSelector('#animation-complete', { timeout: 120000 });
-        console.log('🏁 Algorithm finished! Stopping recorder...');
+        // Wait for up to 90 seconds for the completion marker
+        await page.waitForSelector('#animation-complete', { timeout: 90000 });
+        console.log('🏁 Algorithm finished! Processing video...');
     } catch (e) {
-        console.warn('⚠️ Timeout waiting for completion marker. Stopping anyway.');
+        console.warn('⚠️ Completion marker not found within timeout. Stopping recorder anyway.');
     }
 
-    // Small buffer after finish
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 2000)); // Final buffer
     await recorder.stop();
     await browser.close();
 
@@ -105,17 +116,22 @@ async function run() {
             }
         }
         try {
+            console.log(`[FFmpeg] Using ${ffmpegPath}`);
             execSync(`"${ffmpegPath}" -y -i "${VIDEO_ONLY}" -i "${AUDIO_FILE}" -c:v copy -c:a aac -shortest "${FINAL_OUTPUT}"`);
             console.log(`✅ FINAL VIDEO SAVED: ${FINAL_OUTPUT}`);
             if (fs.existsSync(VIDEO_ONLY)) fs.unlinkSync(VIDEO_ONLY);
         } catch (err) {
-            console.error('❌ FFmpeg merge failed:', err);
+            console.error('❌ FFmpeg merge failed:', err.message);
             if (fs.existsSync(VIDEO_ONLY)) fs.renameSync(VIDEO_ONLY, FINAL_OUTPUT);
         }
     } else {
+        console.warn('⚠️ No audio file found. Saving video only.');
         if (fs.existsSync(VIDEO_ONLY)) fs.renameSync(VIDEO_ONLY, FINAL_OUTPUT);
     }
-    console.log('✨ All processes complete.');
+    console.log('✨ All capture processes complete.');
 }
 
-run().catch(console.error);
+run().catch(err => {
+    console.error('❌ Global error in capture script:', err);
+    process.exit(1);
+});
