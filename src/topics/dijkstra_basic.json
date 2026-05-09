@@ -1,0 +1,24 @@
+{
+    "title": "Dijkstra's Algorithm: Basic Pathfinding",
+    "description": "A fundamental example of finding the shortest path in a weighted graph.",
+    "nodes": [
+        { "id": "S", "x": 100, "y": 300 },
+        { "id": "A", "x": 280, "y": 120 },
+        { "id": "B", "x": 280, "y": 480 },
+        { "id": "C", "x": 520, "y": 120 },
+        { "id": "D", "x": 520, "y": 480 },
+        { "id": "E", "x": 700, "y": 300 },
+        { "id": "T", "x": 800, "y": 300 }
+    ],
+    "edges": [
+        { "from": "S", "to": "A", "weight": 4 },
+        { "from": "S", "to": "B", "weight": 3 },
+        { "from": "A", "to": "C", "weight": 2 },
+        { "from": "A", "to": "D", "weight": 5 },
+        { "from": "B", "to": "D", "weight": 3 },
+        { "from": "C", "to": "E", "weight": 2 },
+        { "from": "D", "to": "E", "weight": 1 },
+        { "from": "E", "to": "T", "weight": 3 },
+        { "from": "C", "to": "D", "weight": 2 }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "title": "Dijkstra's Algorithm: Complex Network",
+    "description": "A more intricate network with multiple branching paths and varying costs.",
+    "nodes": [
+        { "id": "S", "x": 100, "y": 300 },
+        { "id": "1", "x": 250, "y": 150 },
+        { "id": "2", "x": 250, "y": 450 },
+        { "id": "3", "x": 450, "y": 100 },
+        { "id": "4", "x": 450, "y": 300 },
+        { "id": "5", "x": 450, "y": 500 },
+        { "id": "6", "x": 650, "y": 150 },
+        { "id": "7", "x": 650, "y": 450 },
+        { "id": "T", "x": 800, "y": 300 }
+    ],
+    "edges": [
+        { "from": "S", "to": "1", "weight": 2 },
+        { "from": "S", "to": "2", "weight": 5 },
+        { "from": "1", "to": "3", "weight": 1 },
+        { "from": "1", "to": "4", "weight": 4 },
+        { "from": "2", "to": "4", "weight": 2 },
+        { "from": "2", "to": "5", "weight": 3 },
+        { "from": "3", "to": "6", "weight": 3 },
+        { "from": "4", "to": "6", "weight": 1 },
+        { "from": "4", "to": "7", "weight": 5 },
+        { "from": "5", "to": "7", "weight": 2 },
+        { "from": "6", "to": "T", "weight": 2 },
+        { "from": "7", "to": "T", "weight": 1 }
+    ]
+}
