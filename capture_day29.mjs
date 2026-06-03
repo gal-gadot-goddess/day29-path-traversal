@@ -98,7 +98,10 @@ async function run() {
     await browser.close();
 
     console.log('💀 Killing Vite server...');
-    viteProcess.kill();
+    viteProcess.kill('SIGKILL');
+    // Force kill entire process group on Windows/Linux
+    try { process.kill(-viteProcess.pid, 'SIGKILL'); } catch (e) {}
+    try { execSync(`taskkill /pid ${viteProcess.pid} /T /F 2>nul || kill -9 ${viteProcess.pid} 2>/dev/null`); } catch (e) {}
 
     if (AUDIO_FILE && fs.existsSync(AUDIO_FILE)) {
         console.log(`🎵 Merging with audio: ${randomAudio}...`);
@@ -129,6 +132,7 @@ async function run() {
         if (fs.existsSync(VIDEO_ONLY)) fs.renameSync(VIDEO_ONLY, FINAL_OUTPUT);
     }
     console.log('✨ All capture processes complete.');
+    process.exit(0);
 }
 
 run().catch(err => {
