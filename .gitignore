@@ -48,5 +48,3 @@ venv/
 .venv/
 
 # Project Specific
-history.json
-metadata.json
