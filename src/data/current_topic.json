@@ -1,114 +1,31 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Current Mapper",
-  "description": "Navigate the bioluminescent currents of the abyssal plain. Each node is a deep-sea vent, and edges are the flow of nutrient-rich water. Find the fastest path from the research sub (S) to the ancient artifact (T).",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 300
-    },
-    {
-      "id": "A",
-      "x": 350,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 650,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 250,
-      "y": 700
-    },
-    {
-      "id": "E",
-      "x": 750,
-      "y": 700
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 900
-    },
-    {
-      "id": "T",
-      "x": 600,
-      "y": 1100
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Swarm Sync",
+  "description": "These ethereal bioluminescent sprites are out of sync!  Use bubble sort to guide them back into harmonious glowing patterns.",
+  "data": [
+    55,
+    23,
+    87,
+    42,
+    99,
+    31,
+    68,
+    75,
+    50,
+    18,
+    91
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 7
-    }
+  "labels": [
+    "Glow Wisp 1",
+    "Glow Wisp 2",
+    "Glow Wisp 3",
+    "Glow Wisp 4",
+    "Glow Wisp 5",
+    "Glow Wisp 6",
+    "Glow Wisp 7",
+    "Glow Wisp 8",
+    "Glow Wisp 9",
+    "Glow Wisp 10",
+    "Glow Wisp 11"
   ]
 }
