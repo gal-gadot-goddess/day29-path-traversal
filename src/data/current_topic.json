@@ -1,7 +1,7 @@
 {
   "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescent Path",
-  "description": "Explore the ocean's abyss.  Find the shortest bioluminescent trail from the research submersible to the hydrothermal vent.",
+  "title": "Deep Sea Current Mapper",
+  "description": "Navigate the bioluminescent currents of the abyssal plain. Each node is a deep-sea vent, and edges are the flow of nutrient-rich water. Find the fastest path from the research sub (S) to the ancient artifact (T).",
   "nodes": [
     {
       "id": "S",
@@ -10,32 +10,37 @@
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 350,
       "y": 500
     },
     {
       "id": "B",
-      "x": 600,
+      "x": 650,
       "y": 500
     },
     {
       "id": "C",
-      "x": 300,
+      "x": 500,
       "y": 700
     },
     {
       "id": "D",
-      "x": 700,
+      "x": 250,
       "y": 700
     },
     {
       "id": "E",
-      "x": 500,
+      "x": 750,
+      "y": 700
+    },
+    {
+      "id": "F",
+      "x": 400,
       "y": 900
     },
     {
       "id": "T",
-      "x": 500,
+      "x": 600,
       "y": 1100
     }
   ],
@@ -43,67 +48,67 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 6
+      "weight": 2
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 4
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "B",
       "to": "D",
-      "weight": 9
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 2
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "C",
-      "to": "E",
-      "weight": 10
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 6
     },
     {
       "from": "D",
-      "to": "E",
-      "weight": 8
+      "to": "F",
+      "weight": 2
     },
     {
       "from": "E",
       "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
       "weight": 5
     },
     {
-      "from": "C",
-      "to": "S",
-      "weight": 12
-    },
-    {
       "from": "D",
-      "to": "B",
-      "weight": 11
-    },
-    {
-      "from": "E",
-      "to": "A",
-      "weight": 13
-    },
-    {
-      "from": "T",
       "to": "E",
-      "weight": 4
+      "weight": 7
     }
   ]
 }
