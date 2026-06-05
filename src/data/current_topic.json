@@ -1,31 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Swarm Sync",
-  "description": "These ethereal bioluminescent sprites are out of sync!  Use bubble sort to guide them back into harmonious glowing patterns.",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Guiding the gentle flow of bioluminescent flora to their optimal growth positions in a dark nebula.",
   "data": [
-    55,
-    23,
-    87,
-    42,
-    99,
-    31,
-    68,
-    75,
+    95,
+    32,
+    78,
     50,
-    18,
-    91
+    88,
+    25,
+    61,
+    40,
+    72,
+    30
   ],
   "labels": [
-    "Glow Wisp 1",
-    "Glow Wisp 2",
-    "Glow Wisp 3",
-    "Glow Wisp 4",
-    "Glow Wisp 5",
-    "Glow Wisp 6",
-    "Glow Wisp 7",
-    "Glow Wisp 8",
-    "Glow Wisp 9",
-    "Glow Wisp 10",
-    "Glow Wisp 11"
+    "Starpetal",
+    "NebulaGlow",
+    "CosmicVine",
+    "GlimmerMoss",
+    "AstroBloom",
+    "VoidFlower",
+    "QuantumLily",
+    "StardustLeaf",
+    "SolarDaisy",
+    "Moonpetal"
   ]
 }
