@@ -1,29 +1,99 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "Guiding the gentle flow of bioluminescent flora to their optimal growth positions in a dark nebula.",
-  "data": [
-    95,
-    32,
-    78,
-    50,
-    88,
-    25,
-    61,
-    40,
-    72,
-    30
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Data Currents",
+  "description": "Navigate the Mariana Trench's data conduits. Follow the current to the deepest research station.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 400
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 600
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 700
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 850
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 950
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 1100
+    },
+    {
+      "id": "T",
+      "x": 450,
+      "y": 1300
+    }
   ],
-  "labels": [
-    "Starpetal",
-    "NebulaGlow",
-    "CosmicVine",
-    "GlimmerMoss",
-    "AstroBloom",
-    "VoidFlower",
-    "QuantumLily",
-    "StardustLeaf",
-    "SolarDaisy",
-    "Moonpetal"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 1
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    }
   ]
 }
