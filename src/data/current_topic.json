@@ -1,139 +1,29 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Trench Network",
-  "description": "Navigate the bioluminescent pathways of the Mariana Trench, finding the quickest route to the thermal vent oasis.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 350,
-      "y": 800
-    },
-    {
-      "id": "E",
-      "x": 650,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Guiding the luminous spores to bloom in sequential order, from dimmest to brightest, to harmonize the coral reef's light cycle.",
+  "data": [
+    75,
+    30,
+    90,
+    45,
+    60,
+    85,
+    25,
+    50,
+    95,
+    35
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "S",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "S",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "A",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "E",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "F",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "T",
-      "to": "F",
-      "weight": 3
-    }
+  "labels": [
+    "Azure Glow",
+    "Seafoam Spark",
+    "Coral Radiance",
+    "Aqua Shimmer",
+    "Pearl Gleam",
+    "Amber Pulse",
+    "Emerald Flicker",
+    "Sapphire Glow",
+    "Ruby Lumina",
+    "Jade Haze"
   ]
 }
