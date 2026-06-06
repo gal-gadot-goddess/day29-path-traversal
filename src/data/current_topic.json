@@ -1,29 +1,139 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Reef Shard Sort",
-  "description": "The ocean floor pulses with light! Sort these glowing reef shards by their energy signature to stabilize the magical currents.",
-  "data": [
-    67,
-    34,
-    92,
-    55,
-    81,
-    29,
-    70,
-    43,
-    98,
-    50
+  "algorithm": "dfs",
+  "title": "Deep Sea Trench Network",
+  "description": "Navigate the bioluminescent pathways of the Mariana Trench, finding the quickest route to the thermal vent oasis.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 350,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 650,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Aqua Shard",
-    "Coral Glow",
-    "Deep Bloom",
-    "Ember Pulse",
-    "Flicker",
-    "Glimmer",
-    "Lumin Orb",
-    "Sea Spark",
-    "Tide Light",
-    "Zephyr Gleam"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "S",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "S",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "A",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "E",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "F",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "T",
+      "to": "F",
+      "weight": 3
+    }
   ]
 }
