@@ -1,99 +1,29 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Data Currents",
-  "description": "Navigate the Mariana Trench's data conduits. Follow the current to the deepest research station.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 400
-    },
-    {
-      "id": "A",
-      "x": 450,
-      "y": 600
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 700
-    },
-    {
-      "id": "C",
-      "x": 400,
-      "y": 850
-    },
-    {
-      "id": "D",
-      "x": 600,
-      "y": 950
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 1100
-    },
-    {
-      "id": "T",
-      "x": 450,
-      "y": 1300
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Reef Shard Sort",
+  "description": "The ocean floor pulses with light! Sort these glowing reef shards by their energy signature to stabilize the magical currents.",
+  "data": [
+    67,
+    34,
+    92,
+    55,
+    81,
+    29,
+    70,
+    43,
+    98,
+    50
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 1
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    }
+  "labels": [
+    "Aqua Shard",
+    "Coral Glow",
+    "Deep Bloom",
+    "Ember Pulse",
+    "Flicker",
+    "Glimmer",
+    "Lumin Orb",
+    "Sea Spark",
+    "Tide Light",
+    "Zephyr Gleam"
   ]
 }
