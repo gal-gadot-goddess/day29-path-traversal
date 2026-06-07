@@ -1,109 +1,104 @@
 {
   "algorithm": "astar",
-  "title": "NeuraLink Ascent",
-  "description": "Navigate the neural pathways of a bio-integrated AI, finding the fastest route from core processing to sensory output.",
+  "title": "Quantum Entanglement Grid",
+  "description": "Navigate a quantum computer's entangled qubits, where paths can be probabilistic but the shortest route is key.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
-      "id": "A",
-      "x": 450,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 500
-    },
-    {
-      "id": "C",
+      "id": "Q1",
       "x": 400,
-      "y": 650
+      "y": 600
     },
     {
-      "id": "D",
+      "id": "Q2",
       "x": 600,
-      "y": 650
+      "y": 600
     },
     {
-      "id": "E",
+      "id": "Q3",
       "x": 500,
       "y": 800
     },
     {
+      "id": "Q4",
+      "x": 400,
+      "y": 1000
+    },
+    {
+      "id": "Q5",
+      "x": 600,
+      "y": 1000
+    },
+    {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 3
+      "to": "Q1",
+      "weight": 5
     },
     {
       "from": "S",
-      "to": "B",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "B",
-      "to": "D",
+      "to": "Q2",
       "weight": 6
     },
     {
-      "from": "B",
-      "to": "E",
-      "weight": 5
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 7
     },
     {
-      "from": "C",
-      "to": "E",
+      "from": "Q2",
+      "to": "Q3",
+      "weight": 4
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
       "weight": 8
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
+      "from": "Q3",
+      "to": "Q5",
       "weight": 3
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 2
+      "from": "Q4",
+      "to": "T",
+      "weight": 5
     },
     {
-      "from": "C",
-      "to": "D",
+      "from": "Q5",
+      "to": "T",
       "weight": 7
     },
     {
-      "from": "E",
-      "to": "A",
-      "weight": 6
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 9
     },
     {
-      "from": "E",
-      "to": "B",
-      "weight": 4
+      "from": "Q4",
+      "to": "Q5",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "Q3",
+      "weight": 10
+    },
+    {
+      "from": "Q2",
+      "to": "Q5",
+      "weight": 11
     }
   ]
 }
