@@ -1,99 +1,29 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Bioluminescent Path",
-  "description": "Navigate the abyssal depths, tracing the glow of bioluminescent organisms to find the shortest path to a research submersible.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 300
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 400,
-      "y": 900
-    },
-    {
-      "id": "E",
-      "x": 600,
-      "y": 900
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Stream Alignment",
+  "description": "Aligning entangled quantum data packets for faster interstellar communication.",
+  "data": [
+    78,
+    34,
+    92,
+    56,
+    41,
+    85,
+    29,
+    67,
+    50,
+    99
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    }
+  "labels": [
+    "Alpha Stream",
+    "Beta Burst",
+    "Gamma Flux",
+    "Delta Pulse",
+    "Epsilon Wave",
+    "Zeta Echo",
+    "Eta Spark",
+    "Theta Singularity",
+    "Iota Packet",
+    "Kappa Resonance"
   ]
 }
