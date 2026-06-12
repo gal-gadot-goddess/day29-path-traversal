@@ -1,29 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Data Stream Alignment",
-  "description": "Aligning entangled quantum data packets for faster interstellar communication.",
-  "data": [
-    78,
-    34,
-    92,
-    56,
-    41,
-    85,
-    29,
-    67,
-    50,
-    99
+  "algorithm": "dfs",
+  "title": "Neural Synapse Flow",
+  "description": "Navigate the intricate pathways of a bio-neural network to find the most efficient data transfer route.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 950
+    }
   ],
-  "labels": [
-    "Alpha Stream",
-    "Beta Burst",
-    "Gamma Flux",
-    "Delta Pulse",
-    "Epsilon Wave",
-    "Zeta Echo",
-    "Eta Spark",
-    "Theta Singularity",
-    "Iota Packet",
-    "Kappa Resonance"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    }
   ]
 }
