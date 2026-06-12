@@ -1,12 +1,12 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Synapse Flow",
-  "description": "Navigate the intricate pathways of a bio-neural network to find the most efficient data transfer route.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Trench Search",
+  "description": "Navigate the bioluminescent currents of the abyssal zone to find a rare hydrothermal vent. Each connection represents a stable water flow.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
@@ -21,89 +21,84 @@
     {
       "id": "C",
       "x": 300,
-      "y": 650
+      "y": 700
     },
     {
       "id": "D",
       "x": 700,
-      "y": 650
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
+      "y": 900
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 1100
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 5
+      "weight": 6
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 6
+      "to": "B",
+      "weight": 3
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "T",
       "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
     },
     {
       "from": "C",
       "to": "E",
       "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "S",
+      "weight": 10
+    },
+    {
+      "from": "D",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "E",
+      "to": "C",
+      "weight": 6
     }
   ]
 }
