@@ -1,64 +1,64 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Data Currents",
-  "description": "Navigate a bioluminescent data network in the abyss, finding the fastest route through pulsing currents to reach the central data core.",
+  "algorithm": "astar",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate through glowing currents and intricate coral structures to find the bioluminescent treasure.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
       "x": 450,
-      "y": 500
+      "y": 600
     },
     {
       "id": "B",
       "x": 550,
-      "y": 500
+      "y": 700
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 650
+      "x": 380,
+      "y": 850
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 650
+      "x": 620,
+      "y": 900
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 800
+      "x": 480,
+      "y": 1100
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 950
+      "x": 520,
+      "y": 1300
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
       "weight": 7
     },
     {
       "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "A",
       "to": "B",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "B",
@@ -68,22 +68,22 @@
     {
       "from": "B",
       "to": "E",
-      "weight": 6
+      "weight": 8
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 3
+      "weight": 9
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 2
+      "weight": 5
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 5
+      "weight": 7
     },
     {
       "from": "E",
@@ -91,14 +91,14 @@
       "weight": 3
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "S",
+      "from": "A",
       "to": "E",
       "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 12
     }
   ]
 }
