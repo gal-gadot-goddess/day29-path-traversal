@@ -1,29 +1,114 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Order",
-  "description": "The ancient bioluminescent flora of Xylos blooms only when their light intensity is ordered. Help the Lumina-Keepers sort the petals by their glow to initiate the Grand Luminescence!",
-  "data": [
-    85,
-    42,
-    91,
-    33,
-    78,
-    55,
-    67,
-    29,
-    98,
-    50
+  "algorithm": "bfs",
+  "title": "Submerged Data Stream",
+  "description": "Navigate the bioluminescent currents of a deep-sea data conduit. Find the fastest path to transmit vital information.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 300,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Azure",
-    "Crimson",
-    "Emerald",
-    "Gold",
-    "Violet",
-    "Silver",
-    "Amber",
-    "Indigo",
-    "Scarlet",
-    "Quartz"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    }
   ]
 }
