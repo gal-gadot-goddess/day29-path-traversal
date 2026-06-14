@@ -1,42 +1,42 @@
 {
-  "algorithm": "astar",
-  "title": "Deep Sea Bioluminescent Path",
-  "description": "Navigate through glowing currents and intricate coral structures to find the bioluminescent treasure.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Trench Expedition",
+  "description": "Navigate the crushing depths of a hydrothermal vent field, finding the safest path to collect precious samples.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
       "x": 450,
-      "y": 600
+      "y": 550
     },
     {
       "id": "B",
       "x": 550,
-      "y": 700
+      "y": 550
     },
     {
       "id": "C",
-      "x": 380,
-      "y": 850
+      "x": 400,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 620,
-      "y": 900
+      "x": 600,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 480,
-      "y": 1100
+      "x": 500,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 520,
-      "y": 1300
+      "x": 500,
+      "y": 1150
     }
   ],
   "edges": [
@@ -53,22 +53,17 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 8
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 4
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 8
+      "to": "D",
+      "weight": 6
     },
     {
       "from": "C",
@@ -81,9 +76,9 @@
       "weight": 5
     },
     {
-      "from": "D",
-      "to": "T",
-      "weight": 7
+      "from": "C",
+      "to": "D",
+      "weight": 12
     },
     {
       "from": "E",
@@ -93,12 +88,17 @@
     {
       "from": "A",
       "to": "E",
-      "weight": 10
+      "weight": 15
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 12
+      "from": "B",
+      "to": "T",
+      "weight": 18
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 20
     }
   ]
 }
