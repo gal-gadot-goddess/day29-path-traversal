@@ -1,42 +1,47 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Synapse Maze",
-  "description": "Navigate the fluctuating data streams of a complex neural network to find the fastest path from a sensory input to a targeted output.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescent Trails",
+  "description": "Explore the Mariana Trench, tracing paths of bioluminescent signals between research stations and rare deep-sea organisms.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 450,
       "y": 500
     },
     {
       "id": "B",
-      "x": 600,
+      "x": 550,
       "y": 500
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 700
+      "x": 400,
+      "y": 650
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 700
+      "x": 600,
+      "y": 650
     },
     {
       "id": "E",
       "x": 500,
-      "y": 900
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 450,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1100
+      "x": 550,
+      "y": 950
     }
   ],
   "edges": [
@@ -48,7 +53,7 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 6
     },
     {
       "from": "A",
@@ -57,48 +62,48 @@
     },
     {
       "from": "A",
-      "to": "E",
+      "to": "D",
       "weight": 8
     },
     {
       "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
+      "to": "C",
       "weight": 9
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "C",
+      "from": "B",
       "to": "D",
       "weight": 10
     },
     {
-      "from": "S",
+      "from": "C",
       "to": "E",
+      "weight": 11
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 13
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 14
+    },
+    {
+      "from": "C",
+      "to": "F",
       "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 16
     }
   ]
 }
