@@ -1,42 +1,42 @@
 {
-  "algorithm": "astar",
-  "title": "Deep Sea Bioluminescent Paths",
-  "description": "Navigate the abyssal plain, connecting glowing flora for the fastest descent.",
+  "algorithm": "dijkstra",
+  "title": "Neural Synapse Maze",
+  "description": "Navigate the fluctuating data streams of a complex neural network to find the fastest path from a sensory input to a targeted output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
       "x": 400,
-      "y": 550
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 500
     },
     {
       "id": "C",
       "x": 300,
-      "y": 750
+      "y": 700
     },
     {
       "id": "D",
       "x": 700,
-      "y": 750
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 950
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
@@ -48,17 +48,17 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 7
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 10
+      "weight": 8
     },
     {
       "from": "B",
@@ -68,37 +68,37 @@
     {
       "from": "B",
       "to": "E",
-      "weight": 9
+      "weight": 5
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 5
+      "weight": 4
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 15
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 12
+      "weight": 9
     },
     {
       "from": "A",
       "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "D",
       "weight": 10
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 15
     }
   ]
 }
