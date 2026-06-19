@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "The Lumina Flowers are out of sync! Help sort their glow intensity to restore the forest's harmony.",
-  "data": [
-    78,
-    34,
-    92,
-    56,
-    21,
-    88,
-    45,
-    67,
-    99,
-    30
+  "algorithm": "dijkstra",
+  "title": "Quantum Data Stream",
+  "description": "Navigate the entangled data streams of a quantum computer, finding the fastest path from input to output.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "Q1",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "Q2",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C1",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "Q3",
+      "x": 400,
+      "y": 800
+    },
+    {
+      "id": "Q4",
+      "x": 600,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 950
+    }
   ],
-  "labels": [
-    "Glow A",
-    "Glow B",
-    "Glow C",
-    "Glow D",
-    "Glow E",
-    "Glow F",
-    "Glow G",
-    "Glow H",
-    "Glow I",
-    "Glow J"
+  "edges": [
+    {
+      "from": "S",
+      "to": "Q1",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "Q2",
+      "weight": 7
+    },
+    {
+      "from": "Q1",
+      "to": "C1",
+      "weight": 3
+    },
+    {
+      "from": "Q2",
+      "to": "C1",
+      "weight": 2
+    },
+    {
+      "from": "C1",
+      "to": "Q3",
+      "weight": 4
+    },
+    {
+      "from": "C1",
+      "to": "Q4",
+      "weight": 6
+    },
+    {
+      "from": "Q3",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 10
+    },
+    {
+      "from": "Q2",
+      "to": "Q4",
+      "weight": 9
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 15
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 12
+    }
   ]
 }
