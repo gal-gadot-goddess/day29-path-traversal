@@ -1,33 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entangled Data Streams",
-  "description": "Aligning quantum entangled data streams for stable interdimensional communication.",
-  "data": [
-    85,
-    42,
-    91,
-    68,
-    30,
-    77,
-    55,
-    25,
-    99,
-    50,
-    72,
-    39
+  "algorithm": "dijkstra",
+  "title": "Neural Net Ascent",
+  "description": "Navigate a cyberpunk neural network's data pathways, from input to output, finding the fastest route through complex, evolving connections.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 450,
+      "y": 900
+    },
+    {
+      "id": "F",
+      "x": 550,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Stream Alpha",
-    "Stream Beta",
-    "Stream Gamma",
-    "Stream Delta",
-    "Stream Epsilon",
-    "Stream Zeta",
-    "Stream Eta",
-    "Stream Theta",
-    "Stream Iota",
-    "Stream Kappa",
-    "Stream Lambda",
-    "Stream Mu"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 15
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 10
+    }
   ]
 }
