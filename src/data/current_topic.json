@@ -1,7 +1,7 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Net Ascent",
-  "description": "Navigate a cyberpunk neural network's data pathways, from input to output, finding the fastest route through complex, evolving connections.",
+  "algorithm": "bfs",
+  "title": "Subterranean Biolume Network",
+  "description": "Explore a hidden network of glowing caverns, finding the quickest route through its luminous pathways.",
   "nodes": [
     {
       "id": "S",
@@ -11,99 +11,104 @@
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
       "x": 300,
-      "y": 700
+      "y": 750
     },
     {
       "id": "D",
       "x": 700,
-      "y": 700
+      "y": 750
     },
     {
       "id": "E",
-      "x": 450,
-      "y": 900
+      "x": 500,
+      "y": 950
     },
     {
       "id": "F",
-      "x": 550,
-      "y": 900
+      "x": 400,
+      "y": 1150
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1100
+      "x": 600,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 4
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 12
+      "weight": 5
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "E",
       "weight": 4
     },
     {
-      "from": "D",
-      "to": "F",
+      "from": "B",
+      "to": "E",
       "weight": 3
     },
     {
-      "from": "E",
+      "from": "C",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
       "to": "T",
       "weight": 5
     },
     {
-      "from": "F",
-      "to": "T",
+      "from": "E",
+      "to": "F",
       "weight": 6
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 15
+      "from": "E",
+      "to": "T",
+      "weight": 4
     },
     {
-      "from": "E",
-      "to": "F",
-      "weight": 10
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
     }
   ]
 }
