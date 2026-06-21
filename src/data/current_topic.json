@@ -1,59 +1,59 @@
 {
   "algorithm": "bfs",
-  "title": "Subterranean Biolume Network",
-  "description": "Explore a hidden network of glowing caverns, finding the quickest route through its luminous pathways.",
+  "title": "Neural Link Ascent",
+  "description": "Navigate the emergent pathways of a bio-neural network, finding the fastest signal route.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 400
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 650,
       "y": 550
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 550
+      "x": 350,
+      "y": 600
     },
     {
       "id": "C",
-      "x": 300,
+      "x": 500,
       "y": 750
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 750
+      "x": 650,
+      "y": 900
     },
     {
       "id": "E",
-      "x": 500,
+      "x": 350,
       "y": 950
     },
     {
       "id": "F",
-      "x": 400,
-      "y": 1150
+      "x": 500,
+      "y": 1100
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 1150
+      "x": 650,
+      "y": 1250
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 3
+      "weight": 2
     },
     {
       "from": "A",
@@ -61,39 +61,34 @@
       "weight": 4
     },
     {
-      "from": "A",
+      "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "B",
       "to": "E",
       "weight": 5
     },
     {
-      "from": "B",
+      "from": "C",
       "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 3
+      "weight": 2
     },
     {
       "from": "C",
       "to": "F",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 5
+      "weight": 4
     },
     {
       "from": "E",
       "to": "F",
-      "weight": 6
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
+      "weight": 2
     },
     {
       "from": "F",
@@ -103,12 +98,17 @@
     {
       "from": "A",
       "to": "B",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
       "weight": 7
     },
     {
-      "from": "C",
-      "to": "E",
-      "weight": 5
+      "from": "S",
+      "to": "C",
+      "weight": 8
     }
   ]
 }
