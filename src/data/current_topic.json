@@ -1,29 +1,104 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entangled Data",
-  "description": "Aligning quantum entangled data streams for stable interstellar communication.",
-  "data": [
-    42,
-    87,
-    23,
-    91,
-    55,
-    76,
-    38,
-    64,
-    50,
-    99
+  "algorithm": "bfs",
+  "title": "Subterranean Data Flow",
+  "description": "Navigate the ancient, bioluminescent pathways of a lost civilization's subterranean data network, seeking the central archive.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 12
+    }
   ]
 }
