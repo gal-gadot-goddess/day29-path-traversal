@@ -1,114 +1,104 @@
 {
   "algorithm": "astar",
-  "title": "Neuron Stream",
-  "description": "Navigate a bio-luminescent neural pathway, optimizing signal flow from synapse to cortex.",
+  "title": "Cyberpunk Data Flow",
+  "description": "Navigate the neon-drenched arteries of Neo-Kyoto's data network, optimizing packet delivery through fluctuating bandwidths.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 600
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 600
     },
     {
       "id": "C",
       "x": 500,
-      "y": 650
+      "y": 800
     },
     {
       "id": "D",
       "x": 350,
-      "y": 800
+      "y": 1000
     },
     {
       "id": "E",
       "x": 650,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 500,
-      "y": 950
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 8
     },
     {
       "from": "B",
       "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "E",
       "weight": 6
     },
     {
-      "from": "D",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
-    },
-    {
       "from": "A",
-      "to": "B",
-      "weight": 8
+      "to": "D",
+      "weight": 12
     },
     {
-      "from": "D",
+      "from": "B",
       "to": "E",
       "weight": 9
     },
     {
-      "from": "B",
+      "from": "C",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "C",
       "to": "E",
-      "weight": 7
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 8
     },
     {
       "from": "A",
-      "to": "F",
-      "weight": 10
+      "to": "B",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 11
     }
   ]
 }
