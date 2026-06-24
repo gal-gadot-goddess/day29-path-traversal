@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Deep Sea Bioluminescent Path",
-  "description": "Navigate the abyssal depths, following glowing pathways of rare organisms to reach the ultimate research beacon.",
+  "algorithm": "dijkstra",
+  "title": "Subterranean Synapse Search",
+  "description": "Navigate the intricate neural pathways of a bio-luminescent subterranean organism to find the primary data cluster.",
   "nodes": [
     {
       "id": "S",
@@ -10,105 +10,100 @@
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 500
+      "x": 400,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 500
+      "x": 600,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 650
+      "x": 300,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 650
+      "x": 500,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 800
+      "x": 700,
+      "y": 750
     },
     {
       "id": "F",
-      "x": 450,
+      "x": 400,
       "y": 950
     },
     {
       "id": "T",
-      "x": 550,
-      "y": 1100
+      "x": 600,
+      "y": 950
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "D",
       "weight": 6
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 4
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "C",
-      "to": "E",
+      "to": "F",
       "weight": 8
     },
     {
       "from": "D",
-      "to": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
       "weight": 5
     },
     {
       "from": "E",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "E",
       "to": "T",
-      "weight": 6
+      "weight": 4
     },
     {
-      "from": "A",
-      "to": "B",
+      "from": "F",
+      "to": "T",
       "weight": 3
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 10
-    },
-    {
-      "from": "F",
-      "to": "T",
       "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "C",
-      "weight": 10
     }
   ]
 }
