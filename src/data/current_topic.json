@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Cyberpunk Data Flow",
-  "description": "Navigate the neon-drenched arteries of Neo-Kyoto's data network, optimizing packet delivery through fluctuating bandwidths.",
+  "algorithm": "dfs",
+  "title": "Neuron's Synaptic Maze",
+  "description": "Navigate the intricate pathways of a digital brain, finding the quickest route through its neural network.",
   "nodes": [
     {
       "id": "S",
@@ -20,23 +20,28 @@
     },
     {
       "id": "C",
-      "x": 500,
+      "x": 300,
       "y": 800
     },
     {
       "id": "D",
-      "x": 350,
-      "y": 1000
+      "x": 500,
+      "y": 800
     },
     {
       "id": "E",
-      "x": 650,
+      "x": 700,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 400,
       "y": 1000
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1200
+      "x": 600,
+      "y": 1000
     }
   ],
   "edges": [
@@ -53,52 +58,57 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 6
+      "weight": 3
     },
     {
       "from": "A",
       "to": "D",
-      "weight": 12
+      "weight": 6
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
       "to": "D",
       "weight": 4
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "F",
       "weight": 5
     },
     {
       "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
       "to": "T",
-      "weight": 10
+      "weight": 9
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 8
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 5
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 15
+      "weight": 10
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 11
+      "from": "C",
+      "to": "D",
+      "weight": 7
     }
   ]
 }
