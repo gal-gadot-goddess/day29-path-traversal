@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Quantum Data Stream",
-  "description": "Navigate the fluctuating quantum entanglement to find the fastest data path.",
+  "algorithm": "dijkstra",
+  "title": "Neuron Ascent",
+  "description": "Navigate the complex pathways of a bio-luminescent neural network, finding the fastest signal route from sensory input to motor output.",
   "nodes": [
     {
       "id": "S",
@@ -11,59 +11,69 @@
     {
       "id": "A",
       "x": 400,
-      "y": 550
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 500
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 750
+      "x": 300,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 750
+      "x": 700,
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 950
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 6
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 2
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 4
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 6
+      "weight": 9
     },
     {
       "from": "D",
@@ -73,32 +83,17 @@
     {
       "from": "E",
       "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 7
+      "weight": 5
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 10
+      "weight": 12
     },
     {
       "from": "A",
-      "to": "T",
-      "weight": 15
-    },
-    {
-      "from": "B",
-      "to": "T",
-      "weight": 12
+      "to": "B",
+      "weight": 10
     }
   ]
 }
