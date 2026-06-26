@@ -1,104 +1,29 @@
 {
-  "algorithm": "astar",
-  "title": "Deep Sea Bioluminescent Trails",
-  "description": "Navigate the crushing depths, following faint bioluminescent trails to reach the luminous abyss.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 350,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 650,
-      "y": 750
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 900
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "bubble_sort",
+  "title": "Quantum Entanglement Sort",
+  "description": "Realigning entangled quantum particles before they decohere. Each particle's energy level must be ordered to maintain system stability.",
+  "data": [
+    95,
+    32,
+    78,
+    45,
+    88,
+    21,
+    67,
+    53,
+    92,
+    39
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 12
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 15
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 18
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 14
-    }
+  "labels": [
+    "Qubit A",
+    "Qubit B",
+    "Qubit C",
+    "Qubit D",
+    "Qubit E",
+    "Qubit F",
+    "Qubit G",
+    "Qubit H",
+    "Qubit I",
+    "Qubit J"
   ]
 }
