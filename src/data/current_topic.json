@@ -1,29 +1,33 @@
 {
   "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Stabilizer",
-  "description": "Aligning entangled particles to stabilize the quantum flux.",
+  "title": "Quantum Entanglement Sort",
+  "description": "Aligning entangled quantum particles by their energy signatures before a temporal jump.",
   "data": [
-    88,
-    34,
-    67,
+    85,
+    32,
     91,
-    23,
-    55,
+    64,
+    47,
     78,
-    42,
+    29,
+    55,
+    70,
     99,
-    50
+    41,
+    88
   ],
   "labels": [
-    "Flux Unit 1",
-    "Flux Unit 2",
-    "Flux Unit 3",
-    "Flux Unit 4",
-    "Flux Unit 5",
-    "Flux Unit 6",
-    "Flux Unit 7",
-    "Flux Unit 8",
-    "Flux Unit 9",
-    "Flux Unit 10"
+    "Alpha-1",
+    "Beta-7",
+    "Gamma-3",
+    "Delta-5",
+    "Epsilon-9",
+    "Zeta-2",
+    "Eta-8",
+    "Theta-4",
+    "Iota-6",
+    "Kappa-1",
+    "Lambda-7",
+    "Mu-3"
   ]
 }
