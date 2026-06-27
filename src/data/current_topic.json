@@ -1,29 +1,29 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Realigning entangled quantum particles before they decohere. Each particle's energy level must be ordered to maintain system stability.",
+  "algorithm": "quick_sort",
+  "title": "Quantum Nexus Alignment",
+  "description": "Aligning entangled quantum data streams by their energy signatures for stable interdimensional communication.",
   "data": [
-    95,
+    75,
     32,
-    78,
+    98,
     45,
+    61,
     88,
-    21,
-    67,
-    53,
-    92,
-    39
+    29,
+    54,
+    71,
+    40
   ],
   "labels": [
-    "Qubit A",
-    "Qubit B",
-    "Qubit C",
-    "Qubit D",
-    "Qubit E",
-    "Qubit F",
-    "Qubit G",
-    "Qubit H",
-    "Qubit I",
-    "Qubit J"
+    "Nexus Alpha",
+    "Nexus Beta",
+    "Nexus Gamma",
+    "Nexus Delta",
+    "Nexus Epsilon",
+    "Nexus Zeta",
+    "Nexus Eta",
+    "Nexus Theta",
+    "Nexus Iota",
+    "Nexus Kappa"
   ]
 }
