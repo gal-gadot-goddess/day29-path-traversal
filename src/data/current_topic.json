@@ -1,29 +1,109 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "Guide the bioluminescent plankton through the dark abyss, arranging them by their light intensity for optimal energy capture.",
-  "data": [
-    45,
-    88,
-    32,
-    67,
-    51,
-    95,
-    28,
-    74,
-    40,
-    81
+  "algorithm": "bfs",
+  "title": "Deep Sea Data Current",
+  "description": "Navigate the bioluminescent pathways of the abyssal plain to find the lost data beacon.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Glow 1",
-    "Glow 2",
-    "Glow 3",
-    "Glow 4",
-    "Glow 5",
-    "Glow 6",
-    "Glow 7",
-    "Glow 8",
-    "Glow 9",
-    "Glow 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 11
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 12
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 13
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 14
+    }
   ]
 }
