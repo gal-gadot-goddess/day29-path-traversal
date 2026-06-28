@@ -1,31 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Seedlings",
-  "description": "The Luminaflora nurseries need their genetically engineered seedlings sorted by growth energy before they bloom! Help the automated gardener arrange them from weakest to strongest.",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Guide the bioluminescent plankton through the dark abyss, arranging them by their light intensity for optimal energy capture.",
   "data": [
-    78,
-    32,
-    95,
-    54,
-    21,
+    45,
     88,
-    60,
-    47,
-    99,
-    39,
-    71
+    32,
+    67,
+    51,
+    95,
+    28,
+    74,
+    40,
+    81
   ],
   "labels": [
-    "Glowmoss",
-    "Sunpetal",
-    "Starbloom",
-    "Moonvine",
-    "Sparkroot",
-    "Dawnlily",
-    "Nightshade",
-    "Emberfern",
-    "Astralblossom",
-    "Whisperleaf",
-    "Zephyrbud"
+    "Glow 1",
+    "Glow 2",
+    "Glow 3",
+    "Glow 4",
+    "Glow 5",
+    "Glow 6",
+    "Glow 7",
+    "Glow 8",
+    "Glow 9",
+    "Glow 10"
   ]
 }
