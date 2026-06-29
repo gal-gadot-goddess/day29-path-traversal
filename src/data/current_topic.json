@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence Trail",
-  "description": "Trace the path of bioluminescent signals through a deep-sea trench, revealing hidden life.",
+  "algorithm": "dfs",
+  "title": "Neuron Path Explorer",
+  "description": "Navigate the intricate pathways of a synaptic network to find the most efficient signal route.",
   "nodes": [
     {
       "id": "S",
@@ -11,104 +11,94 @@
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
       "x": 300,
-      "y": 650
+      "y": 750
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 650
+      "x": 700,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 800
+      "x": 500,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 800
+      "x": 500,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 2
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 3
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
+      "weight": 3
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 2
+      "to": "E",
+      "weight": 8
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 3
+      "weight": 4
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "F",
       "weight": 6
     },
     {
-      "from": "D",
-      "to": "F",
+      "from": "C",
+      "to": "E",
       "weight": 2
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 4
+      "to": "E",
+      "weight": 9
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 3
+      "weight": 5
     },
     {
-      "from": "F",
+      "from": "C",
       "to": "T",
-      "weight": 1
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 12
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 3
+      "weight": 10
     }
   ]
 }
