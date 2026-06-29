@@ -1,29 +1,114 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Data Stream Sync",
-  "description": "Aligning temporal echoes in a quantum data stream. The faster the sync, the more stable the reality.",
-  "data": [
-    78,
-    34,
-    91,
-    56,
-    23,
-    88,
-    45,
-    71,
-    99,
-    62
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence Trail",
+  "description": "Trace the path of bioluminescent signals through a deep-sea trench, revealing hidden life.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 800
+    }
   ],
-  "labels": [
-    "Echo 1",
-    "Echo 2",
-    "Echo 3",
-    "Echo 4",
-    "Echo 5",
-    "Echo 6",
-    "Echo 7",
-    "Echo 8",
-    "Echo 9",
-    "Echo 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 3
+    }
   ]
 }
