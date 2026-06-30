@@ -1,29 +1,114 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Cosmic Energy Core Alignment",
-  "description": "We're aligning unstable cosmic energy cores. Their energy output determines their stability. Let's sort them from lowest to highest energy to prevent a temporal anomaly!",
-  "data": [
-    55,
-    32,
-    88,
-    45,
-    71,
-    28,
-    93,
-    60,
-    50,
-    79
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate a bioluminescent neural network in the abyssal depths. Find the path of light from the anglerfish to the hydrothermal vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 300,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Core 1",
-    "Core 2",
-    "Core 3",
-    "Core 4",
-    "Core 5",
-    "Core 6",
-    "Core 7",
-    "Core 8",
-    "Core 9",
-    "Core 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 20
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 18
+    }
   ]
 }
