@@ -1,29 +1,29 @@
 {
   "algorithm": "bubble_sort",
   "title": "Bioluminescent Bloom Sort",
-  "description": "Guide the glowing spores of the Lumina Bloom to their optimal blooming sequence, ensuring maximum light diffusion through the alien jungle.",
+  "description": "Guide the gentle currents of the Aethelian Sea to arrange bioluminescent spores by their light intensity, ensuring the most vibrant blooms blossom in unison.",
   "data": [
-    78,
-    45,
-    92,
-    31,
-    66,
-    85,
+    75,
+    42,
+    91,
+    28,
+    63,
     50,
-    23,
-    71,
-    59
+    88,
+    37,
+    70,
+    49
   ],
   "labels": [
-    "Glowmoss",
-    "Starlight",
-    "Sunpetal",
-    "Moonshard",
-    "Flicker",
-    "Radiant",
-    "Shimmer",
-    "Glimmer",
-    "Sparkle",
-    "Glowbug"
+    "Glow Kelp",
+    "Sun Coral",
+    "Moon Pearl",
+    "Deep Moss",
+    "Star Anemone",
+    "Ocean Gem",
+    "Azure Bloom",
+    "Flicker Weed",
+    "Luminous Frond",
+    "Shimmer Scale"
   ]
 }
