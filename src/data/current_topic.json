@@ -1,29 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Glow Worm Data Stream",
-  "description": "Bioluminescent data packets are streaming from the abyss. Sort them by brightness before they fade!",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Guide the glowing spores of the Lumina Bloom to their optimal blooming sequence, ensuring maximum light diffusion through the alien jungle.",
   "data": [
-    85,
-    32,
-    67,
-    91,
-    44,
     78,
-    25,
-    59,
-    98,
-    50
+    45,
+    92,
+    31,
+    66,
+    85,
+    50,
+    23,
+    71,
+    59
   ],
   "labels": [
-    "Glow-01",
-    "Glow-02",
-    "Glow-03",
-    "Glow-04",
-    "Glow-05",
-    "Glow-06",
-    "Glow-07",
-    "Glow-08",
-    "Glow-09",
-    "Glow-10"
+    "Glowmoss",
+    "Starlight",
+    "Sunpetal",
+    "Moonshard",
+    "Flicker",
+    "Radiant",
+    "Shimmer",
+    "Glimmer",
+    "Sparkle",
+    "Glowbug"
   ]
 }
