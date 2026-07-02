@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "Guide the gentle currents of the Aethelian Sea to arrange bioluminescent spores by their light intensity, ensuring the most vibrant blooms blossom in unison.",
-  "data": [
-    75,
-    42,
-    91,
-    28,
-    63,
-    50,
-    88,
-    37,
-    70,
-    49
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Current Flow",
+  "description": "Navigate the treacherous currents of the abyssal plain to find the shortest path through this bioluminescent ecosystem.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 400
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 600
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 700
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 850
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 950
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 1100
+    },
+    {
+      "id": "T",
+      "x": 450,
+      "y": 1300
+    }
   ],
-  "labels": [
-    "Glow Kelp",
-    "Sun Coral",
-    "Moon Pearl",
-    "Deep Moss",
-    "Star Anemone",
-    "Ocean Gem",
-    "Azure Bloom",
-    "Flicker Weed",
-    "Luminous Frond",
-    "Shimmer Scale"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 7
+    }
   ]
 }
