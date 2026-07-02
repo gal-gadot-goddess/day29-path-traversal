@@ -1,42 +1,47 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Current Flow",
-  "description": "Navigate the treacherous currents of the abyssal plain to find the shortest path through this bioluminescent ecosystem.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescent Web",
+  "description": "Explore the glowing currents of the abyssal plain, finding the quickest path from a research submersible to a rare bioluminescent organism.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 600
+      "x": 400,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 700
+      "x": 600,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 850
+      "x": 300,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 1100
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 450,
-      "y": 1300
+      "x": 600,
+      "y": 950
     }
   ],
   "edges": [
@@ -48,7 +53,7 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 5
     },
     {
       "from": "A",
@@ -58,7 +63,7 @@
     {
       "from": "A",
       "to": "D",
-      "weight": 10
+      "weight": 4
     },
     {
       "from": "B",
@@ -68,37 +73,32 @@
     {
       "from": "B",
       "to": "E",
-      "weight": 6
+      "weight": 8
     },
     {
       "from": "C",
-      "to": "E",
+      "to": "F",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "F",
       "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 9
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "E",
       "weight": 7
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 5
     }
   ]
 }
