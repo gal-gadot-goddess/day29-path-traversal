@@ -1,114 +1,29 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescent Paths",
-  "description": "Navigate the abyssal plains by following trails of bioluminescent organisms, finding the shortest glowing path.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 550
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 750
-    },
-    {
-      "id": "D",
-      "x": 350,
-      "y": 750
-    },
-    {
-      "id": "E",
-      "x": 650,
-      "y": 750
-    },
-    {
-      "id": "F",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Reordering",
+  "description": "Realigning unstable quantum entangled data packets before they collapse.",
+  "data": [
+    85,
+    42,
+    91,
+    23,
+    78,
+    55,
+    67,
+    30,
+    99,
+    48
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 12
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 7
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 15
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 20
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 13
-    }
+  "labels": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa"
   ]
 }
