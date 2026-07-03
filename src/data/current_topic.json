@@ -1,29 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Data Reordering",
-  "description": "Realigning unstable quantum entangled data packets before they collapse.",
-  "data": [
-    85,
-    42,
-    91,
-    23,
-    78,
-    55,
-    67,
-    30,
-    99,
-    48
+  "algorithm": "bfs",
+  "title": "Neural Dive: Synaptic Pathways",
+  "description": "Explore the fastest route through a cascading neural network, visualizing signal propagation from sensory input to motor output.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 500,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 400,
+      "y": 650
+    },
+    {
+      "id": "C",
+      "x": 600,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "F",
+      "x": 600,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 10
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 6
+    },
+    {
+      "from": "S",
+      "to": "D",
+      "weight": 15
+    }
   ]
 }
