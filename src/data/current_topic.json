@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Trace the bioluminescent pathways of deep-sea organisms to find the quickest communication route.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Data Trench",
+  "description": "Navigate the crushing depths of the Mariana Trench, where bioluminescent nodes form a network. Find the fastest data path from the surface research sub ('S') to the deep-sea anomaly ('T'), avoiding hazardous pressure zones.",
   "nodes": [
     {
       "id": "S",
@@ -10,110 +10,95 @@
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 600,
       "y": 500
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 400,
+      "y": 650
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 650
+      "x": 550,
+      "y": 800
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 650
+      "x": 450,
+      "y": 950
     },
     {
       "id": "E",
       "x": 500,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
+      "y": 1100
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 650,
+      "y": 1250
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 8
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 4
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 2
+      "to": "D",
+      "weight": 12
     },
     {
       "from": "B",
-      "to": "D",
+      "to": "C",
       "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 15
     },
     {
       "from": "C",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
       "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "C",
       "weight": 7
     },
     {
       "from": "C",
-      "to": "F",
-      "weight": 5
+      "to": "E",
+      "weight": 6
     },
     {
       "from": "D",
-      "to": "F",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
       "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
     }
   ]
 }
