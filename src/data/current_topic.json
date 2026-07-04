@@ -1,104 +1,33 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Data Trench",
-  "description": "Navigate the crushing depths of the Mariana Trench, where bioluminescent nodes form a network. Find the fastest data path from the surface research sub ('S') to the deep-sea anomaly ('T'), avoiding hazardous pressure zones.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 400,
-      "y": 650
-    },
-    {
-      "id": "C",
-      "x": 550,
-      "y": 800
-    },
-    {
-      "id": "D",
-      "x": 450,
-      "y": 950
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 1100
-    },
-    {
-      "id": "T",
-      "x": 650,
-      "y": 1250
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entanglement Sort",
+  "description": "Aligning entangled quantum states before transmission to prevent decoherence.",
+  "data": [
+    88,
+    45,
+    92,
+    71,
+    30,
+    63,
+    55,
+    78,
+    40,
+    81,
+    25,
+    68
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 12
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 15
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 10
-    }
+  "labels": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa",
+    "Lambda",
+    "Mu"
   ]
 }
