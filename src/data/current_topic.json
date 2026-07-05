@@ -1,33 +1,99 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Aligning entangled quantum states before transmission to prevent decoherence.",
-  "data": [
-    88,
-    45,
-    92,
-    71,
-    30,
-    63,
-    55,
-    78,
-    40,
-    81,
-    25,
-    68
+  "algorithm": "bfs",
+  "title": "Deep Sea Hydrothermal Vent",
+  "description": "Explore the extreme conditions of the deep sea by navigating a network of hydrothermal vents, seeking the most efficient path to a nutrient-rich vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "Vent A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "Vent B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "Deep Ridge",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "Vent C",
+      "x": 350,
+      "y": 850
+    },
+    {
+      "id": "Vent D",
+      "x": 650,
+      "y": 850
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1000
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa",
-    "Lambda",
-    "Mu"
+  "edges": [
+    {
+      "from": "S",
+      "to": "Vent A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "Vent B",
+      "weight": 4
+    },
+    {
+      "from": "Vent A",
+      "to": "Deep Ridge",
+      "weight": 5
+    },
+    {
+      "from": "Vent B",
+      "to": "Deep Ridge",
+      "weight": 3
+    },
+    {
+      "from": "Deep Ridge",
+      "to": "Vent C",
+      "weight": 6
+    },
+    {
+      "from": "Deep Ridge",
+      "to": "Vent D",
+      "weight": 4
+    },
+    {
+      "from": "Vent C",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "Vent D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "Vent A",
+      "to": "Vent B",
+      "weight": 2
+    },
+    {
+      "from": "Vent C",
+      "to": "Vent D",
+      "weight": 2
+    },
+    {
+      "from": "Vent A",
+      "to": "Vent C",
+      "weight": 8
+    }
   ]
 }
