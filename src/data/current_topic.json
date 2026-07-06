@@ -1,54 +1,64 @@
 {
-  "algorithm": "dfs",
-  "title": "Quantum Neural Mesh",
-  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Data Stream",
+  "description": "Navigate the bioluminescent trenches to find the fastest data route.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
-      "x": 250,
-      "y": 650
+      "x": 400,
+      "y": 500
     },
     {
       "id": "B",
-      "x": 750,
-      "y": 650
+      "x": 600,
+      "y": 500
     },
     {
       "id": "C",
       "x": 300,
-      "y": 950
+      "y": 700
     },
     {
       "id": "D",
       "x": 700,
-      "y": 950
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 4
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 3
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
     },
     {
       "from": "B",
@@ -56,14 +66,39 @@
       "weight": 6
     },
     {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
       "from": "C",
-      "to": "T",
-      "weight": 2
+      "to": "E",
+      "weight": 4
     },
     {
       "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
       "to": "T",
       "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 12
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "weight": 15
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 18
     }
   ]
 }
