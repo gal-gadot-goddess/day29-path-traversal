@@ -1,29 +1,69 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Stream",
-  "description": "Aligning glowing plankton for optimal energy transfer in the abyssal depths.",
-  "data": [
-    95,
-    32,
-    78,
-    41,
-    60,
-    25,
-    88,
-    53,
-    70,
-    39
+  "algorithm": "dfs",
+  "title": "Quantum Neural Mesh",
+  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "B",
+      "x": 750,
+      "y": 650
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 950
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Lum B",
-    "Glow A",
-    "Pulse C",
-    "Shine D",
-    "Glimmer E",
-    "Spark F",
-    "Radiant G",
-    "Glow H",
-    "Lumen I",
-    "Sparkle J"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 4
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 3
+    }
   ]
 }
