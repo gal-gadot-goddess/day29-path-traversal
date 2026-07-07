@@ -1,109 +1,104 @@
 {
-  "algorithm": "bfs",
-  "title": "Subaquatic Data Stream",
-  "description": "Navigate the bioluminescent pathways of a deep-sea trench, optimizing data flow through an oceanic neural network.",
+  "algorithm": "astar",
+  "title": "Quantum Data Stream",
+  "description": "Navigate entangled qubits to find the fastest quantum data path.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
-      "id": "A",
-      "x": 450,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 400,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 600,
-      "y": 650
-    },
-    {
-      "id": "E",
+      "id": "Q1",
       "x": 500,
+      "y": 600
+    },
+    {
+      "id": "Q2",
+      "x": 300,
       "y": 800
     },
     {
-      "id": "T",
+      "id": "Q3",
+      "x": 700,
+      "y": 800
+    },
+    {
+      "id": "Q4",
       "x": 500,
-      "y": 950
+      "y": 1000
+    },
+    {
+      "id": "Q5",
+      "x": 300,
+      "y": 1200
+    },
+    {
+      "id": "T",
+      "x": 700,
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
+      "to": "Q1",
+      "weight": 2
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
       "weight": 3
     },
     {
-      "from": "S",
-      "to": "B",
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 3
+    },
+    {
+      "from": "Q2",
+      "to": "Q4",
       "weight": 4
     },
     {
-      "from": "A",
-      "to": "C",
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 4
+    },
+    {
+      "from": "Q2",
+      "to": "Q5",
       "weight": 5
     },
     {
-      "from": "A",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "E",
+      "from": "Q3",
+      "to": "T",
       "weight": 5
     },
     {
-      "from": "E",
+      "from": "Q4",
+      "to": "Q5",
+      "weight": 2
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "Q5",
       "to": "T",
       "weight": 2
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 10
+      "from": "S",
+      "to": "Q2",
+      "weight": 8
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 12
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 15
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 18
+      "from": "Q1",
+      "to": "Q5",
+      "weight": 9
     }
   ]
 }
