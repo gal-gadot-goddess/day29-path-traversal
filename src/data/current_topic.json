@@ -1,124 +1,31 @@
 {
-  "algorithm": "dfs",
-  "title": "Neuron Synapse Maze",
-  "description": "Navigate the branching pathways of a bio-neural network, seeking the fastest signal route from sensory input to motor output.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "G",
-      "x": 600,
-      "y": 800
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 950
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Organize the radiant energy levels of alien flora for optimal light cycle synchronization.",
+  "data": [
+    85,
+    42,
+    91,
+    67,
+    33,
+    78,
+    55,
+    28,
+    95,
+    50,
+    71
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "G",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "G",
-      "weight": 2
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "G",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
-      "from": "F",
-      "to": "G",
-      "weight": 8
-    }
+  "labels": [
+    "Glowpetal",
+    "Sunspore",
+    "Starvine",
+    "Moonmoss",
+    "Nightbloom",
+    "Cometleaf",
+    "Auroraweed",
+    "Deeproot",
+    "Radiantvine",
+    "Shinebud",
+    "Glimmerfern"
   ]
 }
