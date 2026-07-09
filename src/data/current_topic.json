@@ -1,59 +1,49 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Nexus Ascent",
-  "description": "Navigate the layered architecture of a quantum neural network, finding the fastest data flow from the input synapse to the output nexus.",
+  "algorithm": "astar",
+  "title": "Quantum Neural Mesh",
+  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 500
+      "x": 250,
+      "y": 650
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 750,
+      "y": 650
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 700
+      "x": 300,
+      "y": 950
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 700
-    },
-    {
-      "id": "E",
-      "x": 650,
-      "y": 700
-    },
-    {
-      "id": "F",
-      "x": 450,
-      "y": 900
+      "x": 700,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 550,
-      "y": 1100
+      "x": 500,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 4
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 3
     },
     {
       "from": "A",
@@ -61,53 +51,18 @@
       "weight": 5
     },
     {
-      "from": "A",
-      "to": "D",
-      "weight": 2
-    },
-    {
       "from": "B",
       "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
       "weight": 6
     },
     {
       "from": "C",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "F",
+      "to": "T",
       "weight": 2
     },
     {
       "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
       "to": "T",
-      "weight": 7
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
       "weight": 3
     }
   ]
