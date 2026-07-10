@@ -1,69 +1,33 @@
 {
-  "algorithm": "astar",
-  "title": "Quantum Neural Mesh",
-  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 250,
-      "y": 650
-    },
-    {
-      "id": "B",
-      "x": 750,
-      "y": 650
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 950
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Stream Alignment",
+  "description": "Align unstable quantum data packets for efficient hyper-space transmission.",
+  "data": [
+    78,
+    34,
+    92,
+    56,
+    81,
+    29,
+    65,
+    41,
+    99,
+    72,
+    39,
+    88
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 4
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 3
-    }
+  "labels": [
+    "Q-Packet Alpha",
+    "Q-Packet Beta",
+    "Q-Packet Gamma",
+    "Q-Packet Delta",
+    "Q-Packet Epsilon",
+    "Q-Packet Zeta",
+    "Q-Packet Eta",
+    "Q-Packet Theta",
+    "Q-Packet Iota",
+    "Q-Packet Kappa",
+    "Q-Packet Lambda",
+    "Q-Packet Mu"
   ]
 }
