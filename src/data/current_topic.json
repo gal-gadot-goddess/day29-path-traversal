@@ -1,109 +1,99 @@
 {
   "algorithm": "dijkstra",
-  "title": "Neural Net Ascent",
-  "description": "Navigate the ascending layers of a neural network, finding the fastest path from input to output.",
+  "title": "Neural Ascent",
+  "description": "Navigate the intricate pathways of a growing neural network, from initial activation to ultimate processing.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
-      "id": "A",
-      "x": 500,
+      "id": "N1",
+      "x": 400,
       "y": 500
     },
     {
-      "id": "B",
-      "x": 300,
-      "y": 600
+      "id": "N2",
+      "x": 600,
+      "y": 500
     },
     {
-      "id": "C",
-      "x": 700,
-      "y": 600
+      "id": "N3",
+      "x": 350,
+      "y": 650
     },
     {
-      "id": "D",
+      "id": "N4",
+      "x": 650,
+      "y": 650
+    },
+    {
+      "id": "N5",
       "x": 500,
       "y": 800
     },
     {
-      "id": "E",
-      "x": 300,
-      "y": 900
-    },
-    {
-      "id": "F",
-      "x": 700,
-      "y": 900
-    },
-    {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1000
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
+      "to": "N1",
       "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
     },
     {
       "from": "S",
-      "to": "D",
-      "weight": 10
+      "to": "N2",
+      "weight": 4
     },
     {
-      "from": "B",
-      "to": "F",
-      "weight": 8
+      "from": "N1",
+      "to": "N3",
+      "weight": 2
     },
     {
-      "from": "C",
-      "to": "E",
-      "weight": 9
+      "from": "N1",
+      "to": "N2",
+      "weight": 1
+    },
+    {
+      "from": "N2",
+      "to": "N4",
+      "weight": 3
+    },
+    {
+      "from": "N2",
+      "to": "N5",
+      "weight": 5
+    },
+    {
+      "from": "N3",
+      "to": "N5",
+      "weight": 4
+    },
+    {
+      "from": "N4",
+      "to": "N5",
+      "weight": 2
+    },
+    {
+      "from": "N4",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "N5",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "N3",
+      "to": "N4",
+      "weight": 5
     }
   ]
 }
