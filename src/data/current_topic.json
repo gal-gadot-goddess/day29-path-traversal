@@ -1,7 +1,7 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Ascent",
-  "description": "Navigate the intricate pathways of a growing neural network, from initial activation to ultimate processing.",
+  "algorithm": "astar",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate the abyss, following the faint glow of bioluminescent organisms.",
   "nodes": [
     {
       "id": "S",
@@ -9,91 +9,96 @@
       "y": 350
     },
     {
-      "id": "N1",
+      "id": "A",
+      "x": 450,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 500
+    },
+    {
+      "id": "C",
       "x": 400,
-      "y": 500
+      "y": 650
     },
     {
-      "id": "N2",
+      "id": "D",
       "x": 600,
-      "y": 500
-    },
-    {
-      "id": "N3",
-      "x": 350,
       "y": 650
     },
     {
-      "id": "N4",
-      "x": 650,
-      "y": 650
-    },
-    {
-      "id": "N5",
+      "id": "E",
       "x": 500,
       "y": 800
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1000
+      "y": 1050
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "N1",
+      "to": "A",
       "weight": 3
     },
     {
       "from": "S",
-      "to": "N2",
+      "to": "B",
       "weight": 4
     },
     {
-      "from": "N1",
-      "to": "N3",
-      "weight": 2
-    },
-    {
-      "from": "N1",
-      "to": "N2",
-      "weight": 1
-    },
-    {
-      "from": "N2",
-      "to": "N4",
-      "weight": 3
-    },
-    {
-      "from": "N2",
-      "to": "N5",
+      "from": "A",
+      "to": "C",
       "weight": 5
     },
     {
-      "from": "N3",
-      "to": "N5",
-      "weight": 4
-    },
-    {
-      "from": "N4",
-      "to": "N5",
+      "from": "A",
+      "to": "B",
       "weight": 2
     },
     {
-      "from": "N4",
-      "to": "T",
+      "from": "B",
+      "to": "D",
       "weight": 6
     },
     {
-      "from": "N5",
+      "from": "B",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
       "to": "T",
       "weight": 3
     },
     {
-      "from": "N3",
-      "to": "N4",
-      "weight": 5
+      "from": "A",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 8
     }
   ]
 }
