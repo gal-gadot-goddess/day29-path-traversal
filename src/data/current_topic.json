@@ -1,33 +1,25 @@
 {
   "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Aligning entangled quantum particles for stable energy transfer.",
+  "title": "Neural Synapse Sorter",
+  "description": "Sorting high-priority neurotransmitters in the prefrontal cortex.",
   "data": [
-    85,
-    34,
-    92,
-    28,
-    71,
     45,
-    63,
-    50,
-    39,
-    78,
-    55,
-    99
+    12,
+    89,
+    34,
+    67,
+    23,
+    56,
+    78
   ],
   "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa",
-    "Lambda",
-    "Mu"
+    "Dopamine",
+    "Serotonin",
+    "GABA",
+    "Glutamate",
+    "Acetyl",
+    "Norepi",
+    "Oxytocin",
+    "Endorphin"
   ]
 }
