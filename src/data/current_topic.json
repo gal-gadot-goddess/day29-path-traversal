@@ -1,114 +1,33 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Bio-Circuitry Ascent",
-  "description": "Navigate the intricate bio-circuitry of a microscopic organism, finding the fastest pathway through its neural network to reach the central command node.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 300
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 700
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 900
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entanglement Sort",
+  "description": "Entangled quantum data packets need to be sequenced by their coherence level for stable transfer. Arrange them from least to most stable!",
+  "data": [
+    42,
+    88,
+    31,
+    75,
+    56,
+    92,
+    28,
+    67,
+    50,
+    81,
+    39,
+    70
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 10
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 12
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "A",
-      "weight": 10
-    },
-    {
-      "from": "D",
-      "to": "B",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "A",
-      "weight": 12
-    },
-    {
-      "from": "E",
-      "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "T",
-      "to": "E",
-      "weight": 4
-    }
+  "labels": [
+    "Alpha",
+    "Theta",
+    "Gamma",
+    "Sigma",
+    "Delta",
+    "Omega",
+    "Beta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Iota",
+    "Kappa"
   ]
 }
