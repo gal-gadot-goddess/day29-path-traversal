@@ -1,33 +1,69 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Entangled quantum data packets need to be sequenced by their coherence level for stable transfer. Arrange them from least to most stable!",
-  "data": [
-    42,
-    88,
-    31,
-    75,
-    56,
-    92,
-    28,
-    67,
-    50,
-    81,
-    39,
-    70
+  "algorithm": "dfs",
+  "title": "Quantum Neural Mesh",
+  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "B",
+      "x": 750,
+      "y": 650
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 950
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Theta",
-    "Gamma",
-    "Sigma",
-    "Delta",
-    "Omega",
-    "Beta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 4
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 3
+    }
   ]
 }
