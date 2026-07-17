@@ -1,69 +1,33 @@
 {
-  "algorithm": "dfs",
-  "title": "Quantum Neural Mesh",
-  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 250,
-      "y": 650
-    },
-    {
-      "id": "B",
-      "x": 750,
-      "y": 650
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 950
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "quick_sort",
+  "title": "Bioluminescent Data Stream",
+  "description": "Aligning chronometric pulses of bioluminescent plankton to stabilize subspace frequencies.",
+  "data": [
+    55,
+    32,
+    88,
+    45,
+    92,
+    25,
+    67,
+    78,
+    40,
+    81,
+    35,
+    59
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 4
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 3
-    }
+  "labels": [
+    "Pulse 1",
+    "Pulse 2",
+    "Pulse 3",
+    "Pulse 4",
+    "Pulse 5",
+    "Pulse 6",
+    "Pulse 7",
+    "Pulse 8",
+    "Pulse 9",
+    "Pulse 10",
+    "Pulse 11",
+    "Pulse 12"
   ]
 }
