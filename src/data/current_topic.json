@@ -1,33 +1,104 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Bioluminescent Data Stream",
-  "description": "Aligning chronometric pulses of bioluminescent plankton to stabilize subspace frequencies.",
-  "data": [
-    55,
-    32,
-    88,
-    45,
-    92,
-    25,
-    67,
-    78,
-    40,
-    81,
-    35,
-    59
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescent",
+  "description": "Explore the abyss! Trace the shortest bioluminescent path from the research submersible (S) to the ancient glowing artifact (T) amidst deep-sea flora and fauna.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 900
+    }
   ],
-  "labels": [
-    "Pulse 1",
-    "Pulse 2",
-    "Pulse 3",
-    "Pulse 4",
-    "Pulse 5",
-    "Pulse 6",
-    "Pulse 7",
-    "Pulse 8",
-    "Pulse 9",
-    "Pulse 10",
-    "Pulse 11",
-    "Pulse 12"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    }
   ]
 }
