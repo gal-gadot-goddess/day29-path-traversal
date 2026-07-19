@@ -1,114 +1,104 @@
 {
-  "algorithm": "dfs",
-  "title": "Cyberpunk Datastream Maze",
-  "description": "Navigate the neon-drenched data conduits of Neo-Kyoto, avoiding corrupted nodes to find the quickest route.",
+  "algorithm": "astar",
+  "title": "Quantum Entanglement Grid",
+  "description": "Navigate a quantum entanglement grid where stable pathways flicker, demanding optimal pathfinding through unstable qubits.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
-      "id": "A",
+      "id": "Q1",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
-      "id": "B",
+      "id": "Q2",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
-      "id": "C",
-      "x": 300,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 700
-    },
-    {
-      "id": "E",
+      "id": "Q3",
       "x": 500,
-      "y": 900
+      "y": 750
     },
     {
-      "id": "F",
+      "id": "Q4",
       "x": 400,
-      "y": 1100
+      "y": 950
+    },
+    {
+      "id": "Q5",
+      "x": 600,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 1100
+      "x": 500,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 3
+      "to": "Q1",
+      "weight": 5
     },
     {
       "from": "S",
-      "to": "B",
-      "weight": 2
+      "to": "Q2",
+      "weight": 7
     },
     {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "C",
-      "to": "E",
+      "from": "Q1",
+      "to": "Q3",
       "weight": 6
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 2
+      "from": "Q2",
+      "to": "Q3",
+      "weight": 4
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 8
+    },
+    {
+      "from": "Q3",
+      "to": "Q5",
+      "weight": 5
+    },
+    {
+      "from": "Q1",
+      "to": "Q4",
+      "weight": 12
+    },
+    {
+      "from": "Q2",
+      "to": "Q5",
+      "weight": 10
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "Q5",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 9
+    },
+    {
+      "from": "Q4",
+      "to": "Q5",
+      "weight": 7
     }
   ]
 }
