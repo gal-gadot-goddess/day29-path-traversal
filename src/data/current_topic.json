@@ -1,79 +1,79 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Synapse Navigator",
-  "description": "Navigate the complex firing patterns of a bio-digital neural network to find the quickest signal path.",
+  "algorithm": "dijkstra",
+  "title": "Neural Ascent",
+  "description": "Navigate the synaptic pathways of a digital mind, finding the fastest route for signal propagation from sensory input to cognitive output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 300
     },
     {
       "id": "A",
-      "x": 600,
-      "y": 550
+      "x": 400,
+      "y": 450
     },
     {
       "id": "B",
-      "x": 400,
-      "y": 600
+      "x": 600,
+      "y": 450
     },
     {
       "id": "C",
-      "x": 550,
-      "y": 750
+      "x": 300,
+      "y": 600
     },
     {
       "id": "D",
-      "x": 450,
-      "y": 800
+      "x": 700,
+      "y": 600
     },
     {
       "id": "E",
-      "x": 650,
-      "y": 950
+      "x": 500,
+      "y": 750
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 900
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 5
     },
     {
       "from": "A",
-      "to": "D",
+      "to": "E",
       "weight": 6
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 4
+      "weight": 5
     },
     {
       "from": "B",
-      "to": "C",
-      "weight": 10
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "D",
@@ -81,29 +81,19 @@
       "weight": 3
     },
     {
-      "from": "C",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 11
-    },
-    {
       "from": "E",
       "to": "T",
-      "weight": 2
+      "weight": 4
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 12
+      "weight": 8
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 7
+      "weight": 10
     }
   ]
 }
