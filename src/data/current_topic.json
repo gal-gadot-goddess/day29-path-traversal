@@ -1,7 +1,7 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Ascent",
-  "description": "Navigate the synaptic pathways of a digital mind, finding the fastest route for signal propagation from sensory input to cognitive output.",
+  "algorithm": "dfs",
+  "title": "Cyberpunk Datastream Maze",
+  "description": "Navigate the neon-drenched data conduits of Neo-Kyoto, avoiding corrupted nodes to find the quickest route.",
   "nodes": [
     {
       "id": "S",
@@ -11,32 +11,37 @@
     {
       "id": "A",
       "x": 400,
-      "y": 450
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 450
+      "y": 500
     },
     {
       "id": "C",
       "x": 300,
-      "y": 600
+      "y": 700
     },
     {
       "id": "D",
       "x": 700,
-      "y": 600
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 750
+      "y": 900
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 1100
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 900
+      "x": 600,
+      "y": 1100
     }
   ],
   "edges": [
@@ -48,52 +53,62 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 2
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 4
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 5
     },
     {
       "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
       "to": "E",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "C",
-      "to": "E",
+      "to": "F",
       "weight": 2
     },
     {
       "from": "D",
-      "to": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "F",
       "weight": 3
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 4
+      "weight": 5
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 8
+      "from": "F",
+      "to": "T",
+      "weight": 1
     },
     {
       "from": "C",
-      "to": "D",
-      "weight": 10
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
     }
   ]
 }
