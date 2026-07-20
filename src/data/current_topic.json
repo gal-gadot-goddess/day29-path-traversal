@@ -1,29 +1,31 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Coral Reef",
-  "description": "Guiding glowing plankton blooms by their light intensity to ensure optimal nutrient distribution.",
+  "algorithm": "quick_sort",
+  "title": "Quantum Entanglement Stabilizer",
+  "description": "Aligning quantum particles by their energy signatures to stabilize the entanglement field.",
   "data": [
-    85,
-    23,
-    98,
-    42,
+    78,
+    45,
+    92,
+    33,
     67,
-    31,
-    79,
-    55,
-    91,
-    38
+    88,
+    25,
+    51,
+    95,
+    40,
+    71
   ],
   "labels": [
-    "Glow A",
-    "Glow B",
-    "Glow C",
-    "Glow D",
-    "Glow E",
-    "Glow F",
-    "Glow G",
-    "Glow H",
-    "Glow I",
-    "Glow J"
+    "Qubit 78",
+    "Qubit 45",
+    "Qubit 92",
+    "Qubit 33",
+    "Qubit 67",
+    "Qubit 88",
+    "Qubit 25",
+    "Qubit 51",
+    "Qubit 95",
+    "Qubit 40",
+    "Qubit 71"
   ]
 }
