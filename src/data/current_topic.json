@@ -1,31 +1,104 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Stabilizer",
-  "description": "Aligning quantum particles by their energy signatures to stabilize the entanglement field.",
-  "data": [
-    78,
-    45,
-    92,
-    33,
-    67,
-    88,
-    25,
-    51,
-    95,
-    40,
-    71
+  "algorithm": "dfs",
+  "title": "Deep Sea Vent Network",
+  "description": "Explore the hydrothermal vent network, a vital ecosystem where life thrives under extreme pressure. Find the shortest path to the deepest vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Qubit 78",
-    "Qubit 45",
-    "Qubit 92",
-    "Qubit 33",
-    "Qubit 67",
-    "Qubit 88",
-    "Qubit 25",
-    "Qubit 51",
-    "Qubit 95",
-    "Qubit 40",
-    "Qubit 71"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 7
+    }
   ]
 }
