@@ -1,42 +1,42 @@
 {
   "algorithm": "dijkstra",
-  "title": "Neural Net Ascent",
-  "description": "Navigate the data flow within a complex neural network, finding the fastest path for information to reach its output.",
+  "title": "Deep-Sea Bioluminescent Path",
+  "description": "Navigate the abyssal plains, finding the fastest route through bioluminescent currents from the Submersible to the Trench.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 400
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 450
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 450
-    },
-    {
-      "id": "C",
       "x": 500,
       "y": 600
     },
     {
-      "id": "D",
+      "id": "B",
       "x": 400,
-      "y": 750
+      "y": 800
+    },
+    {
+      "id": "C",
+      "x": 600,
+      "y": 800
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 1000
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 750
+      "x": 400,
+      "y": 1200
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 900
+      "x": 600,
+      "y": 1200
     }
   ],
   "edges": [
@@ -46,59 +46,59 @@
       "weight": 3
     },
     {
-      "from": "S",
+      "from": "A",
       "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "A",
-      "to": "C",
-      "weight": 2
+      "from": "B",
+      "to": "D",
+      "weight": 6
     },
     {
-      "from": "B",
-      "to": "C",
+      "from": "C",
+      "to": "D",
       "weight": 3
     },
     {
-      "from": "A",
-      "to": "D",
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "T",
       "weight": 5
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 1
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "D",
       "to": "T",
-      "weight": 3
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 4
+      "weight": 3
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 2
+      "from": "S",
+      "to": "D",
+      "weight": 15
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 6
+      "to": "T",
+      "weight": 12
     }
   ]
 }
