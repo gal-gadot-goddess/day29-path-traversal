@@ -1,7 +1,7 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Vent Network",
-  "description": "Explore the hydrothermal vent network, a vital ecosystem where life thrives under extreme pressure. Find the shortest path to the deepest vent.",
+  "algorithm": "dijkstra",
+  "title": "Neural Net Ascent",
+  "description": "Navigate the data flow within a complex neural network, finding the fastest path for information to reach its output.",
   "nodes": [
     {
       "id": "S",
@@ -10,33 +10,33 @@
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 500
+      "x": 400,
+      "y": 450
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 500
+      "x": 600,
+      "y": 450
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 700
+      "x": 500,
+      "y": 600
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 700
+      "x": 400,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 900
+      "x": 600,
+      "y": 750
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 900
     }
   ],
   "edges": [
@@ -53,52 +53,52 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "B",
       "weight": 2
     },
     {
       "from": "B",
-      "to": "D",
+      "to": "C",
       "weight": 3
     },
     {
-      "from": "C",
-      "to": "E",
-      "weight": 6
+      "from": "A",
+      "to": "D",
+      "weight": 5
     },
     {
-      "from": "D",
+      "from": "B",
       "to": "E",
       "weight": 4
     },
     {
       "from": "C",
-      "to": "T",
-      "weight": 8
+      "to": "D",
+      "weight": 1
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 2
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "E",
       "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "E",
       "weight": 2
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 7
+      "to": "B",
+      "weight": 6
     }
   ]
 }
