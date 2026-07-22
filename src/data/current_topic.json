@@ -1,18 +1,18 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Chroniton Crystal Alignment",
-  "description": "Align the unstable chroniton crystals by their temporal resonance frequency to stabilize the temporal flux.",
+  "title": "Cybernetic Gene Sequence",
+  "description": "Sequencing bioluminescent cyber-organisms' genetic markers. Unsorted markers cause unpredictable mutations!",
   "data": [
-    95,
-    32,
     78,
     45,
-    63,
-    28,
-    89,
-    51,
-    72,
-    40
+    92,
+    31,
+    66,
+    50,
+    88,
+    25,
+    70,
+    39
   ],
   "labels": [
     "Alpha",
