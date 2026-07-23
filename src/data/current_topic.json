@@ -1,114 +1,25 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Lumina Network",
-  "description": "Explore the bioluminescent communication network illuminating the ocean's abyss. Find the quickest path through this light-based data flow.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 600,
-      "y": 1100
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Bloom Sequence",
+  "description": "Arrange the ancient bioluminescent flora by their light intensity to ensure the sacred ritual's optimal glow.",
+  "data": [
+    75,
+    32,
+    91,
+    48,
+    63,
+    29,
+    88,
+    55
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 2
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 7
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 8
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 15
-    }
+  "labels": [
+    "Glowpetal",
+    "Shimmer Moss",
+    "Star Bloom",
+    "Moon Lily",
+    "Sun Drop",
+    "Void Vine",
+    "Radiant Fern",
+    "Lunar Tear"
   ]
 }
