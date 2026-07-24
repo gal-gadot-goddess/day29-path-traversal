@@ -1,25 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sequence",
-  "description": "Arrange the ancient bioluminescent flora by their light intensity to ensure the sacred ritual's optimal glow.",
-  "data": [
-    75,
-    32,
-    91,
-    48,
-    63,
-    29,
-    88,
-    55
+  "algorithm": "dijkstra",
+  "title": "Suboceanic Data Flow",
+  "description": "Navigate the deep sea's pressure zones and bioluminescent currents to find the fastest data conduit. Each connection represents a unique aquatic data stream.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 500,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 300,
+      "y": 750
+    },
+    {
+      "id": "C",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "E",
+      "x": 300,
+      "y": 1150
+    },
+    {
+      "id": "T",
+      "x": 700,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Glowpetal",
-    "Shimmer Moss",
-    "Star Bloom",
-    "Moon Lily",
-    "Sun Drop",
-    "Void Vine",
-    "Radiant Fern",
-    "Lunar Tear"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "D",
+      "weight": 15
+    },
+    {
+      "from": "A",
+      "to": "T",
+      "weight": 18
+    },
+    {
+      "from": "B",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    }
   ]
 }
