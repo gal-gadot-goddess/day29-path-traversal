@@ -1,29 +1,114 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Chrono-Crystal Alignment",
-  "description": "Aligning temporal energy signatures ensures stable reality phasing. Sort by temporal flux to prevent paradoxes.",
-  "data": [
-    75,
-    32,
-    88,
-    45,
-    92,
-    58,
-    29,
-    67,
-    50,
-    81
+  "algorithm": "dfs",
+  "title": "Neural Pathways",
+  "description": "Navigate the labyrinthine neural network, tracing the flow of information from sensory input to cognitive output.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 350,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 650,
+      "y": 650
+    },
+    {
+      "id": "F",
+      "x": 450,
+      "y": 850
+    },
+    {
+      "id": "T",
+      "x": 550,
+      "y": 950
+    }
   ],
-  "labels": [
-    "FluxWave 1",
-    "FluxWave 2",
-    "FluxWave 3",
-    "FluxWave 4",
-    "FluxWave 5",
-    "FluxWave 6",
-    "FluxWave 7",
-    "FluxWave 8",
-    "FluxWave 9",
-    "FluxWave 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 12
+    }
   ]
 }
