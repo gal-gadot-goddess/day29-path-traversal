@@ -1,7 +1,7 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Pathways",
-  "description": "Navigate the labyrinthine neural network, tracing the flow of information from sensory input to cognitive output.",
+  "algorithm": "dijkstra",
+  "title": "Neural Synapse Surge",
+  "description": "Navigate the flow of information through a complex neural network, finding the fastest path for a vital signal.",
   "nodes": [
     {
       "id": "S",
@@ -11,104 +11,114 @@
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 650
+      "x": 500,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 700
+      "x": 350,
+      "y": 750
     },
     {
       "id": "E",
       "x": 650,
-      "y": 650
+      "y": 750
     },
     {
       "id": "F",
-      "x": 450,
-      "y": 850
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "G",
+      "x": 400,
+      "y": 1150
     },
     {
       "id": "T",
-      "x": 550,
-      "y": 950
+      "x": 600,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 3
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 2
     },
     {
       "from": "A",
       "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
+      "weight": 6
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 6
+      "weight": 7
     },
     {
       "from": "C",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "E",
       "to": "F",
       "weight": 5
     },
     {
-      "from": "D",
-      "to": "F",
+      "from": "C",
+      "to": "G",
+      "weight": 8
+    },
+    {
+      "from": "F",
+      "to": "G",
       "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 7
     },
     {
       "from": "F",
       "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "G",
+      "to": "T",
       "weight": 3
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
-      "from": "C",
+      "from": "D",
       "to": "E",
-      "weight": 12
+      "weight": 10
     }
   ]
 }
