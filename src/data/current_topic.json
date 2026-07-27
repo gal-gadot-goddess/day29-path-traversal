@@ -1,29 +1,33 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Aligning entangled quantum particles for stable energy transfer.",
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Bloom",
+  "description": "In the deep sea trenches, glowing flora bloom in a chaotic display. Untangle their light spectrum to analyze their growth patterns before they fade.",
   "data": [
+    85,
     42,
-    88,
-    31,
-    75,
-    59,
     91,
+    63,
     25,
-    64,
-    38,
-    81
+    77,
+    50,
+    98,
+    31,
+    68,
+    55,
+    80
   ],
   "labels": [
-    "Alpha-Q",
-    "Beta-Q",
-    "Gamma-Q",
-    "Delta-Q",
-    "Epsilon-Q",
-    "Zeta-Q",
-    "Eta-Q",
-    "Theta-Q",
-    "Iota-Q",
-    "Kappa-Q"
+    "Aurora Bloom",
+    "Deep Glow",
+    "Starlight Spore",
+    "Ocean Spark",
+    "Abyssal Light",
+    "Coral Shimmer",
+    "Rift Glow",
+    "Lumin Kelp",
+    "Whisper Flicker",
+    "Veil Light",
+    "Crystal Bloom",
+    "Nether Pulse"
   ]
 }
