@@ -1,33 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom",
-  "description": "In the deep sea trenches, glowing flora bloom in a chaotic display. Untangle their light spectrum to analyze their growth patterns before they fade.",
-  "data": [
-    85,
-    42,
-    91,
-    63,
-    25,
-    77,
-    50,
-    98,
-    31,
-    68,
-    55,
-    80
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Colony Network",
+  "description": "Navigate the pressure and currents to find the fastest data route from the surface research vessel to the deepest trench outpost.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Aurora Bloom",
-    "Deep Glow",
-    "Starlight Spore",
-    "Ocean Spark",
-    "Abyssal Light",
-    "Coral Shimmer",
-    "Rift Glow",
-    "Lumin Kelp",
-    "Whisper Flicker",
-    "Veil Light",
-    "Crystal Bloom",
-    "Nether Pulse"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 10
+    }
   ]
 }
