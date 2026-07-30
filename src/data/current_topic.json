@@ -1,114 +1,114 @@
 {
-  "algorithm": "dfs",
-  "title": "Neuron Pathways",
-  "description": "Navigate the complex connections within a simulated neural network. Find the fastest route from sensory input to motor output.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Biolumi Network",
+  "description": "Explore the interconnected bioluminescent organisms in the abyssal zone, finding the fastest path of light signals.",
   "nodes": [
     {
-      "id": "S'",
-      "x": 500,
-      "y": 320
-    },
-    {
-      "id": "N1",
-      "x": 400,
-      "y": 450
-    },
-    {
-      "id": "N2",
-      "x": 600,
-      "y": 580
-    },
-    {
-      "id": "N3",
+      "id": "S",
       "x": 450,
-      "y": 710
+      "y": 350
     },
     {
-      "id": "N4",
+      "id": "A",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 300,
+      "y": 550
+    },
+    {
+      "id": "C",
       "x": 550,
-      "y": 840
+      "y": 750
     },
     {
-      "id": "N5",
-      "x": 400,
-      "y": 970
+      "id": "D",
+      "x": 350,
+      "y": 780
     },
     {
-      "id": "T'",
-      "x": 500,
-      "y": 1100
+      "id": "E",
+      "x": 450,
+      "y": 950
+    },
+    {
+      "id": "F",
+      "x": 580,
+      "y": 980
+    },
+    {
+      "id": "T",
+      "x": 450,
+      "y": 1150
     }
   ],
   "edges": [
     {
-      "from": "S'",
-      "to": "N1",
-      "weight": 5
-    },
-    {
-      "from": "S'",
-      "to": "N2",
-      "weight": 7
-    },
-    {
-      "from": "N1",
-      "to": "N2",
+      "from": "S",
+      "to": "A",
       "weight": 3
     },
     {
-      "from": "N1",
-      "to": "N3",
-      "weight": 8
+      "from": "S",
+      "to": "B",
+      "weight": 5
     },
     {
-      "from": "N2",
-      "to": "N4",
+      "from": "A",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "N2",
-      "to": "N3",
-      "weight": 6
-    },
-    {
-      "from": "N3",
-      "to": "N4",
-      "weight": 9
-    },
-    {
-      "from": "N3",
-      "to": "N5",
-      "weight": 5
-    },
-    {
-      "from": "N4",
-      "to": "N5",
+      "from": "B",
+      "to": "D",
       "weight": 2
     },
     {
-      "from": "N4",
-      "to": "T'",
-      "weight": 7
-    },
-    {
-      "from": "N5",
-      "to": "T'",
+      "from": "C",
+      "to": "E",
       "weight": 6
     },
     {
-      "from": "N1",
-      "to": "S'",
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "E",
       "weight": 5
     },
     {
-      "from": "N3",
-      "to": "N1",
+      "from": "E",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "C",
       "weight": 8
     },
     {
-      "from": "T'",
-      "to": "N5",
-      "weight": 6
+      "from": "D",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "S",
+      "to": "T",
+      "weight": 20
     }
   ]
 }
