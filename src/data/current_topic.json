@@ -1,69 +1,114 @@
 {
-  "algorithm": "bfs",
-  "title": "Quantum Neural Mesh",
-  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
+  "algorithm": "dfs",
+  "title": "Neuron Pathways",
+  "description": "Navigate the complex connections within a simulated neural network. Find the fastest route from sensory input to motor output.",
   "nodes": [
     {
-      "id": "S",
+      "id": "S'",
       "x": 500,
-      "y": 350
+      "y": 320
     },
     {
-      "id": "A",
-      "x": 250,
-      "y": 650
+      "id": "N1",
+      "x": 400,
+      "y": 450
     },
     {
-      "id": "B",
-      "x": 750,
-      "y": 650
+      "id": "N2",
+      "x": 600,
+      "y": 580
     },
     {
-      "id": "C",
-      "x": 300,
-      "y": 950
+      "id": "N3",
+      "x": 450,
+      "y": 710
     },
     {
-      "id": "D",
-      "x": 700,
-      "y": 950
+      "id": "N4",
+      "x": 550,
+      "y": 840
     },
     {
-      "id": "T",
+      "id": "N5",
+      "x": 400,
+      "y": 970
+    },
+    {
+      "id": "T'",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
     {
-      "from": "S",
-      "to": "A",
-      "weight": 4
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "C",
+      "from": "S'",
+      "to": "N1",
       "weight": 5
     },
     {
-      "from": "B",
-      "to": "D",
+      "from": "S'",
+      "to": "N2",
+      "weight": 7
+    },
+    {
+      "from": "N1",
+      "to": "N2",
+      "weight": 3
+    },
+    {
+      "from": "N1",
+      "to": "N3",
+      "weight": 8
+    },
+    {
+      "from": "N2",
+      "to": "N4",
+      "weight": 4
+    },
+    {
+      "from": "N2",
+      "to": "N3",
       "weight": 6
     },
     {
-      "from": "C",
-      "to": "T",
+      "from": "N3",
+      "to": "N4",
+      "weight": 9
+    },
+    {
+      "from": "N3",
+      "to": "N5",
+      "weight": 5
+    },
+    {
+      "from": "N4",
+      "to": "N5",
       "weight": 2
     },
     {
-      "from": "D",
-      "to": "T",
-      "weight": 3
+      "from": "N4",
+      "to": "T'",
+      "weight": 7
+    },
+    {
+      "from": "N5",
+      "to": "T'",
+      "weight": 6
+    },
+    {
+      "from": "N1",
+      "to": "S'",
+      "weight": 5
+    },
+    {
+      "from": "N3",
+      "to": "N1",
+      "weight": 8
+    },
+    {
+      "from": "T'",
+      "to": "N5",
+      "weight": 6
     }
   ]
 }
