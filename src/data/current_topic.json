@@ -1,104 +1,99 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Bioluminescent Paths",
-  "description": "Navigate the dark abyss using bioluminescent trails, finding the quickest route to the research vessel.",
+  "algorithm": "astar",
+  "title": "Quantum Entanglement Network",
+  "description": "Navigate the qubit entanglement pathways of a quantum computer, optimizing for minimal entanglement decay.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
-      "id": "A",
-      "x": 450,
-      "y": 500
+      "id": "Q1",
+      "x": 350,
+      "y": 600
     },
     {
-      "id": "B",
-      "x": 550,
-      "y": 500
+      "id": "Q2",
+      "x": 650,
+      "y": 600
     },
     {
-      "id": "C",
-      "x": 400,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 600,
-      "y": 700
-    },
-    {
-      "id": "E",
+      "id": "Q3",
       "x": 500,
-      "y": 900
+      "y": 800
+    },
+    {
+      "id": "Q4",
+      "x": 300,
+      "y": 1000
+    },
+    {
+      "id": "Q5",
+      "x": 700,
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 5
+      "to": "Q1",
+      "weight": 3
     },
     {
       "from": "S",
-      "to": "B",
+      "to": "Q2",
+      "weight": 4
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 2
+    },
+    {
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 5
+    },
+    {
+      "from": "Q2",
+      "to": "Q3",
+      "weight": 3
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
       "weight": 6
     },
     {
-      "from": "A",
-      "to": "C",
-      "weight": 8
+      "from": "Q3",
+      "to": "Q5",
+      "weight": 5
     },
     {
-      "from": "B",
-      "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "E",
+      "from": "Q4",
       "to": "T",
       "weight": 4
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 12
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 15
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 20
-    },
-    {
-      "from": "A",
+      "from": "Q5",
       "to": "T",
-      "weight": 18
+      "weight": 3
     },
     {
-      "from": "B",
-      "to": "T",
-      "weight": 17
+      "from": "Q1",
+      "to": "Q4",
+      "weight": 10
+    },
+    {
+      "from": "Q2",
+      "to": "Q5",
+      "weight": 9
     }
   ]
 }
