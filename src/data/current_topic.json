@@ -1,42 +1,47 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Lumina Trails",
-  "description": "Navigate the bioluminescent paths of the abyssal trench, finding the quickest route to the deepest research outpost.",
+  "algorithm": "dfs",
+  "title": "Neuro-Net Ascent",
+  "description": "Navigate the ascending pathways of a bio-digital consciousness. Find the quickest route through the neural labyrinth.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 500
+      "x": 400,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 500
+      "x": 600,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 700
+      "x": 500,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 700
+      "x": 300,
+      "y": 750
     },
     {
       "id": "E",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "F",
       "x": 500,
-      "y": 900
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1150
     }
   ],
   "edges": [
@@ -53,47 +58,57 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 4
     },
     {
       "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "B",
       "to": "E",
-      "weight": 9
+      "weight": 6
     },
     {
       "from": "C",
-      "to": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "F",
+      "to": "T",
       "weight": 3
     },
     {
       "from": "D",
-      "to": "E",
-      "weight": 5
+      "to": "C",
+      "weight": 6
     },
     {
       "from": "E",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 12
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 15
+      "to": "B",
+      "weight": 7
     }
   ]
 }
