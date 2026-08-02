@@ -1,109 +1,29 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Biolume Network",
-  "description": "Explore the bioluminescent communication network of deep-sea creatures. Find the fastest path from a curious research drone to a rare giant squid.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 650,
-      "y": 450
-    },
-    {
-      "id": "B",
-      "x": 350,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 650,
-      "y": 750
-    },
-    {
-      "id": "E",
-      "x": 350,
-      "y": 850
-    },
-    {
-      "id": "F",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 650,
-      "y": 1050
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entangled Crystals",
+  "description": "We must align the energy frequencies of these quantum crystals for stable teleportation. Quick sort will ensure the correct order before we shift them through the void.",
+  "data": [
+    87,
+    34,
+    92,
+    56,
+    71,
+    25,
+    81,
+    49,
+    66,
+    98
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "C",
-      "weight": 7
-    }
+  "labels": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa"
   ]
 }
