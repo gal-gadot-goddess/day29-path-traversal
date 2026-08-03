@@ -1,29 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entangled Crystals",
-  "description": "We must align the energy frequencies of these quantum crystals for stable teleportation. Quick sort will ensure the correct order before we shift them through the void.",
-  "data": [
-    87,
-    34,
-    92,
-    56,
-    71,
-    25,
-    81,
-    49,
-    66,
-    98
+  "algorithm": "dfs",
+  "title": "Cyberpunk Data Stream",
+  "description": "Navigate the neon-drenched districts of Neo-Kyoto, tracing the fastest data flow through its intricate network.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 1100
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    }
   ]
 }
