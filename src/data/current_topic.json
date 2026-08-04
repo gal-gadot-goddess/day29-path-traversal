@@ -1,47 +1,42 @@
 {
-  "algorithm": "astar",
-  "title": "Quantum Entanglement Highway",
-  "description": "Navigate the probabilistic pathways of a quantum entanglement network to find the fastest signal transmission route.",
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate the abyssal plains, tracing light trails of bioluminescent organisms to find the lost artifact.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
       "x": 400,
-      "y": 600
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 500
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 800
+      "x": 500,
+      "y": 650
     },
     {
       "id": "D",
-      "x": 500,
+      "x": 400,
       "y": 800
     },
     {
       "id": "E",
-      "x": 700,
+      "x": 600,
       "y": 800
     },
     {
-      "id": "F",
-      "x": 400,
-      "y": 1000
-    },
-    {
       "id": "T",
-      "x": 600,
-      "y": 1000
+      "x": 500,
+      "y": 950
     }
   ],
   "edges": [
@@ -58,61 +53,51 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "D",
       "weight": 6
     },
     {
       "from": "B",
-      "to": "D",
-      "weight": 3
+      "to": "C",
+      "weight": 4
     },
     {
-      "from": "B",
-      "to": "E",
+      "from": "C",
+      "to": "D",
       "weight": 8
     },
     {
       "from": "C",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
+      "to": "E",
+      "weight": 3
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "B",
       "weight": 10
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 7
+      "from": "E",
+      "to": "T",
+      "weight": 5
     },
     {
-      "from": "E",
+      "from": "A",
       "to": "D",
+      "weight": 12
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "E",
       "weight": 5
     }
   ]
