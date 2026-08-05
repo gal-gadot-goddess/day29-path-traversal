@@ -1,33 +1,29 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Stabilizer",
-  "description": "Stabilize quantum entangled particles by sorting their energy signatures.  Incorrect order could lead to decoherence!",
+  "algorithm": "bubble_sort",
+  "title": "Nebula Bloom Sort",
+  "description": "The Bioluminescent Nebula's core energy pulses are misaligned! We must reorder them by intensity to stabilize the cosmic bloom before it fades.",
   "data": [
-    75,
-    30,
+    88,
+    32,
     95,
-    45,
-    60,
-    80,
-    25,
+    41,
+    76,
     50,
-    70,
-    35,
+    63,
+    25,
     90,
-    55
+    58
   ],
   "labels": [
-    "Qubit Alpha",
-    "Qubit Beta",
-    "Qubit Gamma",
-    "Qubit Delta",
-    "Qubit Epsilon",
-    "Qubit Zeta",
-    "Qubit Eta",
-    "Qubit Theta",
-    "Qubit Iota",
-    "Qubit Kappa",
-    "Qubit Lambda",
-    "Qubit Mu"
+    "Crimson Flare",
+    "Azure Shimmer",
+    "Emerald Spark",
+    "Golden Haze",
+    "Violet Glow",
+    "Aqua Pulse",
+    "Amber Beam",
+    "Silver Whisper",
+    "Opal Gleam",
+    "Bronze Radiance"
   ]
 }
