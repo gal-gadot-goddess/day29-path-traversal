@@ -1,42 +1,42 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Explore the abyssal depths, tracing the path of light signals between unique deep-sea organisms.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Data Conduit",
+  "description": "Navigate the Mariana Trench's bioluminescent data cables to find the fastest signal path.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 600
+      "x": 450,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 600
+      "x": 550,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 800
+      "x": 400,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 1000
+      "x": 600,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 1000
+      "x": 500,
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1200
+      "y": 1150
     }
   ],
   "edges": [
@@ -53,27 +53,32 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 8
     },
     {
       "from": "B",
-      "to": "C",
-      "weight": 5
+      "to": "D",
+      "weight": 6
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 8
+      "from": "A",
+      "to": "B",
+      "weight": 3
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 7
+      "weight": 9
     },
     {
       "from": "D",
-      "to": "T",
+      "to": "E",
       "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 12
     },
     {
       "from": "E",
@@ -81,14 +86,19 @@
       "weight": 5
     },
     {
-      "from": "A",
+      "from": "B",
       "to": "E",
       "weight": 10
     },
     {
-      "from": "B",
-      "to": "D",
-      "weight": 9
+      "from": "A",
+      "to": "E",
+      "weight": 15
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 18
     }
   ]
 }
