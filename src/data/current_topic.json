@@ -1,29 +1,109 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Gene Sort",
-  "description": "We're sorting bioluminescent gene sequences by their light output strength to stabilize a deep-sea organism's glow pattern.",
-  "data": [
-    95,
-    42,
-    78,
-    31,
-    88,
-    55,
-    67,
-    29,
-    91,
-    37
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate the glowing abyss, finding the quickest route through vibrant deep-sea trenches to reach the bioluminescent source.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "F",
+      "x": 450,
+      "y": 1150
+    },
+    {
+      "id": "T",
+      "x": 550,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Alpha Ray",
-    "Beta Pulse",
-    "Gamma Spark",
-    "Delta Shimmer",
-    "Epsilon Gleam",
-    "Zeta Flicker",
-    "Eta Glow",
-    "Theta Beam",
-    "Iota Lumina",
-    "Kappa Flare"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 11
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    }
   ]
 }
