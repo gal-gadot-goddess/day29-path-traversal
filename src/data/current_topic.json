@@ -1,29 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Flow",
-  "description": "In the deepest abyssal trenches, glowing data-plankton need to be aligned by their energy signature. We'll use a gentle sorting wave to organize them.",
+  "title": "Bioluminescent Swarm Logic",
+  "description": "These bioluminescent plankton are pulsing in a chaotic rhythm. We need to arrange them by their light intensity to establish a stable synchronized glow.",
   "data": [
-    78,
+    85,
+    32,
+    98,
     45,
-    92,
-    31,
-    67,
-    52,
-    88,
-    23,
     71,
-    59
+    59,
+    27,
+    91,
+    40,
+    63
   ],
   "labels": [
-    "Aqua",
-    "Crimson",
-    "Azure",
-    "Violet",
-    "Emerald",
-    "Gold",
-    "Indigo",
-    "Scarlet",
-    "Jade",
-    "Amber"
+    "Glowworm A",
+    "Glowworm B",
+    "Glowworm C",
+    "Glowworm D",
+    "Glowworm E",
+    "Glowworm F",
+    "Glowworm G",
+    "Glowworm H",
+    "Glowworm I",
+    "Glowworm J"
   ]
 }
