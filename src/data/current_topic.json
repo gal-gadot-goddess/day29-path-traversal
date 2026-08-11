@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Swarm Logic",
-  "description": "These bioluminescent plankton are pulsing in a chaotic rhythm. We need to arrange them by their light intensity to establish a stable synchronized glow.",
-  "data": [
-    85,
-    32,
-    98,
-    45,
-    71,
-    59,
-    27,
-    91,
-    40,
-    63
+  "algorithm": "dijkstra",
+  "title": "Neural Path Weaver",
+  "description": "Navigate the intricate pathways of a bio-luminescent neural network, finding the quickest route for signal propagation from the originating Synapse to the final Trigger.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 400
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 600
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 600
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "D",
+      "x": 300,
+      "y": 900
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Glowworm A",
-    "Glowworm B",
-    "Glowworm C",
-    "Glowworm D",
-    "Glowworm E",
-    "Glowworm F",
-    "Glowworm G",
-    "Glowworm H",
-    "Glowworm I",
-    "Glowworm J"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 1
+    },
+    {
+      "from": "D",
+      "to": "C",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "C",
+      "weight": 3
+    }
   ]
 }
