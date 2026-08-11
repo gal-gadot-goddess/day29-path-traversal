@@ -1,29 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "These rare deep-sea flora's luminescence intensity needs to be aligned before their synchronized blooming ritual.",
+  "title": "Bioluminescent Data Flow",
+  "description": "In the deepest abyssal trenches, glowing data-plankton need to be aligned by their energy signature. We'll use a gentle sorting wave to organize them.",
   "data": [
-    88,
-    32,
-    95,
+    78,
     45,
-    72,
-    58,
-    29,
-    81,
-    63,
-    40
+    92,
+    31,
+    67,
+    52,
+    88,
+    23,
+    71,
+    59
   ],
   "labels": [
-    "Aqua Shimmer",
-    "Ocean Glow",
-    "Coral Spark",
-    "Abyssal Light",
-    "Sea Lantern",
-    "Tidal Flare",
-    "Kelp Beam",
-    "Moon Kelp",
-    "Deep Bloom",
-    "Sunken Gleam"
+    "Aqua",
+    "Crimson",
+    "Azure",
+    "Violet",
+    "Emerald",
+    "Gold",
+    "Indigo",
+    "Scarlet",
+    "Jade",
+    "Amber"
   ]
 }
