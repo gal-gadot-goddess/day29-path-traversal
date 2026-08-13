@@ -1,7 +1,7 @@
 {
-  "algorithm": "dfs",
-  "title": "Cybernetic Synapse Flow",
-  "description": "Navigate the pulsing neural pathways of a digital brain, finding the fastest data route from thought injection to processing core.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Bioluminescent Trails",
+  "description": "Navigate the dark ocean depths, following glowing trails to reach the abyssal trench.",
   "nodes": [
     {
       "id": "S",
@@ -11,94 +11,89 @@
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
       "x": 500,
-      "y": 650
+      "y": 750
     },
     {
       "id": "D",
       "x": 400,
-      "y": 800
+      "y": 950
     },
     {
       "id": "E",
       "x": 600,
-      "y": 800
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 7
     },
     {
       "from": "A",
-      "to": "E",
+      "to": "C",
       "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
     }
   ]
 }
