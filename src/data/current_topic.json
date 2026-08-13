@@ -1,7 +1,7 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Bioluminescent Trails",
-  "description": "Navigate the dark ocean depths, following glowing trails to reach the abyssal trench.",
+  "algorithm": "astar",
+  "title": "Quantum Entangled Synapses",
+  "description": "Navigate the probabilistic pathways of a quantum neural network, where entangled nodes offer shortcuts but introduce uncertainty.",
   "nodes": [
     {
       "id": "S",
@@ -61,34 +61,39 @@
       "weight": 6
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    },
-    {
       "from": "A",
-      "to": "B",
-      "weight": 4
+      "to": "D",
+      "weight": 12
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 12
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 11
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 15
     },
     {
       "from": "D",
