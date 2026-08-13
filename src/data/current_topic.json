@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Neural Ascent",
-  "description": "Navigate the cascading layers of a bio-organic neural network, seeking the apex of consciousness.",
+  "algorithm": "dfs",
+  "title": "Cybernetic Synapse Flow",
+  "description": "Navigate the pulsing neural pathways of a digital brain, finding the fastest data route from thought injection to processing core.",
   "nodes": [
     {
       "id": "S",
@@ -20,26 +20,16 @@
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
       "x": 500,
       "y": 650
     },
     {
-      "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
+      "id": "D",
       "x": 400,
       "y": 800
     },
     {
-      "id": "G",
+      "id": "E",
       "x": 600,
       "y": 800
     },
@@ -53,72 +43,62 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 2
+      "weight": 5
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 3
+      "weight": 2
     },
     {
       "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
+      "to": "C",
       "weight": 3
     },
     {
       "from": "C",
-      "to": "F",
+      "to": "D",
       "weight": 4
     },
     {
-      "from": "D",
-      "to": "F",
-      "weight": 4
+      "from": "C",
+      "to": "E",
+      "weight": 3
     },
     {
       "from": "D",
-      "to": "G",
-      "weight": 4
+      "to": "T",
+      "weight": 2
     },
     {
       "from": "E",
-      "to": "G",
+      "to": "T",
       "weight": 4
     },
     {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "G",
-      "to": "T",
-      "weight": 5
-    },
-    {
       "from": "A",
-      "to": "S",
-      "weight": 2
+      "to": "B",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
     },
     {
       "from": "B",
-      "to": "S",
-      "weight": 2
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
     }
   ]
 }
