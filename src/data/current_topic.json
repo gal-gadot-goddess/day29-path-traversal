@@ -1,47 +1,42 @@
 {
-  "algorithm": "bfs",
-  "title": "Sub-Oceanic Data Flow",
-  "description": "Explore the deep sea trench's bioluminescent data conduits. Find the fastest path from the research hub to the anomaly.",
+  "algorithm": "dijkstra",
+  "title": "Cyberpunk Neural Highway",
+  "description": "Navigate the neon-drenched neural pathways of Neo-Kyoto's data superhighway, finding the fastest route to bypass corporate firewalls and reach the hidden data haven.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
       "x": 400,
-      "y": 550
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 500
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 750
+      "x": 350,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 750
+      "x": 650,
+      "y": 700
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 750
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
+      "x": 500,
+      "y": 900
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 1100
     }
   ],
   "edges": [
@@ -58,57 +53,52 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 2
+      "weight": 5
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 5
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 3
+      "weight": 6
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "F",
-      "to": "T",
       "weight": 5
     },
     {
       "from": "C",
-      "to": "D",
-      "weight": 1
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 8
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 10
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 15
     }
   ]
 }
