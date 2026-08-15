@@ -1,114 +1,124 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Navigate the crushing depths, following the faint glow of bioluminescent creatures to find the lost research station.",
+  "algorithm": "dfs",
+  "title": "Neural Net Ascent",
+  "description": "Navigate the interconnected pathways of a futuristic neural network, from input to output, seeking the most efficient data flow.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 550
+      "x": 400,
+      "y": 450
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 550
+      "x": 600,
+      "y": 450
     },
     {
       "id": "C",
+      "x": 300,
+      "y": 600
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 600
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 600
+    },
+    {
+      "id": "F",
       "x": 400,
       "y": 750
     },
     {
-      "id": "D",
+      "id": "G",
       "x": 600,
       "y": 750
     },
     {
-      "id": "E",
-      "x": 500,
-      "y": 950
-    },
-    {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 900
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 6
+      "weight": 2
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 10
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 11
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 12
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 13
-    },
-    {
-      "from": "A",
-      "to": "B",
       "weight": 4
     },
     {
-      "from": "C",
+      "from": "A",
       "to": "D",
       "weight": 3
     },
     {
-      "from": "D",
-      "to": "A",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "C",
-      "weight": 1
-    },
-    {
-      "from": "E",
+      "from": "B",
       "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "E",
       "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "G",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "G",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "G",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "F",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "G",
+      "weight": 4
     }
   ]
 }
