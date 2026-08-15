@@ -1,104 +1,114 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Cyberpunk Neural Highway",
-  "description": "Navigate the neon-drenched neural pathways of Neo-Kyoto's data superhighway, finding the fastest route to bypass corporate firewalls and reach the hidden data haven.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate the crushing depths, following the faint glow of bioluminescent creatures to find the lost research station.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 500
+      "x": 450,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 550,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 700
+      "x": 400,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 700
+      "x": 600,
+      "y": 750
     },
     {
       "id": "E",
       "x": 500,
-      "y": 900
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 6
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "E",
       "weight": 7
     },
     {
-      "from": "B",
+      "from": "A",
       "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "E",
       "weight": 8
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
+      "from": "B",
+      "to": "C",
       "weight": 9
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "D",
       "weight": 10
     },
     {
-      "from": "S",
+      "from": "C",
       "to": "E",
-      "weight": 15
+      "weight": 11
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 13
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "C",
+      "weight": 1
+    },
+    {
+      "from": "E",
+      "to": "D",
+      "weight": 2
     }
   ]
 }
