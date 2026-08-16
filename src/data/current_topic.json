@@ -1,104 +1,29 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Sub-Oceanic Data Flow",
-  "description": "Navigate the treacherous deep-sea cable network to reach the data nexus before the signal degrades.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 450,
-      "y": 550
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 400,
-      "y": 750
-    },
-    {
-      "id": "D",
-      "x": 600,
-      "y": 750
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Stream Reassembly",
+  "description": "Realigning scrambled quantum data packets by their energy signature to restore critical stellar navigation logs.",
+  "data": [
+    88,
+    42,
+    95,
+    31,
+    76,
+    55,
+    63,
+    29,
+    81,
+    49
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 15
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 12
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 10
-    }
+  "labels": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa"
   ]
 }
