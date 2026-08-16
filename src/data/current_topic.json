@@ -1,29 +1,114 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Data Stream Reassembly",
-  "description": "Realigning scrambled quantum data packets by their energy signature to restore critical stellar navigation logs.",
-  "data": [
-    88,
-    42,
-    95,
-    31,
-    76,
-    55,
-    63,
-    29,
-    81,
-    49
+  "algorithm": "dfs",
+  "title": "Neuron Link Explorer",
+  "description": "Navigate the complex neural pathways of a quantum AI, finding the fastest signal route.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 300,
+      "y": 450
+    },
+    {
+      "id": "B",
+      "x": 700,
+      "y": 450
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 600
+    },
+    {
+      "id": "D",
+      "x": 300,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "F",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1050
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 9
+    }
   ]
 }
