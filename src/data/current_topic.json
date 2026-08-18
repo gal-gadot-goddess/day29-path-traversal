@@ -1,79 +1,79 @@
 {
   "algorithm": "bfs",
-  "title": "Cyberpunk Data Stream",
-  "description": "Navigate the neon-drenched underbelly of a cyberpunk city, tracing the fastest data packet route through its intricate network.",
+  "title": "Deep Sea Data Stream",
+  "description": "Navigate through the bioluminescent currents of the Mariana Trench to find the lost data beacon.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
       "x": 400,
-      "y": 600
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 500
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 800
+      "x": 350,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 800
+      "x": 650,
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 1000
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1200
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 2
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
+      "weight": 3
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 8
+      "to": "B",
+      "weight": 4
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 6
+      "weight": 3
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 9
+      "to": "A",
+      "weight": 4
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "D",
@@ -86,24 +86,19 @@
       "weight": 2
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
       "from": "C",
       "to": "D",
-      "weight": 15
+      "weight": 6
     },
     {
-      "from": "D",
-      "to": "T",
+      "from": "A",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "E",
       "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 20
     }
   ]
 }
