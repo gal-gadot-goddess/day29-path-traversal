@@ -1,37 +1,37 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Navigate the glowing abyssal depths, finding the fastest path through luminous flora and fauna.",
+  "algorithm": "bfs",
+  "title": "Quantum Entanglement Links",
+  "description": "Navigate the probabilistic pathways of a quantum computer, finding the quickest entangled route from the source qubit to the target.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 400
     },
     {
-      "id": "A",
-      "x": 450,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 500
-    },
-    {
-      "id": "C",
+      "id": "Q1",
       "x": 400,
-      "y": 700
+      "y": 600
     },
     {
-      "id": "D",
+      "id": "Q2",
       "x": 600,
-      "y": 700
+      "y": 600
     },
     {
-      "id": "E",
+      "id": "Q3",
       "x": 500,
-      "y": 900
+      "y": 800
+    },
+    {
+      "id": "Q4",
+      "x": 350,
+      "y": 950
+    },
+    {
+      "id": "Q5",
+      "x": 650,
+      "y": 950
     },
     {
       "id": "T",
@@ -42,63 +42,58 @@
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "B",
+      "to": "Q1",
       "weight": 3
     },
     {
-      "from": "B",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 12
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
+      "from": "S",
+      "to": "Q2",
       "weight": 4
     },
     {
-      "from": "A",
-      "to": "E",
-      "weight": 9
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 2
     },
     {
-      "from": "B",
-      "to": "C",
-      "weight": 11
+      "from": "Q2",
+      "to": "Q3",
+      "weight": 2
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 5
+    },
+    {
+      "from": "Q3",
+      "to": "Q5",
+      "weight": 4
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "Q5",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 6
+    },
+    {
+      "from": "Q4",
+      "to": "Q5",
+      "weight": 1
+    },
+    {
+      "from": "S",
+      "to": "Q3",
+      "weight": 8
     }
   ]
 }
