@@ -1,99 +1,104 @@
 {
-  "algorithm": "bfs",
-  "title": "Quantum Entanglement Links",
-  "description": "Navigate the probabilistic pathways of a quantum computer, finding the quickest entangled route from the source qubit to the target.",
+  "algorithm": "dfs",
+  "title": "Deep Sea Conduit Search",
+  "description": "Navigate the bioluminescent depths, tracing energy conduits to find the lost research beacon.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
-      "id": "Q1",
+      "id": "A",
       "x": 400,
-      "y": 600
+      "y": 550
     },
     {
-      "id": "Q2",
+      "id": "B",
       "x": 600,
-      "y": 600
+      "y": 550
     },
     {
-      "id": "Q3",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "Q4",
+      "id": "C",
       "x": 350,
-      "y": 950
+      "y": 750
     },
     {
-      "id": "Q5",
+      "id": "D",
       "x": 650,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
       "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "Q1",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "Q2",
-      "weight": 4
-    },
-    {
-      "from": "Q1",
-      "to": "Q3",
-      "weight": 2
-    },
-    {
-      "from": "Q2",
-      "to": "Q3",
-      "weight": 2
-    },
-    {
-      "from": "Q3",
-      "to": "Q4",
+      "to": "A",
       "weight": 5
     },
     {
-      "from": "Q3",
-      "to": "Q5",
-      "weight": 4
+      "from": "S",
+      "to": "B",
+      "weight": 7
     },
     {
-      "from": "Q4",
-      "to": "T",
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "A",
+      "to": "B",
       "weight": 3
     },
     {
-      "from": "Q5",
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "E",
       "to": "T",
       "weight": 2
     },
     {
-      "from": "Q1",
-      "to": "Q2",
+      "from": "C",
+      "to": "A",
       "weight": 6
     },
     {
-      "from": "Q4",
-      "to": "Q5",
-      "weight": 1
+      "from": "B",
+      "to": "S",
+      "weight": 7
     },
     {
-      "from": "S",
-      "to": "Q3",
-      "weight": 8
+      "from": "T",
+      "to": "E",
+      "weight": 2
     }
   ]
 }
