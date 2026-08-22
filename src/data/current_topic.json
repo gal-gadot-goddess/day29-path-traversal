@@ -1,99 +1,33 @@
 {
-  "algorithm": "astar",
-  "title": "Cybernetic Synapse Path",
-  "description": "Navigate the pulsating neural pathways of a digital mind, finding the quickest route through its complex synaptic connections.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "E",
-      "x": 600,
-      "y": 800
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 950
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entangled Shards",
+  "description": "Re-aligning quantum entangled energy shards to stabilize the temporal flux generator before it collapses.",
+  "data": [
+    87,
+    45,
+    68,
+    23,
+    92,
+    37,
+    55,
+    79,
+    31,
+    60,
+    98,
+    42
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "T",
-      "weight": 20
-    }
+  "labels": [
+    "Alpha-7",
+    "Beta-3",
+    "Gamma-9",
+    "Delta-1",
+    "Epsilon-5",
+    "Zeta-8",
+    "Eta-2",
+    "Theta-6",
+    "Iota-4",
+    "Kappa-0",
+    "Lambda-9",
+    "Mu-7"
   ]
 }
