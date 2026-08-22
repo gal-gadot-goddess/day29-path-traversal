@@ -1,33 +1,119 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entangled Shards",
-  "description": "Re-aligning quantum entangled energy shards to stabilize the temporal flux generator before it collapses.",
-  "data": [
-    87,
-    45,
-    68,
-    23,
-    92,
-    37,
-    55,
-    79,
-    31,
-    60,
-    98,
-    42
+  "algorithm": "dfs",
+  "title": "Deep Sea Trench Explorer",
+  "description": "Navigate the abyssal depths, uncovering ancient relics by traversing bioluminescent pathways.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 450,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 550,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Alpha-7",
-    "Beta-3",
-    "Gamma-9",
-    "Delta-1",
-    "Epsilon-5",
-    "Zeta-8",
-    "Eta-2",
-    "Theta-6",
-    "Iota-4",
-    "Kappa-0",
-    "Lambda-9",
-    "Mu-7"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 10
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "S",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "S",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "E",
+      "weight": 10
+    }
   ]
 }
