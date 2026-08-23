@@ -1,33 +1,99 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entangled Data",
-  "description": "Aligning quantum entangled data streams for stable interdimensional travel.",
-  "data": [
-    78,
-    35,
-    92,
-    45,
-    61,
-    29,
-    88,
-    53,
-    70,
-    41,
-    95,
-    57
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Trench Network",
+  "description": "Navigate the crushing depths of a bioluminescent trench, finding the fastest route through interconnected hydrothermal vents.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1000
+    }
   ],
-  "labels": [
-    "Alpha Stream",
-    "Beta Stream",
-    "Gamma Stream",
-    "Delta Stream",
-    "Epsilon Stream",
-    "Zeta Stream",
-    "Eta Stream",
-    "Theta Stream",
-    "Iota Stream",
-    "Kappa Stream",
-    "Lambda Stream",
-    "Mu Stream"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 13
+    }
   ]
 }
