@@ -1,99 +1,33 @@
 {
-  "algorithm": "dfs",
-  "title": "Cyberpunk Data Stream",
-  "description": "Navigate the neon-drenched data conduits of Neo-Kyoto to find the fastest path to the rogue AI.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 400
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 600
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 600
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "D",
-      "x": 400,
-      "y": 1000
-    },
-    {
-      "id": "E",
-      "x": 600,
-      "y": 1000
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1200
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entangled Data",
+  "description": "Aligning quantum entangled data streams for stable interdimensional travel.",
+  "data": [
+    78,
+    35,
+    92,
+    45,
+    61,
+    29,
+    88,
+    53,
+    70,
+    41,
+    95,
+    57
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 1
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    }
+  "labels": [
+    "Alpha Stream",
+    "Beta Stream",
+    "Gamma Stream",
+    "Delta Stream",
+    "Epsilon Stream",
+    "Zeta Stream",
+    "Eta Stream",
+    "Theta Stream",
+    "Iota Stream",
+    "Kappa Stream",
+    "Lambda Stream",
+    "Mu Stream"
   ]
 }
