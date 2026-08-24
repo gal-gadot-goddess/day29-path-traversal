@@ -1,42 +1,42 @@
 {
   "algorithm": "dfs",
-  "title": "Neural Net Pathways",
-  "description": "Navigate the intricate connections of a bio-neural network to find the fastest signal route.",
+  "title": "Quantum Entanglement Paths",
+  "description": "Explore entangled qubits. Find the shortest path from a stable qubit (S) to a target qubit (T) by navigating through quantum gates.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 500
+      "x": 600,
+      "y": 600
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 400,
+      "y": 600
     },
     {
       "id": "C",
       "x": 500,
-      "y": 650
+      "y": 800
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 800
+      "x": 600,
+      "y": 1000
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 800
+      "x": 400,
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1200
     }
   ],
   "edges": [
@@ -48,12 +48,12 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 7
     },
     {
       "from": "B",
@@ -63,42 +63,42 @@
     {
       "from": "C",
       "to": "D",
-      "weight": 8
+      "weight": 6
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 5
+      "weight": 8
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 9
+      "weight": 2
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 10
+      "weight": 2
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 6
+      "weight": 3
     },
     {
       "from": "S",
       "to": "C",
-      "weight": 12
+      "weight": 10
     },
     {
       "from": "A",
       "to": "D",
-      "weight": 15
+      "weight": 12
     },
     {
       "from": "B",
