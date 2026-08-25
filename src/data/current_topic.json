@@ -1,29 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sorter",
-  "description": "Realigning quantum entangled particles to establish stable communication.",
-  "data": [
-    95,
-    42,
-    78,
-    31,
-    64,
-    88,
-    55,
-    23,
-    91,
-    49
+  "algorithm": "astar",
+  "title": "Neural Ascent",
+  "description": "Navigate the synaptic pathways of a simulated consciousness, seeking the nexus of highest cognitive function.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 450,
+      "y": 800
+    },
+    {
+      "id": "E",
+      "x": 550,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 950
+    }
   ],
-  "labels": [
-    "Alpha-7",
-    "Beta-3",
-    "Gamma-9",
-    "Delta-1",
-    "Epsilon-5",
-    "Zeta-8",
-    "Eta-6",
-    "Theta-2",
-    "Iota-10",
-    "Kappa-4"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 12
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 11
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 10
+    }
   ]
 }
