@@ -1,104 +1,29 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Net Cascade",
-  "description": "Navigate the intricate pathways of a bio-luminescent neural network, seeking the fastest signal route from the core processing unit to the memory nexus.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 450,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 550,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1000
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Bloom Sort",
+  "description": "Guide the shimmering bioluminescent flora to bloom in synchronized patterns, sorting them by light intensity.",
+  "data": [
+    75,
+    42,
+    91,
+    33,
+    68,
+    85,
+    50,
+    27,
+    99,
+    58
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "T",
-      "weight": 15
-    },
-    {
-      "from": "S",
-      "to": "T",
-      "weight": 20
-    }
+  "labels": [
+    "Glowpetal",
+    "Luminroot",
+    "Starbloom",
+    "Moonmoss",
+    "Sunpetal",
+    "Cometvine",
+    "Nebulaflower",
+    "Dustbloom",
+    "Aurorapetal",
+    "Shimmerleaf"
   ]
 }
