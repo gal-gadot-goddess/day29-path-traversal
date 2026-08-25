@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Ascent",
-  "description": "Navigate the synaptic pathways of a simulated consciousness, seeking the nexus of highest cognitive function.",
+  "algorithm": "dfs",
+  "title": "Neural Net Cascade",
+  "description": "Navigate the intricate pathways of a bio-luminescent neural network, seeking the fastest signal route from the core processing unit to the memory nexus.",
   "nodes": [
     {
       "id": "S",
@@ -20,90 +20,85 @@
     },
     {
       "id": "C",
-      "x": 500,
+      "x": 450,
       "y": 650
     },
     {
       "id": "D",
-      "x": 450,
-      "y": 800
+      "x": 550,
+      "y": 650
     },
     {
       "id": "E",
-      "x": 550,
+      "x": 500,
       "y": 800
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1000
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 2
     },
     {
       "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "C",
       "to": "D",
-      "weight": 9
+      "weight": 2
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 8
+      "weight": 5
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 5
+      "to": "E",
+      "weight": 3
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 7
+      "weight": 1
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 3
+      "weight": 6
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "C",
-      "weight": 12
+      "from": "C",
+      "to": "D",
+      "weight": 7
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 11
+      "to": "E",
+      "weight": 9
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 10
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "S",
+      "to": "T",
+      "weight": 20
     }
   ]
 }
