@@ -1,29 +1,31 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "Guiding the light-emitting plankton to bloom in synchronized patterns by sorting their intensity levels.",
+  "title": "Bioluminescent Data Stream",
+  "description": "Guiding a cascading stream of glowing alien spores to their designated containment pods, ensuring stable growth patterns.",
   "data": [
-    75,
-    32,
+    85,
+    42,
     98,
-    55,
-    21,
-    88,
-    45,
+    23,
     67,
-    39,
-    91
+    55,
+    31,
+    79,
+    50,
+    91,
+    28
   ],
   "labels": [
-    "Shimmer",
-    "Glow",
-    "Radiance",
-    "Sparkle",
-    "Flicker",
-    "Luster",
-    "Gleam",
-    "Shine",
-    "Beam",
-    "Aura"
+    "Spore Alpha",
+    "Spore Beta",
+    "Spore Gamma",
+    "Spore Delta",
+    "Spore Epsilon",
+    "Spore Zeta",
+    "Spore Eta",
+    "Spore Theta",
+    "Spore Iota",
+    "Spore Kappa",
+    "Spore Lambda"
   ]
 }
