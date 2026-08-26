@@ -1,31 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Stream",
-  "description": "Guiding a cascading stream of glowing alien spores to their designated containment pods, ensuring stable growth patterns.",
-  "data": [
-    85,
-    42,
-    98,
-    23,
-    67,
-    55,
-    31,
-    79,
-    50,
-    91,
-    28
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescent Trails",
+  "description": "Trace the bioluminescent trails of deep-sea creatures from the abyssal plains to the hydrothermal vents.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Spore Alpha",
-    "Spore Beta",
-    "Spore Gamma",
-    "Spore Delta",
-    "Spore Epsilon",
-    "Spore Zeta",
-    "Spore Eta",
-    "Spore Theta",
-    "Spore Iota",
-    "Spore Kappa",
-    "Spore Lambda"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "S",
+      "weight": 10
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "B",
+      "weight": 11
+    }
   ]
 }
