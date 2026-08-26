@@ -1,29 +1,29 @@
 {
   "algorithm": "bubble_sort",
   "title": "Bioluminescent Bloom Sort",
-  "description": "Guide the shimmering bioluminescent flora to bloom in synchronized patterns, sorting them by light intensity.",
+  "description": "Guiding the light-emitting plankton to bloom in synchronized patterns by sorting their intensity levels.",
   "data": [
     75,
-    42,
-    91,
-    33,
-    68,
-    85,
-    50,
-    27,
-    99,
-    58
+    32,
+    98,
+    55,
+    21,
+    88,
+    45,
+    67,
+    39,
+    91
   ],
   "labels": [
-    "Glowpetal",
-    "Luminroot",
-    "Starbloom",
-    "Moonmoss",
-    "Sunpetal",
-    "Cometvine",
-    "Nebulaflower",
-    "Dustbloom",
-    "Aurorapetal",
-    "Shimmerleaf"
+    "Shimmer",
+    "Glow",
+    "Radiance",
+    "Sparkle",
+    "Flicker",
+    "Luster",
+    "Gleam",
+    "Shine",
+    "Beam",
+    "Aura"
   ]
 }
