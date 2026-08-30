@@ -1,12 +1,12 @@
 {
   "algorithm": "dfs",
-  "title": "Neuro-Synaptic Pathways",
-  "description": "Navigate the intricate synaptic connections of a digital brain, finding the fastest route through its complex neural network.",
+  "title": "Neuron Dive",
+  "description": "Navigate the intricate pathways of a biological neural network, tracing signal propagation from stimulus to response.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
@@ -20,23 +20,23 @@
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 700
+      "x": 500,
+      "y": 650
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 700
+      "x": 350,
+      "y": 800
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 900
+      "x": 650,
+      "y": 800
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 950
     }
   ],
   "edges": [
@@ -48,7 +48,7 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
@@ -56,44 +56,44 @@
       "weight": 3
     },
     {
-      "from": "A",
-      "to": "E",
-      "weight": 6
+      "from": "B",
+      "to": "C",
+      "weight": 2
     },
     {
-      "from": "B",
+      "from": "C",
       "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
+      "weight": 6
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 2
+      "weight": 7
     },
     {
       "from": "D",
-      "to": "E",
+      "to": "T",
       "weight": 5
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 10
+      "weight": 8
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 9
+      "weight": 1
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 12
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 9
     }
   ]
 }
