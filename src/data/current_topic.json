@@ -1,119 +1,99 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Biolume Trails",
-  "description": "Trace the bioluminescent pathways of a deep-sea creature, finding the quickest route from its feeding grounds to its nest.",
+  "algorithm": "dijkstra",
+  "title": "Neural Path Weaver",
+  "description": "Navigate theynaptic pathways of a nascent AI, finding the most efficient route for signal propagation from input to output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 300
     },
     {
       "id": "A",
       "x": 400,
-      "y": 600
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 550
     },
     {
       "id": "C",
-      "x": 500,
+      "x": 300,
       "y": 800
     },
     {
       "id": "D",
-      "x": 300,
-      "y": 850
+      "x": 700,
+      "y": 800
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 850
-    },
-    {
-      "id": "F",
       "x": 500,
-      "y": 1000
+      "y": 1050
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1200
+      "y": 1300
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
       "weight": 2
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 10
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 3
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 12
+      "weight": 2
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 15
+      "weight": 3
     },
     {
-      "from": "S",
-      "to": "C",
-      "weight": 11
+      "from": "E",
+      "to": "T",
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 7
     }
   ]
 }
