@@ -1,99 +1,29 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Path Weaver",
-  "description": "Navigate theynaptic pathways of a nascent AI, finding the most efficient route for signal propagation from input to output.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 300
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 550
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 800
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 800
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 1050
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1300
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Reef Data",
+  "description": "In the deep, glowing reefs, synchronized flashes are key to survival. We must sort these bioluminescent creature signals by intensity.",
+  "data": [
+    55,
+    32,
+    88,
+    25,
+    91,
+    47,
+    76,
+    39,
+    63,
+    50
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 7
-    }
+  "labels": [
+    "Glow Worm A",
+    "Jelly A",
+    "Anglerfish",
+    "Glow Worm B",
+    "Deep Squid",
+    "Jelly B",
+    "Lantern Fish",
+    "Glow Worm C",
+    "Shrimp Swarm",
+    "Coral Pulse"
   ]
 }
