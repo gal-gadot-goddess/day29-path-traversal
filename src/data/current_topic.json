@@ -1,29 +1,109 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Reef Data",
-  "description": "In the deep, glowing reefs, synchronized flashes are key to survival. We must sort these bioluminescent creature signals by intensity.",
-  "data": [
-    55,
-    32,
-    88,
-    25,
-    91,
-    47,
-    76,
-    39,
-    63,
-    50
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate the abyssal plains, finding the quickest bioluminescent trail from the research submersible to the hydrothermal vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "F",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Glow Worm A",
-    "Jelly A",
-    "Anglerfish",
-    "Glow Worm B",
-    "Deep Squid",
-    "Jelly B",
-    "Lantern Fish",
-    "Glow Worm C",
-    "Shrimp Swarm",
-    "Coral Pulse"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 9
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 10
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "A",
+      "weight": 8
+    },
+    {
+      "from": "F",
+      "to": "C",
+      "weight": 4
+    }
   ]
 }
