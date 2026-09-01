@@ -1,114 +1,33 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Labyrinth",
-  "description": "Navigate the synaptic pathways of a bio-engineered neural network to find the shortest signal route.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 400
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 600
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 600
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 800
-    },
-    {
-      "id": "D",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "E",
-      "x": 700,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 1000
-    },
-    {
-      "id": "T",
-      "x": 600,
-      "y": 1000
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Nebula Swarm",
+  "description": "The ancient starlight of the Andromeda Nebula is fading! These bioluminescent stellar plankton must be arranged by their light intensity to re-ignite the cosmic glow before it's lost forever.",
+  "data": [
+    75,
+    32,
+    88,
+    45,
+    61,
+    92,
+    28,
+    55,
+    79,
+    40,
+    68,
+    81
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 11
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    }
+  "labels": [
+    "Nova Dust",
+    "Ghost Shard",
+    "Solar Flare",
+    "Comet Trail",
+    "Aurora Bloom",
+    "Galactic Spark",
+    "Void Glimmer",
+    "Stardust Swirl",
+    "Nebula Ember",
+    "Cosmic Dew",
+    "Starfall Petal",
+    "Wormhole Glow"
   ]
 }
