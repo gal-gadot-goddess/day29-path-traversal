@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Quantum Neural Mesh",
-  "description": "Navigating the entanglement pathways of a experimental quantum processor.",
+  "algorithm": "astar",
+  "title": "Quantum Entanglement Hub",
+  "description": "Navigate the interconnected nodes of a quantum computer, where entanglement dictates faster pathways, but requires precise qubit alignment.",
   "nodes": [
     {
       "id": "S",
@@ -9,61 +9,91 @@
       "y": 350
     },
     {
-      "id": "A",
-      "x": 250,
-      "y": 650
+      "id": "Q1",
+      "x": 400,
+      "y": 500
     },
     {
-      "id": "B",
-      "x": 750,
-      "y": 650
+      "id": "Q2",
+      "x": 600,
+      "y": 500
     },
     {
-      "id": "C",
+      "id": "Q3",
       "x": 300,
-      "y": 950
+      "y": 650
     },
     {
-      "id": "D",
+      "id": "Q4",
       "x": 700,
-      "y": 950
+      "y": 650
+    },
+    {
+      "id": "Q5",
+      "x": 500,
+      "y": 800
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1000
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 4
+      "to": "Q1",
+      "weight": 3
     },
     {
       "from": "S",
-      "to": "B",
-      "weight": 3
+      "to": "Q2",
+      "weight": 4
     },
     {
-      "from": "A",
-      "to": "C",
+      "from": "Q1",
+      "to": "Q3",
       "weight": 5
     },
     {
-      "from": "B",
-      "to": "D",
+      "from": "Q1",
+      "to": "Q5",
+      "weight": 7
+    },
+    {
+      "from": "Q2",
+      "to": "Q4",
       "weight": 6
     },
     {
-      "from": "C",
-      "to": "T",
-      "weight": 2
+      "from": "Q2",
+      "to": "Q5",
+      "weight": 8
     },
     {
-      "from": "D",
-      "to": "T",
+      "from": "Q3",
+      "to": "Q5",
+      "weight": 4
+    },
+    {
+      "from": "Q4",
+      "to": "Q5",
       "weight": 3
+    },
+    {
+      "from": "Q5",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 10
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 12
     }
   ]
 }
