@@ -1,33 +1,99 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Aetheric Data Stream Sort",
-  "description": "The ancient mage needs to align the fluctuating Aetheric energies before casting a powerful spell. Help sort the energy frequencies!",
-  "data": [
-    85,
-    32,
-    77,
-    41,
-    68,
-    25,
-    92,
-    50,
-    39,
-    71,
-    55,
-    29
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate the abyssal plains, connecting bioluminescent organisms to find the fastest glowing trail.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "E",
+      "x": 600,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Fire Rune",
-    "Water Sigil",
-    "Earth Glyth",
-    "Air Rune",
-    "Spirit Sigil",
-    "Void Glyth",
-    "Sun Rune",
-    "Moon Sigil",
-    "Star Glyth",
-    "Aether Rune",
-    "Chaos Sigil",
-    "Order Glyth"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 12
+    }
   ]
 }
