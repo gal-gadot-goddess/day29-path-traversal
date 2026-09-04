@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Neura-City Transit",
-  "description": "Navigate the sprawling neural pathways of a hyper-connected cyberpunk metropolis, finding the fastest data flow.",
+  "algorithm": "dijkstra",
+  "title": "Neural Ascent",
+  "description": "Navigate the rising activation pathways of a complex neural network from sensory input to cognitive output.",
   "nodes": [
     {
       "id": "S",
@@ -10,22 +10,22 @@
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 450,
       "y": 500
     },
     {
       "id": "B",
-      "x": 600,
+      "x": 550,
       "y": 500
     },
     {
       "id": "C",
-      "x": 300,
+      "x": 400,
       "y": 650
     },
     {
       "id": "D",
-      "x": 700,
+      "x": 600,
       "y": 650
     },
     {
@@ -43,57 +43,67 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 5
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 6
     },
     {
       "from": "B",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "B",
       "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "B",
       "weight": 9
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "B",
-      "weight": 12
-    },
-    {
-      "from": "D",
-      "to": "A",
-      "weight": 15
+      "weight": 7
     }
   ]
 }
