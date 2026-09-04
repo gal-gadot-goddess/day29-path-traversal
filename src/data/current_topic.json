@@ -1,29 +1,99 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "The vibrant bioluminescent spores of the Lumina Flora are out of sync! Help us sort them by their energy output to ensure the forest's radiant glow.",
-  "data": [
-    75,
-    30,
-    95,
-    50,
-    80,
-    25,
-    60,
-    90,
-    40,
-    70
+  "algorithm": "astar",
+  "title": "Neura-City Transit",
+  "description": "Navigate the sprawling neural pathways of a hyper-connected cyberpunk metropolis, finding the fastest data flow.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 950
+    }
   ],
-  "labels": [
-    "Glowgem",
-    "Sparkle",
-    "Radiant",
-    "Lumen",
-    "Aura",
-    "Shimmer",
-    "Glimmer",
-    "Ember",
-    "Flare",
-    "Blaze"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 12
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "weight": 15
+    }
   ]
 }
