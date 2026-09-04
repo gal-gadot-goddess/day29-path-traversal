@@ -1,109 +1,119 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Ascent",
-  "description": "Navigate the rising activation pathways of a complex neural network from sensory input to cognitive output.",
+  "algorithm": "astar",
+  "title": "Neuron Ascent",
+  "description": "Navigate the synaptic pathways of a hyper-evolved neural network to reach the core processing unit.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 500
+      "x": 300,
+      "y": 450
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 500
+      "x": 700,
+      "y": 450
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 650
+      "x": 500,
+      "y": 600
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 650
+      "x": 300,
+      "y": 750
     },
     {
       "id": "E",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "F",
       "x": 500,
-      "y": 800
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1050
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 6
+      "weight": 4
     },
     {
       "from": "B",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
+      "to": "C",
       "weight": 3
     },
     {
-      "from": "D",
-      "to": "T",
+      "from": "C",
+      "to": "D",
       "weight": 6
     },
     {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 8
+    },
+    {
       "from": "E",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "F",
       "to": "T",
       "weight": 4
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 9
+      "weight": 10
     },
     {
-      "from": "C",
+      "from": "D",
       "to": "E",
-      "weight": 7
+      "weight": 12
+    },
+    {
+      "from": "S",
+      "to": "F",
+      "weight": 15
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 11
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 13
     }
   ]
 }
