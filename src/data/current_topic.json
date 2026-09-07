@@ -1,29 +1,29 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Spore Bloom",
-  "description": "The rare Lumina Bloom is about to blossom! We must arrange the bioluminescent spores by their energy levels to optimize the light show.",
+  "algorithm": "quick_sort",
+  "title": "Cyberpunk Data Stream Sort",
+  "description": "Reorganizing corrupted data packets in a neon-drenched metropolis.",
   "data": [
-    88,
-    45,
-    62,
-    30,
-    91,
-    76,
-    53,
-    25,
-    70,
-    38
+    87,
+    42,
+    95,
+    31,
+    78,
+    55,
+    63,
+    29,
+    81,
+    49
   ],
   "labels": [
-    "Azure Glow",
-    "Viridian Spark",
-    "Crimson Pulse",
-    "Amber Shimmer",
-    "Violet Flash",
-    "Jade Gleam",
-    "Sapphire Haze",
-    "Coral Flicker",
-    "Golden Aura",
-    "Emerald Luster"
+    "Packet 01",
+    "Packet 02",
+    "Packet 03",
+    "Packet 04",
+    "Packet 05",
+    "Packet 06",
+    "Packet 07",
+    "Packet 08",
+    "Packet 09",
+    "Packet 10"
   ]
 }
