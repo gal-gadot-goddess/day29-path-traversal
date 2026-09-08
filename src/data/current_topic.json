@@ -1,29 +1,119 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Cyberpunk Data Stream Sort",
-  "description": "Reorganizing corrupted data packets in a neon-drenched metropolis.",
-  "data": [
-    87,
-    42,
-    95,
-    31,
-    78,
-    55,
-    63,
-    29,
-    81,
-    49
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate a glowing abyssal network, seeking the deepest light.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 450,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 550,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 950
+    }
   ],
-  "labels": [
-    "Packet 01",
-    "Packet 02",
-    "Packet 03",
-    "Packet 04",
-    "Packet 05",
-    "Packet 06",
-    "Packet 07",
-    "Packet 08",
-    "Packet 09",
-    "Packet 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "T",
+      "to": "E",
+      "weight": 6
+    }
   ]
 }
