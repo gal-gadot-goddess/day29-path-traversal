@@ -1,119 +1,29 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Navigate a glowing abyssal network, seeking the deepest light.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 450,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 550,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 600,
-      "y": 950
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Stream Alignment",
+  "description": "Aligning hyper-dimensional data streams from the Quantum Nexus requires precise sequencing. Let's sort these unstable energy signatures before they collapse!",
+  "data": [
+    95,
+    22,
+    78,
+    45,
+    61,
+    33,
+    89,
+    50,
+    29,
+    71
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "A",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "T",
-      "to": "E",
-      "weight": 6
-    }
+  "labels": [
+    "Alpha Flux",
+    "Beta Echo",
+    "Gamma Pulse",
+    "Delta Wave",
+    "Epsilon Sing",
+    "Zeta Burst",
+    "Theta Flare",
+    "Iota Stream",
+    "Kappa Node",
+    "Lambda Shift"
   ]
 }
