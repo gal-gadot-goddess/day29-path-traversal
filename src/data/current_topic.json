@@ -1,29 +1,29 @@
 {
   "algorithm": "quick_sort",
-  "title": "Quantum Key Distribution",
-  "description": "Aligning quantum keys for secure interstellar communication. Unsorted keys risk entanglement chaos!",
+  "title": "Quantum Entanglement Sorting",
+  "description": "Aligning entangled particles for stable quantum computation.",
   "data": [
-    85,
-    32,
-    91,
-    48,
-    77,
-    25,
-    63,
-    50,
-    99,
-    42
+    78,
+    34,
+    92,
+    55,
+    21,
+    67,
+    88,
+    41,
+    73,
+    29
   ],
   "labels": [
-    "Key Alpha",
-    "Key Beta",
-    "Key Gamma",
-    "Key Delta",
-    "Key Epsilon",
-    "Key Zeta",
-    "Key Eta",
-    "Key Theta",
-    "Key Iota",
-    "Key Kappa"
+    "Qubit 1",
+    "Qubit 2",
+    "Qubit 3",
+    "Qubit 4",
+    "Qubit 5",
+    "Qubit 6",
+    "Qubit 7",
+    "Qubit 8",
+    "Qubit 9",
+    "Qubit 10"
   ]
 }
