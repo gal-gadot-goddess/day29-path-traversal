@@ -1,29 +1,29 @@
 {
   "algorithm": "quick_sort",
-  "title": "Quantum Data Stream Alignment",
-  "description": "Aligning hyper-dimensional data streams from the Quantum Nexus requires precise sequencing. Let's sort these unstable energy signatures before they collapse!",
+  "title": "Quantum Key Distribution",
+  "description": "Aligning quantum keys for secure interstellar communication. Unsorted keys risk entanglement chaos!",
   "data": [
-    95,
-    22,
-    78,
-    45,
-    61,
-    33,
-    89,
+    85,
+    32,
+    91,
+    48,
+    77,
+    25,
+    63,
     50,
-    29,
-    71
+    99,
+    42
   ],
   "labels": [
-    "Alpha Flux",
-    "Beta Echo",
-    "Gamma Pulse",
-    "Delta Wave",
-    "Epsilon Sing",
-    "Zeta Burst",
-    "Theta Flare",
-    "Iota Stream",
-    "Kappa Node",
-    "Lambda Shift"
+    "Key Alpha",
+    "Key Beta",
+    "Key Gamma",
+    "Key Delta",
+    "Key Epsilon",
+    "Key Zeta",
+    "Key Eta",
+    "Key Theta",
+    "Key Iota",
+    "Key Kappa"
   ]
 }
