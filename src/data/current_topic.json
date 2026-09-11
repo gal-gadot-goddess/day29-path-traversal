@@ -1,42 +1,42 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Data Currents",
-  "description": "Navigate the abyssal data conduits, finding the fastest route from the surface probe (S) to the hydrothermal vent terminal (T).",
+  "algorithm": "bfs",
+  "title": "Deep Sea Data Flow",
+  "description": "Explore the abyssal currents of a sub-oceanic data network. Find the fastest path for your signal through treacherous trenches and bioluminescent conduits.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
       "x": 400,
-      "y": 550
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 500
     },
     {
       "id": "C",
       "x": 300,
-      "y": 750
+      "y": 700
     },
     {
       "id": "D",
       "x": 700,
-      "y": 750
+      "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 950
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
@@ -53,52 +53,52 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 7
+      "to": "B",
+      "weight": 1
     },
     {
       "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "C",
       "to": "D",
       "weight": 6
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 5
+      "weight": 4
     },
     {
-      "from": "C",
+      "from": "S",
       "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "T",
       "weight": 10
     },
     {
-      "from": "D",
-      "to": "T",
-      "weight": 8
-    },
-    {
       "from": "A",
-      "to": "B",
-      "weight": 9
+      "to": "E",
+      "weight": 7
     }
   ]
 }
