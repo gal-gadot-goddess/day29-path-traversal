@@ -1,29 +1,33 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Nebula Alignment",
-  "description": "Align the shimmering bioluminescent spores by their energy signature to navigate the treacherous nebula.",
+  "title": "Bioluminescent Coral Reef",
+  "description": "The bioluminescent currents are shifting! We need to align the glowing coral fragments by their light intensity to restore the reef's harmony.",
   "data": [
     75,
-    30,
-    92,
-    55,
-    40,
+    32,
     88,
-    62,
+    45,
+    60,
     25,
-    99,
-    48
+    92,
+    51,
+    70,
+    40,
+    85,
+    30
   ],
   "labels": [
-    "Glow",
-    "Spark",
-    "Aura",
-    "Shimmer",
-    "Flicker",
-    "Radiance",
-    "Lumen",
-    "Glimmer",
-    "Beam",
-    "Flash"
+    "Glow Bloom",
+    "Deep Spark",
+    "Azure Shard",
+    "Ember Bloom",
+    "Aqua Light",
+    "Void Spark",
+    "Radiant Shard",
+    "Sun Bloom",
+    "Ocean Spark",
+    "Coral Light",
+    "Star Shard",
+    "Lunar Bloom"
   ]
 }
