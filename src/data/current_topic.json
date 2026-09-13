@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Cyberpunk Data Stream",
-  "description": "Navigate a vertical cyberpunk city's illicit data streams, finding the fastest route through its network.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Vent Network",
+  "description": "Explore the hydrothermal vent ecosystem as bacteria spread from a source to a target colony.",
   "nodes": [
     {
       "id": "S",
@@ -10,105 +10,105 @@
     },
     {
       "id": "A",
-      "x": 450,
-      "y": 500
+      "x": 400,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 550,
-      "y": 500
+      "x": 600,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 400,
-      "y": 650
+      "x": 300,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 600,
-      "y": 650
+      "x": 500,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 800
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1000
+      "x": 600,
+      "y": 950
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "A",
       "to": "B",
       "weight": 3
     },
     {
-      "from": "C",
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
       "to": "E",
       "weight": 5
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 8
+      "from": "C",
+      "to": "F",
+      "weight": 3
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 10
+      "from": "D",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 5
+      "weight": 3
     },
     {
-      "from": "D",
+      "from": "F",
       "to": "T",
-      "weight": 7
+      "weight": 2
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 12
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 9
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 15
+      "to": "B",
+      "weight": 1
     },
     {
       "from": "C",
-      "to": "T",
-      "weight": 9
+      "to": "E",
+      "weight": 6
     }
   ]
 }
