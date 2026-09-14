@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Deep Sea Bioluminescent Trails",
-  "description": "Navigate the abyssal plains, following luminous pathways to reach the hydrothermal vent.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Biolink",
+  "description": "Navigate the glowing bioluminescent pathways of the abyssal trench, finding the fastest route from a research submersible to a rare thermal vent.",
   "nodes": [
     {
       "id": "S",
@@ -34,9 +34,14 @@
       "y": 800
     },
     {
-      "id": "T",
-      "x": 500,
+      "id": "F",
+      "x": 400,
       "y": 950
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1000
     }
   ],
   "edges": [
@@ -53,52 +58,52 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 4
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 10
+      "weight": 6
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 4
+      "weight": 3
     },
     {
       "from": "B",
       "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "F",
       "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
     },
     {
       "from": "C",
       "to": "E",
       "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 12
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "S",
-      "to": "E",
-      "weight": 15
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 18
     }
   ]
 }
