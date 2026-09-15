@@ -1,109 +1,119 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Quantum Entanglement Paths",
-  "description": "Navigate the fluctuating probabilities of a quantum circuit to find the most efficient path from entangled qubit S to target state T.",
+  "algorithm": "dfs",
+  "title": "Cyberpunk Data Streams",
+  "description": "Navigate the neon-drenched data conduits of Neo-Kyoto to find the fastest route.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
-      "id": "Q1",
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
       "x": 500,
-      "y": 600
+      "y": 650
     },
     {
-      "id": "Q2",
-      "x": 350,
-      "y": 750
+      "id": "E",
+      "x": 700,
+      "y": 650
     },
     {
-      "id": "Q3",
-      "x": 650,
-      "y": 750
-    },
-    {
-      "id": "Q4",
-      "x": 500,
-      "y": 900
-    },
-    {
-      "id": "Q5",
-      "x": 350,
-      "y": 1050
+      "id": "F",
+      "x": 400,
+      "y": 800
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1200
+      "x": 600,
+      "y": 950
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "Q1",
+      "to": "A",
       "weight": 3
-    },
-    {
-      "from": "Q1",
-      "to": "Q2",
-      "weight": 5
-    },
-    {
-      "from": "Q1",
-      "to": "Q3",
-      "weight": 4
-    },
-    {
-      "from": "Q2",
-      "to": "Q4",
-      "weight": 6
-    },
-    {
-      "from": "Q3",
-      "to": "Q4",
-      "weight": 3
-    },
-    {
-      "from": "Q2",
-      "to": "Q5",
-      "weight": 7
-    },
-    {
-      "from": "Q3",
-      "to": "Q5",
-      "weight": 5
-    },
-    {
-      "from": "Q4",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "Q5",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "Q1",
-      "to": "Q4",
-      "weight": 9
     },
     {
       "from": "S",
-      "to": "Q2",
-      "weight": 12
+      "to": "B",
+      "weight": 4
     },
     {
-      "from": "Q2",
-      "to": "T",
-      "weight": 15
+      "from": "A",
+      "to": "C",
+      "weight": 5
     },
     {
-      "from": "Q5",
-      "to": "Q4",
+      "from": "A",
+      "to": "D",
       "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 1
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "D",
+      "weight": 8
     }
   ]
 }
