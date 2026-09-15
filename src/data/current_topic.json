@@ -1,109 +1,29 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Biolink",
-  "description": "Navigate the glowing bioluminescent pathways of the abyssal trench, finding the fastest route from a research submersible to a rare thermal vent.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 600,
-      "y": 1000
-    }
+  "algorithm": "quick_sort",
+  "title": "Aetherium Shard Alignment",
+  "description": "Align glowing Aetherium Shards by their energy signature to stabilize the Lumina Core. Incorrect order risks temporal distortion!",
+  "data": [
+    85,
+    32,
+    91,
+    55,
+    78,
+    25,
+    63,
+    48,
+    99,
+    70
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 9
-    }
+  "labels": [
+    "Shard 1",
+    "Shard 2",
+    "Shard 3",
+    "Shard 4",
+    "Shard 5",
+    "Shard 6",
+    "Shard 7",
+    "Shard 8",
+    "Shard 9",
+    "Shard 10"
   ]
 }
