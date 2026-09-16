@@ -1,104 +1,33 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Data Dive",
-  "description": "Navigate the bioluminescent depths, connecting research subs to the oceanic server nexus. Each dive has a resource cost.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 450,
-      "y": 550
-    },
-    {
-      "id": "B",
-      "x": 550,
-      "y": 550
-    },
-    {
-      "id": "C",
-      "x": 400,
-      "y": 750
-    },
-    {
-      "id": "D",
-      "x": 600,
-      "y": 750
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1150
-    }
+  "algorithm": "quick_sort",
+  "title": "Bioluminescent Gene Sequences",
+  "description": "Aligning fluctuating gene sequences to stabilize the bioluminescent ecosystem before the spectral bloom.",
+  "data": [
+    78,
+    34,
+    91,
+    55,
+    23,
+    88,
+    42,
+    67,
+    99,
+    30,
+    71,
+    59
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 12
-    },
-    {
-      "from": "C",
-      "to": "T",
-      "weight": 15
-    }
+  "labels": [
+    "Gene Alpha",
+    "Gene Beta",
+    "Gene Gamma",
+    "Gene Delta",
+    "Gene Epsilon",
+    "Gene Zeta",
+    "Gene Eta",
+    "Gene Theta",
+    "Gene Iota",
+    "Gene Kappa",
+    "Gene Lambda",
+    "Gene Mu"
   ]
 }
