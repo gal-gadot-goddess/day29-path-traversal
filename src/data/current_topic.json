@@ -1,33 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Stream",
-  "description": "Navigate a pulsating bioluminescent data stream, sorting glowing energy packets by intensity to stabilize the cosmic flow.",
+  "title": "Nebula Seed Dispersion",
+  "description": "Cosmic gardeners must align bioluminescent nebula seeds by their energy output before planting them to ensure optimal galactic bloom.",
   "data": [
-    78,
-    45,
-    92,
-    31,
-    88,
-    57,
-    63,
+    85,
+    42,
+    98,
     25,
-    99,
+    67,
+    30,
+    75,
     50,
-    71,
-    39
+    91,
+    38
   ],
   "labels": [
-    "Glow Orb 1",
-    "Glow Orb 2",
-    "Glow Orb 3",
-    "Glow Orb 4",
-    "Glow Orb 5",
-    "Glow Orb 6",
-    "Glow Orb 7",
-    "Glow Orb 8",
-    "Glow Orb 9",
-    "Glow Orb 10",
-    "Glow Orb 11",
-    "Glow Orb 12"
+    "Stardust Orb",
+    "Cosmic Dew",
+    "Nova Bloom",
+    "Asteroid Shard",
+    "Lunar Petal",
+    "Comet Tail",
+    "Solar Flare",
+    "Galaxy Seed",
+    "Pulsar Gem",
+    "Quasar Dust"
   ]
 }
