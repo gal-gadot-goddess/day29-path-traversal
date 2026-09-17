@@ -1,109 +1,33 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Bioluminescent Trails",
-  "description": "Navigate the abyss by following the glowing paths of deep-sea creatures to reach the surface.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 1100
-    },
-    {
-      "id": "A",
-      "x": 500,
-      "y": 900
-    },
-    {
-      "id": "B",
-      "x": 300,
-      "y": 700
-    },
-    {
-      "id": "C",
-      "x": 700,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 500,
-      "y": 500
-    },
-    {
-      "id": "E",
-      "x": 300,
-      "y": 300
-    },
-    {
-      "id": "F",
-      "x": 700,
-      "y": 300
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 100
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Data Stream",
+  "description": "Navigate a pulsating bioluminescent data stream, sorting glowing energy packets by intensity to stabilize the cosmic flow.",
+  "data": [
+    78,
+    45,
+    92,
+    31,
+    88,
+    57,
+    63,
+    25,
+    99,
+    50,
+    71,
+    39
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "S",
-      "to": "D",
-      "weight": 10
-    },
-    {
-      "from": "B",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 9
-    }
+  "labels": [
+    "Glow Orb 1",
+    "Glow Orb 2",
+    "Glow Orb 3",
+    "Glow Orb 4",
+    "Glow Orb 5",
+    "Glow Orb 6",
+    "Glow Orb 7",
+    "Glow Orb 8",
+    "Glow Orb 9",
+    "Glow Orb 10",
+    "Glow Orb 11",
+    "Glow Orb 12"
   ]
 }
