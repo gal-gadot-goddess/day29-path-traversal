@@ -1,29 +1,29 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Nebula Seed Dispersion",
-  "description": "Cosmic gardeners must align bioluminescent nebula seeds by their energy output before planting them to ensure optimal galactic bloom.",
+  "algorithm": "quick_sort",
+  "title": "Quantum Data Stream Alignment",
+  "description": "Aligning fluctuating quantum data packets to stabilize the chroniton flux. Faster alignment means a stable timeline!",
   "data": [
-    85,
-    42,
-    98,
-    25,
-    67,
-    30,
     75,
+    30,
+    92,
+    45,
+    60,
+    25,
+    88,
     50,
-    91,
-    38
+    70,
+    35
   ],
   "labels": [
-    "Stardust Orb",
-    "Cosmic Dew",
-    "Nova Bloom",
-    "Asteroid Shard",
-    "Lunar Petal",
-    "Comet Tail",
-    "Solar Flare",
-    "Galaxy Seed",
-    "Pulsar Gem",
-    "Quasar Dust"
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa"
   ]
 }
