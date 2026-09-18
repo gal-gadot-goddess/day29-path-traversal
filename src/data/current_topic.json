@@ -1,33 +1,29 @@
 {
   "algorithm": "bubble_sort",
-  "title": "Bioluminescent Fungi Bloom",
-  "description": "Glow-spores are blooming! Sort them by luminosity to ensure the forest floor is perfectly illuminated.",
+  "title": "Bioluminescent Swarm Alignment",
+  "description": "Guiding a swarm of bio-luminescent plankton to form a perfect wave of light, by nudging them into ascending brightness order.",
   "data": [
     75,
     32,
     98,
-    55,
-    82,
-    40,
-    63,
-    21,
+    45,
+    61,
     88,
-    49,
-    67,
-    35
+    25,
+    53,
+    70,
+    40
   ],
   "labels": [
-    "Moss Light",
-    "Gloomcap",
-    "Sunpetal",
-    "Flickerling",
-    "Glowroot",
-    "Shimmer",
-    "Starpuff",
-    "Dewdrop",
-    "Radiant",
-    "Glimmer",
-    "Moonbeam",
-    "Sparkle"
+    "Glow Orb 1",
+    "Glow Orb 2",
+    "Glow Orb 3",
+    "Glow Orb 4",
+    "Glow Orb 5",
+    "Glow Orb 6",
+    "Glow Orb 7",
+    "Glow Orb 8",
+    "Glow Orb 9",
+    "Glow Orb 10"
   ]
 }
