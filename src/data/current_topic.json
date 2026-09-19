@@ -1,12 +1,12 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Deep Sea Trench Network",
-  "description": "Navigate the bioluminescent pathways of the abyssal plains to find the deepest geothermal vent.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate a network of glowing deep-sea creatures to find the rarest bioluminescent specimen.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
@@ -20,80 +20,85 @@
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 750
+      "x": 300,
+      "y": 800
     },
     {
       "id": "D",
-      "x": 350,
-      "y": 850
+      "x": 700,
+      "y": 800
     },
     {
       "id": "E",
-      "x": 650,
-      "y": 850
+      "x": 500,
+      "y": 1050
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1050
+      "y": 1300
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 5
     },
     {
       "from": "B",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "C",
       "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
       "weight": 5
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 12
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 10
+      "weight": 7
     },
     {
-      "from": "S",
-      "to": "C",
-      "weight": 15
+      "from": "C",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
     }
   ]
 }
