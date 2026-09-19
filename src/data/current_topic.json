@@ -1,29 +1,109 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Swarm Alignment",
-  "description": "Guiding a swarm of bio-luminescent plankton to form a perfect wave of light, by nudging them into ascending brightness order.",
-  "data": [
-    75,
-    32,
-    98,
-    45,
-    61,
-    88,
-    25,
-    53,
-    70,
-    40
+  "algorithm": "dfs",
+  "title": "Quantum Entanglement Path",
+  "description": "Navigate entangled quantum bits to find the shortest path to the observation node.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "Q1",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "Q2",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "Q3",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "Q4",
+      "x": 400,
+      "y": 900
+    },
+    {
+      "id": "Q5",
+      "x": 600,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Glow Orb 1",
-    "Glow Orb 2",
-    "Glow Orb 3",
-    "Glow Orb 4",
-    "Glow Orb 5",
-    "Glow Orb 6",
-    "Glow Orb 7",
-    "Glow Orb 8",
-    "Glow Orb 9",
-    "Glow Orb 10"
+  "edges": [
+    {
+      "from": "S",
+      "to": "Q1",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "Q2",
+      "weight": 2
+    },
+    {
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 4
+    },
+    {
+      "from": "Q2",
+      "to": "Q3",
+      "weight": 3
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 5
+    },
+    {
+      "from": "Q3",
+      "to": "Q5",
+      "weight": 4
+    },
+    {
+      "from": "Q1",
+      "to": "Q4",
+      "weight": 6
+    },
+    {
+      "from": "Q2",
+      "to": "Q5",
+      "weight": 5
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "Q5",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "Q4",
+      "to": "Q5",
+      "weight": 2
+    },
+    {
+      "from": "Q1",
+      "to": "S",
+      "weight": 3
+    },
+    {
+      "from": "Q2",
+      "to": "S",
+      "weight": 2
+    }
   ]
 }
