@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Quantum Entanglement Paths",
-  "description": "Navigate a quantum computer's entangled qubits to find the fastest data transfer route.",
+  "algorithm": "astar",
+  "title": "Cybernetic Nexus Path",
+  "description": "Navigate the data streams of a neon-drenched cyberpunk city, where information flows through an intricate neural network. Find the fastest route through the digital veins.",
   "nodes": [
     {
       "id": "S",
@@ -9,96 +9,111 @@
       "y": 350
     },
     {
-      "id": "Q1",
+      "id": "A",
+      "x": 450,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 550
+    },
+    {
+      "id": "C",
       "x": 400,
-      "y": 500
+      "y": 750
     },
     {
-      "id": "Q2",
+      "id": "D",
       "x": 600,
-      "y": 500
+      "y": 750
     },
     {
-      "id": "Q3",
+      "id": "E",
       "x": 500,
-      "y": 650
-    },
-    {
-      "id": "Q4",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "Q5",
-      "x": 600,
-      "y": 800
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "Q1",
-      "weight": 2
-    },
-    {
-      "from": "S",
-      "to": "Q2",
-      "weight": 3
-    },
-    {
-      "from": "Q1",
-      "to": "Q3",
-      "weight": 1
-    },
-    {
-      "from": "Q2",
-      "to": "Q3",
-      "weight": 2
-    },
-    {
-      "from": "Q3",
-      "to": "Q4",
-      "weight": 3
-    },
-    {
-      "from": "Q3",
-      "to": "Q5",
-      "weight": 2
-    },
-    {
-      "from": "Q4",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "Q5",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "Q1",
-      "to": "Q4",
-      "weight": 4
-    },
-    {
-      "from": "Q2",
-      "to": "Q5",
-      "weight": 4
-    },
-    {
-      "from": "S",
-      "to": "Q3",
+      "to": "A",
       "weight": 5
     },
     {
-      "from": "Q4",
-      "to": "Q5",
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "A",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
       "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 12
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 15
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 10
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 18
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 16
     }
   ]
 }
