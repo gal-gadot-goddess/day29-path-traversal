@@ -1,33 +1,104 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "Aligning unstable quantum particles by their energy levels for a stable data transfer.",
-  "data": [
-    88,
-    35,
-    72,
-    95,
-    21,
-    56,
-    49,
-    78,
-    63,
-    91,
-    29,
-    50
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescent Trail",
+  "description": "Navigate the crushing depths of the Mariana Trench, following a bioluminescent trail. Find the shortest path from the submersible (S) to the alien artifact (T) by exploring interconnected hydrothermal vents.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 400
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 600
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 600
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "D",
+      "x": 350,
+      "y": 900
+    },
+    {
+      "id": "E",
+      "x": 650,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa",
-    "Lambda",
-    "Mu"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 10
+    }
   ]
 }
