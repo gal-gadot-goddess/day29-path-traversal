@@ -1,29 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Bioluminescent Data Streams",
-  "description": "Realign shimmering bioluminescent data fragments to optimize energy flow through the neural network.",
-  "data": [
-    88,
-    54,
-    92,
-    31,
-    77,
-    45,
-    68,
-    25,
-    99,
-    59
+  "algorithm": "dfs",
+  "title": "Deep Sea Bioluminescent Path",
+  "description": "Navigate the abyssal depths, following the faintest bioluminescent trails to reach the hydrothermal vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 450
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 850
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1050
+    }
   ],
-  "labels": [
-    "Glow Worm",
-    "Firefly",
-    "Jellyfish",
-    "Lanternfish",
-    "Plankton",
-    "Deep Sea",
-    "Coral",
-    "Abyss",
-    "Anglerfish",
-    "Starfish"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    }
   ]
 }
