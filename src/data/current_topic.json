@@ -1,29 +1,99 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Sort",
-  "description": "We're aligning quantum entangled particles based on their chroniton charge for stable interdimensional travel.",
-  "data": [
-    88,
-    34,
-    72,
-    55,
-    91,
-    29,
-    68,
-    41,
-    77,
-    50
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Data Currents",
+  "description": "Navigate treacherous data currents in the abyss. Find the fastest path to the Mariana Trench server.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Alpha-7",
-    "Beta-3",
-    "Gamma-12",
-    "Delta-9",
-    "Epsilon-1",
-    "Zeta-5",
-    "Eta-8",
-    "Theta-2",
-    "Iota-11",
-    "Kappa-4"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 10
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 12
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 15
+    }
   ]
 }
