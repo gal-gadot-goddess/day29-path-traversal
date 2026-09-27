@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Stream",
-  "description": "The deep-sea research vessel's primary data conduit has become scrambled. We must reorder these bioluminescent energy readings to restore the oceanic sensor network.",
-  "data": [
-    55,
-    32,
-    78,
-    41,
-    92,
-    25,
-    67,
-    49,
-    83,
-    38
+  "algorithm": "bfs",
+  "title": "Deep-Sea Bioluminescent Paths",
+  "description": "Explore the abyssal plains, tracing the shortest bioluminescent trail from a research submersible to a newly discovered hydrothermal vent.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 300,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 1100
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Glow Worm",
-    "Jellyfish",
-    "Anglerfish",
-    "Squid",
-    "Lantern",
-    "Coral",
-    "Algae",
-    "Plankton",
-    "Starfish",
-    "Shrimp"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 6
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 6
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    }
   ]
 }
