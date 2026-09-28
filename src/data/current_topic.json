@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Neon Data Flow",
-  "description": "Navigate the pulsating data streams of a cyberpunk city's neural network, finding the fastest route through glowing conduits.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Explore the bioluminescent pathways of deep-sea flora, finding the quickest route from the primary light source to the deepest research probe.",
   "nodes": [
     {
       "id": "S",
@@ -10,95 +10,105 @@
     },
     {
       "id": "A",
-      "x": 500,
-      "y": 550
+      "x": 400,
+      "y": 500
     },
     {
       "id": "B",
-      "x": 400,
-      "y": 750
+      "x": 600,
+      "y": 500
     },
     {
       "id": "C",
-      "x": 600,
-      "y": 750
+      "x": 300,
+      "y": 650
     },
     {
       "id": "D",
       "x": 500,
-      "y": 950
+      "y": 650
     },
     {
       "id": "E",
+      "x": 700,
+      "y": 650
+    },
+    {
+      "id": "F",
       "x": 400,
-      "y": 1150
+      "y": 800
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 1150
+      "x": 500,
+      "y": 950
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 1
     },
     {
-      "from": "A",
+      "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 1
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 1
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 6
+      "weight": 1
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 1
     },
     {
       "from": "C",
-      "to": "D",
-      "weight": 5
+      "to": "F",
+      "weight": 1
     },
     {
       "from": "D",
-      "to": "E",
-      "weight": 9
+      "to": "F",
+      "weight": 1
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 7
-    },
-    {
-      "from": "S",
-      "to": "C",
-      "weight": 12
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 4
+      "weight": 1
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 3
+      "weight": 1
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 1
+    },
+    {
+      "from": "S",
+      "to": "D",
+      "weight": 2
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 15
-    },
-    {
-      "from": "C",
       "to": "E",
-      "weight": 10
+      "weight": 2
     }
   ]
 }
