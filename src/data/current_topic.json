@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Jellyfish Bloom",
-  "description": "The bioluminescent jellyfish have synchronized their glow cycles. We need to arrange them by intensity to prevent a system overload.",
-  "data": [
-    85,
-    32,
-    91,
-    55,
-    27,
-    73,
-    48,
-    60,
-    95,
-    40
+  "algorithm": "astar",
+  "title": "Neon Data Flow",
+  "description": "Navigate the pulsating data streams of a cyberpunk city's neural network, finding the fastest route through glowing conduits.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 500,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 400,
+      "y": 750
+    },
+    {
+      "id": "C",
+      "x": 600,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "E",
+      "x": 400,
+      "y": 1150
+    },
+    {
+      "id": "T",
+      "x": 600,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "Delta",
-    "Epsilon",
-    "Zeta",
-    "Eta",
-    "Theta",
-    "Iota",
-    "Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 12
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 15
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 10
+    }
   ]
 }
