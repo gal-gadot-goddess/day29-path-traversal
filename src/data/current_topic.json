@@ -1,114 +1,33 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Explore the bioluminescent pathways of deep-sea flora, finding the quickest route from the primary light source to the deepest research probe.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 950
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entanglement Calibration",
+  "description": "Calibrating quantum entanglement for interstellar communication requires precise ordering of entangled particle states.",
+  "data": [
+    42,
+    88,
+    23,
+    71,
+    55,
+    99,
+    30,
+    64,
+    18,
+    82,
+    49,
+    76
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 1
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 1
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 1
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 1
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 1
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 1
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "S",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 2
-    }
+  "labels": [
+    "Qubit Alpha",
+    "Qubit Zeta",
+    "Qubit Gamma",
+    "Qubit Epsilon",
+    "Qubit Delta",
+    "Qubit Omicron",
+    "Qubit Beta",
+    "Qubit Lambda",
+    "Qubit Theta",
+    "Qubit Rho",
+    "Qubit Sigma",
+    "Qubit Kappa"
   ]
 }
