@@ -1,33 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Calibration",
-  "description": "Calibrating quantum entanglement for interstellar communication requires precise ordering of entangled particle states.",
-  "data": [
-    42,
-    88,
-    23,
-    71,
-    55,
-    99,
-    30,
-    64,
-    18,
-    82,
-    49,
-    76
+  "algorithm": "dfs",
+  "title": "Deep Sea Anomaly Hunt",
+  "description": "Navigate the crushing depths to find a mysterious energy anomaly. Each connection represents a sonar ping pathway.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 550
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 550
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 750
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Qubit Alpha",
-    "Qubit Zeta",
-    "Qubit Gamma",
-    "Qubit Epsilon",
-    "Qubit Delta",
-    "Qubit Omicron",
-    "Qubit Beta",
-    "Qubit Lambda",
-    "Qubit Theta",
-    "Qubit Rho",
-    "Qubit Sigma",
-    "Qubit Kappa"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 11
+    }
   ]
 }
