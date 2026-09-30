@@ -1,114 +1,29 @@
 {
-  "algorithm": "dfs",
-  "title": "Neuron Path Weaver",
-  "description": "Navigate the intricate pathways of a bio-luminescent neural network, finding the fastest route between signal clusters.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 350,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 650,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 300,
-      "y": 800
-    },
-    {
-      "id": "E",
-      "x": 700,
-      "y": 800
-    },
-    {
-      "id": "F",
-      "x": 500,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "quick_sort",
+  "title": "Cosmic Lumina-Shard Sort",
+  "description": "Aligning bioluminescent energy shards for optimal interdimensional travel requires precise sorting. Help us arrange their frequencies!",
+  "data": [
+    78,
+    45,
+    92,
+    31,
+    67,
+    53,
+    88,
+    24,
+    71,
+    40
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 12
-    }
+  "labels": [
+    "Shard Alpha",
+    "Shard Beta",
+    "Shard Gamma",
+    "Shard Delta",
+    "Shard Epsilon",
+    "Shard Zeta",
+    "Shard Eta",
+    "Shard Theta",
+    "Shard Iota",
+    "Shard Kappa"
   ]
 }
