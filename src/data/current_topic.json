@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Chrono-Crystal Alignment",
-  "description": "Ancient chronometers, powered by unstable temporal crystals, are misaligned. We must sort them by their temporal resonance to prevent a localized time warp!",
-  "data": [
-    88,
-    32,
-    75,
-    45,
-    92,
-    28,
-    61,
-    55,
-    70,
-    39
+  "algorithm": "astar",
+  "title": "Quantum Entanglement Drive",
+  "description": "Navigate a quantum computer's entangled states to find the fastest data transfer path.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "Q1",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "Q2",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C1",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "id": "Q3",
+      "x": 400,
+      "y": 900
+    },
+    {
+      "id": "Q4",
+      "x": 600,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Chronos I",
-    "Chrono II",
-    "Resonance 3",
-    "Temporal 4",
-    "Chrono V",
-    "Echo VI",
-    "Flux VII",
-    "Rift VIII",
-    "Anchor IX",
-    "Phase X"
+  "edges": [
+    {
+      "from": "S",
+      "to": "Q1",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "Q2",
+      "weight": 7
+    },
+    {
+      "from": "Q1",
+      "to": "C1",
+      "weight": 3
+    },
+    {
+      "from": "Q2",
+      "to": "C1",
+      "weight": 4
+    },
+    {
+      "from": "C1",
+      "to": "Q3",
+      "weight": 6
+    },
+    {
+      "from": "C1",
+      "to": "Q4",
+      "weight": 5
+    },
+    {
+      "from": "Q3",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "Q4",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "weight": 2
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "weight": 1
+    },
+    {
+      "from": "Q1",
+      "to": "Q3",
+      "weight": 10
+    },
+    {
+      "from": "Q2",
+      "to": "Q4",
+      "weight": 12
+    }
   ]
 }
