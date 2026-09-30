@@ -1,29 +1,29 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Cosmic Lumina-Shard Sort",
-  "description": "Aligning bioluminescent energy shards for optimal interdimensional travel requires precise sorting. Help us arrange their frequencies!",
+  "algorithm": "bubble_sort",
+  "title": "Chrono-Crystal Alignment",
+  "description": "Ancient chronometers, powered by unstable temporal crystals, are misaligned. We must sort them by their temporal resonance to prevent a localized time warp!",
   "data": [
-    78,
+    88,
+    32,
+    75,
     45,
     92,
-    31,
-    67,
-    53,
-    88,
-    24,
-    71,
-    40
+    28,
+    61,
+    55,
+    70,
+    39
   ],
   "labels": [
-    "Shard Alpha",
-    "Shard Beta",
-    "Shard Gamma",
-    "Shard Delta",
-    "Shard Epsilon",
-    "Shard Zeta",
-    "Shard Eta",
-    "Shard Theta",
-    "Shard Iota",
-    "Shard Kappa"
+    "Chronos I",
+    "Chrono II",
+    "Resonance 3",
+    "Temporal 4",
+    "Chrono V",
+    "Echo VI",
+    "Flux VII",
+    "Rift VIII",
+    "Anchor IX",
+    "Phase X"
   ]
 }
