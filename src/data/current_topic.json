@@ -1,7 +1,7 @@
 {
-  "algorithm": "astar",
-  "title": "Quantum Entanglement Drive",
-  "description": "Navigate a quantum computer's entangled states to find the fastest data transfer path.",
+  "algorithm": "dfs",
+  "title": "Neuron Ascent",
+  "description": "Navigate the dendritic pathways of a synthetic neural network, seeking the fastest route to activate the target cortex.",
   "nodes": [
     {
       "id": "S",
@@ -9,96 +9,111 @@
       "y": 300
     },
     {
-      "id": "Q1",
+      "id": "A",
       "x": 400,
-      "y": 500
+      "y": 450
     },
     {
-      "id": "Q2",
+      "id": "B",
       "x": 600,
-      "y": 500
+      "y": 450
     },
     {
-      "id": "C1",
+      "id": "C",
+      "x": 300,
+      "y": 600
+    },
+    {
+      "id": "D",
+      "x": 700,
+      "y": 600
+    },
+    {
+      "id": "E",
       "x": 500,
-      "y": 700
+      "y": 750
     },
     {
-      "id": "Q3",
+      "id": "F",
       "x": 400,
-      "y": 900
-    },
-    {
-      "id": "Q4",
-      "x": 600,
       "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1050
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "Q1",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "Q2",
-      "weight": 7
-    },
-    {
-      "from": "Q1",
-      "to": "C1",
+      "to": "A",
       "weight": 3
     },
     {
-      "from": "Q2",
-      "to": "C1",
-      "weight": 4
-    },
-    {
-      "from": "C1",
-      "to": "Q3",
-      "weight": 6
-    },
-    {
-      "from": "C1",
-      "to": "Q4",
-      "weight": 5
-    },
-    {
-      "from": "Q3",
-      "to": "T",
-      "weight": 8
-    },
-    {
-      "from": "Q4",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "Q1",
-      "to": "Q2",
+      "from": "S",
+      "to": "B",
       "weight": 2
     },
     {
-      "from": "Q3",
-      "to": "Q4",
+      "from": "A",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "B",
       "weight": 1
     },
     {
-      "from": "Q1",
-      "to": "Q3",
-      "weight": 10
-    },
-    {
-      "from": "Q2",
-      "to": "Q4",
-      "weight": 12
+      "from": "C",
+      "to": "D",
+      "weight": 7
     }
   ]
 }
