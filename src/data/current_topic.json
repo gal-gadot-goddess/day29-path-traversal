@@ -1,47 +1,42 @@
 {
-  "algorithm": "dfs",
-  "title": "Neuron Ascent",
-  "description": "Navigate the dendritic pathways of a synthetic neural network, seeking the fastest route to activate the target cortex.",
+  "algorithm": "astar",
+  "title": "Neural Dive",
+  "description": "Navigate the synaptic pathways of a deep-sea neural network to reach the consciousness core.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
       "x": 400,
-      "y": 450
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 450
+      "y": 500
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 600
+      "x": 500,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 600
+      "x": 350,
+      "y": 850
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 750
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 900
+      "x": 650,
+      "y": 850
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1050
+      "y": 1000
     }
   ],
   "edges": [
@@ -53,67 +48,57 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 2
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "F",
       "weight": 6
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "F",
+      "from": "B",
+      "to": "C",
       "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 1
     },
     {
       "from": "C",
       "to": "D",
       "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 12
     }
   ]
 }
