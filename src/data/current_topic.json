@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Navigate the abyssal depths, illuminating the shortest bioluminescent path from the research sub to the rare abyssal bloom.",
+  "algorithm": "dfs",
+  "title": "Neuron Maze Runner",
+  "description": "Navigate the labyrinthine pathways of a bio-luminescent neural network, finding the fastest route from stimulus to response.",
   "nodes": [
     {
       "id": "S",
@@ -25,12 +25,22 @@
     },
     {
       "id": "D",
-      "x": 700,
+      "x": 500,
       "y": 800
     },
     {
       "id": "E",
-      "x": 500,
+      "x": 700,
+      "y": 800
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 1000
+    },
+    {
+      "id": "G",
+      "x": 600,
       "y": 1000
     },
     {
@@ -43,61 +53,71 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 2
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 3
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "T",
       "weight": 8
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 1
-    },
-    {
-      "from": "C",
       "to": "D",
-      "weight": 2
+      "weight": 6
     },
     {
-      "from": "S",
-      "to": "E",
-      "weight": 10
+      "from": "B",
+      "to": "D",
+      "weight": 4
     },
     {
-      "from": "A",
+      "from": "B",
       "to": "E",
       "weight": 9
     },
     {
-      "from": "B",
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "G",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "G",
+      "weight": 6
+    },
+    {
+      "from": "F",
       "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "G",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 12
+    },
+    {
+      "from": "C",
+      "to": "E",
       "weight": 15
     }
   ]
