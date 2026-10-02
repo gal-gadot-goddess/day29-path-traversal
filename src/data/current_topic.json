@@ -1,114 +1,104 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Nexus Ascent",
-  "description": "Navigate the intricate pathways of a bio-luminescent neural network, seeking the most efficient signal transmission from the synaptic core to the cortex.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate the abyssal depths, illuminating the shortest bioluminescent path from the research sub to the rare abyssal bloom.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
-      "x": 600,
-      "y": 500
+      "x": 400,
+      "y": 600
     },
     {
       "id": "B",
-      "x": 400,
-      "y": 500
+      "x": 600,
+      "y": 600
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 650
+      "x": 300,
+      "y": 800
     },
     {
       "id": "D",
-      "x": 650,
+      "x": 700,
       "y": 800
     },
     {
       "id": "E",
-      "x": 350,
-      "y": 800
+      "x": 500,
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "A",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "B",
       "to": "C",
       "weight": 4
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "D",
-      "weight": 8
+      "weight": 5
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 5
+      "weight": 6
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 9
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 7
+      "weight": 8
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 3
+      "weight": 1
     },
     {
-      "from": "B",
-      "to": "A",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 12
-    },
-    {
-      "from": "E",
+      "from": "C",
       "to": "D",
-      "weight": 11
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 10
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 15
+      "weight": 9
     },
     {
       "from": "B",
-      "to": "D",
-      "weight": 14
+      "to": "T",
+      "weight": 15
     }
   ]
 }
