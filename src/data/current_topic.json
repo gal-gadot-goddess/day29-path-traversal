@@ -1,104 +1,114 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Quantum Entanglement Path",
-  "description": "Navigate the interconnected qubits of a quantum processor to find the most efficient entangled path from the source qubit to the target qubit.",
+  "algorithm": "astar",
+  "title": "Neural Nexus Ascent",
+  "description": "Navigate the intricate pathways of a bio-luminescent neural network, seeking the most efficient signal transmission from the synaptic core to the cortex.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
-      "id": "Q1",
-      "x": 500,
-      "y": 600
-    },
-    {
-      "id": "Q2",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "Q3",
+      "id": "A",
       "x": 600,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 650,
       "y": 800
     },
     {
-      "id": "Q4",
-      "x": 500,
-      "y": 1000
-    },
-    {
-      "id": "Q5",
-      "x": 400,
-      "y": 1200
+      "id": "E",
+      "x": 350,
+      "y": 800
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 1200
+      "x": 500,
+      "y": 950
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "Q1",
-      "weight": 3
-    },
-    {
-      "from": "Q1",
-      "to": "Q2",
+      "to": "A",
       "weight": 5
     },
     {
-      "from": "Q1",
-      "to": "Q3",
-      "weight": 4
-    },
-    {
-      "from": "Q2",
-      "to": "Q4",
-      "weight": 6
-    },
-    {
-      "from": "Q3",
-      "to": "Q4",
-      "weight": 2
-    },
-    {
-      "from": "Q4",
-      "to": "Q5",
+      "from": "S",
+      "to": "B",
       "weight": 7
     },
     {
-      "from": "Q4",
-      "to": "T",
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "Q2",
-      "to": "Q5",
+      "from": "C",
+      "to": "D",
       "weight": 8
     },
     {
-      "from": "Q3",
+      "from": "C",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
       "to": "T",
       "weight": 9
     },
     {
-      "from": "S",
-      "to": "Q2",
+      "from": "E",
+      "to": "T",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "E",
       "weight": 12
     },
     {
-      "from": "Q1",
-      "to": "Q4",
-      "weight": 10
+      "from": "E",
+      "to": "D",
+      "weight": 11
     },
     {
-      "from": "Q5",
-      "to": "T",
-      "weight": 3
+      "from": "A",
+      "to": "E",
+      "weight": 15
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 14
     }
   ]
 }
