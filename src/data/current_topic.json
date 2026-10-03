@@ -1,124 +1,109 @@
 {
-  "algorithm": "dfs",
-  "title": "Neuron Maze Runner",
-  "description": "Navigate the labyrinthine pathways of a bio-luminescent neural network, finding the fastest route from stimulus to response.",
+  "algorithm": "astar",
+  "title": "Neural Net Ascent",
+  "description": "Navigate the layered processing units of a sentient AI's mind, from input receptors to conscious output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
-      "id": "A",
-      "x": 400,
-      "y": 600
+      "id": "N1",
+      "x": 500,
+      "y": 500
     },
     {
-      "id": "B",
-      "x": 600,
-      "y": 600
+      "id": "N2",
+      "x": 350,
+      "y": 650
     },
     {
-      "id": "C",
-      "x": 300,
-      "y": 800
+      "id": "N3",
+      "x": 650,
+      "y": 650
     },
     {
-      "id": "D",
+      "id": "N4",
       "x": 500,
       "y": 800
     },
     {
-      "id": "E",
-      "x": 700,
-      "y": 800
+      "id": "N5",
+      "x": 350,
+      "y": 950
     },
     {
-      "id": "F",
-      "x": 400,
-      "y": 1000
-    },
-    {
-      "id": "G",
-      "x": 600,
-      "y": 1000
+      "id": "N6",
+      "x": 650,
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1200
+      "y": 1100
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
+      "to": "N1",
       "weight": 5
     },
     {
-      "from": "S",
-      "to": "B",
+      "from": "N1",
+      "to": "N2",
       "weight": 7
     },
     {
-      "from": "A",
-      "to": "C",
+      "from": "N1",
+      "to": "N3",
+      "weight": 6
+    },
+    {
+      "from": "N2",
+      "to": "N4",
       "weight": 8
     },
     {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "G",
+      "from": "N3",
+      "to": "N4",
       "weight": 7
     },
     {
-      "from": "E",
-      "to": "G",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "G",
-      "to": "T",
+      "from": "N4",
+      "to": "N5",
       "weight": 5
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 12
+      "from": "N4",
+      "to": "N6",
+      "weight": 6
     },
     {
-      "from": "C",
-      "to": "E",
+      "from": "N5",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "N6",
+      "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "N2",
+      "to": "N3",
       "weight": 15
+    },
+    {
+      "from": "N5",
+      "to": "N6",
+      "weight": 10
+    },
+    {
+      "from": "N1",
+      "to": "N4",
+      "weight": 12
     }
   ]
 }
