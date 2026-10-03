@@ -1,109 +1,33 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Net Ascent",
-  "description": "Navigate the layered processing units of a sentient AI's mind, from input receptors to conscious output.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "N1",
-      "x": 500,
-      "y": 500
-    },
-    {
-      "id": "N2",
-      "x": 350,
-      "y": 650
-    },
-    {
-      "id": "N3",
-      "x": 650,
-      "y": 650
-    },
-    {
-      "id": "N4",
-      "x": 500,
-      "y": 800
-    },
-    {
-      "id": "N5",
-      "x": 350,
-      "y": 950
-    },
-    {
-      "id": "N6",
-      "x": 650,
-      "y": 950
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entanglement Alignment",
+  "description": "Aligning entangled quantum particles by their energy signature for stable interstellar communication.",
+  "data": [
+    92,
+    55,
+    78,
+    31,
+    67,
+    49,
+    85,
+    23,
+    71,
+    98,
+    42,
+    60
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "N1",
-      "weight": 5
-    },
-    {
-      "from": "N1",
-      "to": "N2",
-      "weight": 7
-    },
-    {
-      "from": "N1",
-      "to": "N3",
-      "weight": 6
-    },
-    {
-      "from": "N2",
-      "to": "N4",
-      "weight": 8
-    },
-    {
-      "from": "N3",
-      "to": "N4",
-      "weight": 7
-    },
-    {
-      "from": "N4",
-      "to": "N5",
-      "weight": 5
-    },
-    {
-      "from": "N4",
-      "to": "N6",
-      "weight": 6
-    },
-    {
-      "from": "N5",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "N6",
-      "to": "T",
-      "weight": 8
-    },
-    {
-      "from": "N2",
-      "to": "N3",
-      "weight": 15
-    },
-    {
-      "from": "N5",
-      "to": "N6",
-      "weight": 10
-    },
-    {
-      "from": "N1",
-      "to": "N4",
-      "weight": 12
-    }
+  "labels": [
+    "Qubit Alpha",
+    "Qubit Beta",
+    "Qubit Gamma",
+    "Qubit Delta",
+    "Qubit Epsilon",
+    "Qubit Zeta",
+    "Qubit Eta",
+    "Qubit Theta",
+    "Qubit Iota",
+    "Qubit Kappa",
+    "Qubit Lambda",
+    "Qubit Mu"
   ]
 }
