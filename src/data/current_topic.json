@@ -1,104 +1,104 @@
 {
   "algorithm": "astar",
-  "title": "Cyberpunk Data Stream",
-  "description": "Navigate through a fragmented cyberpunk city's data streams to reach the core server.",
+  "title": "Neural Nexus Ascent",
+  "description": "Navigate the intricate synaptic pathways of a simulated neural network to reach the core processing unit.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
-      "id": "A",
-      "x": 450,
-      "y": 550
+      "id": "1",
+      "x": 400,
+      "y": 450
     },
     {
-      "id": "B",
-      "x": 550,
-      "y": 550
+      "id": "2",
+      "x": 600,
+      "y": 450
     },
     {
-      "id": "C",
-      "x": 350,
-      "y": 750
-    },
-    {
-      "id": "D",
-      "x": 650,
-      "y": 750
-    },
-    {
-      "id": "E",
+      "id": "3",
       "x": 500,
-      "y": 950
+      "y": 600
+    },
+    {
+      "id": "4",
+      "x": 400,
+      "y": 750
+    },
+    {
+      "id": "5",
+      "x": 600,
+      "y": 750
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 900
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
+      "to": "1",
       "weight": 3
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 12
-    },
-    {
       "from": "S",
-      "to": "E",
-      "weight": 15
+      "to": "2",
+      "weight": 4
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "weight": 5
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "weight": 3
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "weight": 7
+    },
+    {
+      "from": "3",
+      "to": "5",
+      "weight": 6
+    },
+    {
+      "from": "4",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "5",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "1",
+      "to": "2",
+      "weight": 2
+    },
+    {
+      "from": "4",
+      "to": "5",
+      "weight": 2
+    },
+    {
+      "from": "1",
+      "to": "4",
+      "weight": 10
+    },
+    {
+      "from": "2",
+      "to": "5",
+      "weight": 11
     }
   ]
 }
