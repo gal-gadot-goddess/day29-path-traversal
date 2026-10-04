@@ -1,104 +1,109 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Nexus Ascent",
-  "description": "Navigate the intricate synaptic pathways of a simulated neural network to reach the core processing unit.",
+  "algorithm": "dfs",
+  "title": "Deep Sea Lumina Network",
+  "description": "Navigate a bioluminescent deep-sea trench, mapping paths between rare glowing organisms to find the elusive Lumina Bloom.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
-      "id": "1",
+      "id": "A",
       "x": 400,
-      "y": 450
+      "y": 500
     },
     {
-      "id": "2",
+      "id": "B",
       "x": 600,
-      "y": 450
+      "y": 500
     },
     {
-      "id": "3",
+      "id": "C",
       "x": 500,
-      "y": 600
+      "y": 650
     },
     {
-      "id": "4",
+      "id": "D",
       "x": 400,
-      "y": 750
+      "y": 800
     },
     {
-      "id": "5",
+      "id": "E",
       "x": 600,
-      "y": 750
+      "y": 800
     },
     {
       "id": "T",
       "x": 500,
-      "y": 900
+      "y": 950
+    },
+    {
+      "id": "F",
+      "x": 300,
+      "y": 650
     }
   ],
   "edges": [
     {
       "from": "S",
-      "to": "1",
-      "weight": 3
+      "to": "A",
+      "weight": 5
     },
     {
       "from": "S",
-      "to": "2",
-      "weight": 4
-    },
-    {
-      "from": "1",
-      "to": "3",
-      "weight": 5
-    },
-    {
-      "from": "2",
-      "to": "3",
-      "weight": 3
-    },
-    {
-      "from": "3",
-      "to": "4",
+      "to": "B",
       "weight": 7
     },
     {
-      "from": "3",
-      "to": "5",
-      "weight": 6
-    },
-    {
-      "from": "4",
-      "to": "T",
+      "from": "A",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "5",
+      "from": "B",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "D",
       "to": "T",
       "weight": 5
     },
     {
-      "from": "1",
-      "to": "2",
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "F",
+      "to": "C",
       "weight": 2
     },
     {
-      "from": "4",
-      "to": "5",
-      "weight": 2
-    },
-    {
-      "from": "1",
-      "to": "4",
+      "from": "B",
+      "to": "E",
       "weight": 10
     },
     {
-      "from": "2",
-      "to": "5",
-      "weight": 11
+      "from": "D",
+      "to": "E",
+      "weight": 3
     }
   ]
 }
