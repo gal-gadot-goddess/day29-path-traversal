@@ -1,12 +1,12 @@
 {
-  "algorithm": "dfs",
-  "title": "Deep Sea Lumina Network",
-  "description": "Navigate a bioluminescent deep-sea trench, mapping paths between rare glowing organisms to find the elusive Lumina Bloom.",
+  "algorithm": "dijkstra",
+  "title": "Cybernetic Ascent",
+  "description": "Navigate the neon-drenched data streams of Neo-Kyoto to reach the elusive information nexus. Each connection has a processing cost.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
@@ -20,28 +20,23 @@
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 650
+      "x": 300,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 800
+      "x": 700,
+      "y": 700
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 800
+      "x": 500,
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
-    },
-    {
-      "id": "F",
-      "x": 300,
-      "y": 650
+      "y": 1100
     }
   ],
   "edges": [
@@ -61,49 +56,44 @@
       "weight": 4
     },
     {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
+      "from": "A",
       "to": "E",
       "weight": 8
     },
     {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 6
+    },
+    {
       "from": "D",
-      "to": "T",
+      "to": "E",
       "weight": 5
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "F",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "E",
       "weight": 10
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 3
+      "from": "A",
+      "to": "B",
+      "weight": 15
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 12
     }
   ]
 }
