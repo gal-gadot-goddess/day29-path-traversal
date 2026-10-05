@@ -1,99 +1,33 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Cybernetic Ascent",
-  "description": "Navigate the neon-drenched data streams of Neo-Kyoto to reach the elusive information nexus. Each connection has a processing cost.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 300
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 700
-    },
-    {
-      "id": "D",
-      "x": 700,
-      "y": 700
-    },
-    {
-      "id": "E",
-      "x": 500,
-      "y": 900
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1100
-    }
+  "algorithm": "quick_sort",
+  "title": "Quantum Entangled Energy Cores",
+  "description": "We must stabilize the Quantum Nexus by arranging its energy cores by resonant frequency before a cascade failure!",
+  "data": [
+    75,
+    32,
+    91,
+    48,
+    66,
+    25,
+    83,
+    55,
+    41,
+    99,
+    38,
+    60
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 15
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 12
-    }
+  "labels": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon",
+    "Zeta",
+    "Eta",
+    "Theta",
+    "Iota",
+    "Kappa",
+    "Lambda",
+    "Mu"
   ]
 }
