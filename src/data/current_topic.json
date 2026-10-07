@@ -1,99 +1,144 @@
 {
-  "algorithm": "bfs",
-  "title": "Sub-Neuron Data Flow",
-  "description": "Visualize data packets navigating a simplified neural network, finding the fastest path from input to output.",
+  "algorithm": "astar",
+  "title": "Deep Sea Biolume Paths",
+  "description": "Navigate the crushing depths, finding the most energy-efficient bioluminescent routes through a trench.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 1200
     },
     {
       "id": "A",
       "x": 400,
-      "y": 600
+      "y": 1000
     },
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 900
     },
     {
       "id": "C",
       "x": 500,
-      "y": 800
+      "y": 700
     },
     {
       "id": "D",
-      "x": 300,
-      "y": 800
+      "x": 400,
+      "y": 500
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 800
+      "x": 600,
+      "y": 300
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1000
+      "y": 100
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 6
+    },
+    {
+      "from": "B",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "A",
-      "to": "C",
-      "weight": 2
-    },
-    {
-      "from": "A",
+      "from": "B",
       "to": "D",
-      "weight": 5
+      "weight": 8
     },
     {
-      "from": "B",
-      "to": "C",
-      "weight": 1
-    },
-    {
-      "from": "B",
-      "to": "E",
+      "from": "C",
+      "to": "D",
       "weight": 3
     },
     {
       "from": "C",
-      "to": "T",
-      "weight": 2
+      "to": "E",
+      "weight": 5
     },
     {
       "from": "D",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "D",
-      "to": "T",
+      "to": "E",
       "weight": 6
     },
     {
+      "from": "D",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "S",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "S",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "A",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "B",
+      "weight": 8
+    },
+    {
+      "from": "D",
+      "to": "C",
+      "weight": 3
+    },
+    {
       "from": "E",
       "to": "C",
-      "weight": 2
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "T",
+      "to": "D",
+      "weight": 10
+    },
+    {
+      "from": "T",
+      "to": "E",
+      "weight": 4
     }
   ]
 }
