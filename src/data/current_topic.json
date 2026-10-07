@@ -1,42 +1,42 @@
 {
   "algorithm": "astar",
-  "title": "Deep Sea Biolume Paths",
-  "description": "Navigate the crushing depths, finding the most energy-efficient bioluminescent routes through a trench.",
+  "title": "Deep Sea Trench Descent",
+  "description": "Navigate the crushing pressures and bioluminescent pathways of an alien ocean.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 1200
+      "y": 350
     },
     {
       "id": "A",
       "x": 400,
-      "y": 1000
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 900
+      "y": 600
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 700
+      "x": 450,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 500
+      "x": 550,
+      "y": 900
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 300
+      "x": 500,
+      "y": 1050
     },
     {
       "id": "T",
       "x": 500,
-      "y": 100
+      "y": 1250
     }
   ],
   "edges": [
@@ -48,12 +48,12 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 8
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 7
     },
     {
       "from": "B",
@@ -63,12 +63,12 @@
     {
       "from": "B",
       "to": "D",
-      "weight": 8
+      "weight": 6
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 3
+      "weight": 9
     },
     {
       "from": "C",
@@ -78,12 +78,12 @@
     {
       "from": "D",
       "to": "E",
-      "weight": 6
+      "weight": 3
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 10
+      "weight": 7
     },
     {
       "from": "E",
@@ -92,53 +92,13 @@
     },
     {
       "from": "A",
-      "to": "S",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "S",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "A",
-      "weight": 6
-    },
-    {
-      "from": "C",
       "to": "B",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "T",
-      "to": "D",
       "weight": 10
     },
     {
-      "from": "T",
-      "to": "E",
-      "weight": 4
+      "from": "C",
+      "to": "T",
+      "weight": 15
     }
   ]
 }
