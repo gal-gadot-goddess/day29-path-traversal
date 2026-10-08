@@ -1,7 +1,7 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Synapse Maze",
-  "description": "Navigate the intricate pathways of a bio-engineered neural network, finding the fastest signal route.",
+  "algorithm": "astar",
+  "title": "Neural Pathway Ascent",
+  "description": "Navigate the ascending neural pathways of a bio-mechanical brain, seeking the most efficient route to higher consciousness.",
   "nodes": [
     {
       "id": "S",
@@ -10,38 +10,38 @@
     },
     {
       "id": "A",
-      "x": 300,
+      "x": 400,
       "y": 500
     },
     {
       "id": "B",
-      "x": 700,
+      "x": 600,
       "y": 500
     },
     {
       "id": "C",
-      "x": 500,
+      "x": 300,
       "y": 650
     },
     {
       "id": "D",
-      "x": 300,
-      "y": 800
+      "x": 700,
+      "y": 650
     },
     {
       "id": "E",
-      "x": 700,
+      "x": 500,
       "y": 800
     },
     {
       "id": "F",
-      "x": 500,
+      "x": 400,
       "y": 950
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1100
+      "x": 600,
+      "y": 950
     }
   ],
   "edges": [
@@ -53,87 +53,67 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 6
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
+      "weight": 7
     },
     {
-      "from": "B",
-      "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
+      "from": "A",
       "to": "E",
       "weight": 8
     },
     {
-      "from": "D",
-      "to": "F",
+      "from": "B",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
       "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 6
     },
     {
       "from": "E",
       "to": "F",
-      "weight": 4
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 7
     },
     {
       "from": "F",
       "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "A",
-      "to": "S",
       "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "S",
-      "weight": 7
     },
     {
       "from": "C",
       "to": "A",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "B",
       "weight": 3
     },
     {
       "from": "D",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "E",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "F",
-      "to": "D",
-      "weight": 5
+      "to": "B",
+      "weight": 4
     },
     {
       "from": "F",
       "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "T",
-      "to": "F",
-      "weight": 2
+      "weight": 3
     }
   ]
 }
