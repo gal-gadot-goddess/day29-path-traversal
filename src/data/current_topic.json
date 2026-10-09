@@ -1,12 +1,12 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Cascade",
-  "description": "Navigate the fluctuating synaptic pathways of a hyper-efficient neural network. Find the quickest route for data to reach its destination.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescent Trail",
+  "description": "Trace the shortest path of bioluminescent signals through a deep-sea trench network, avoiding dangerous currents.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 300
     },
     {
       "id": "A",
@@ -20,27 +20,27 @@
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 650
+      "x": 300,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 800
+      "x": 700,
+      "y": 700
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 800
+      "x": 500,
+      "y": 900
     },
     {
       "id": "F",
-      "x": 500,
-      "y": 950
+      "x": 400,
+      "y": 1100
     },
     {
       "id": "T",
-      "x": 500,
+      "x": 600,
       "y": 1100
     }
   ],
@@ -48,7 +48,7 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
@@ -58,62 +58,57 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "C",
       "weight": 2
     },
     {
-      "from": "C",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
+      "from": "A",
       "to": "E",
       "weight": 5
     },
     {
-      "from": "D",
-      "to": "F",
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
       "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 2
     },
     {
       "from": "E",
       "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "T",
       "weight": 3
     },
     {
       "from": "F",
       "to": "T",
-      "weight": 7
+      "weight": 1
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 10
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 9
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 11
+      "weight": 5
     },
     {
       "from": "C",
-      "to": "F",
-      "weight": 5
+      "to": "E",
+      "weight": 4
     }
   ]
 }
