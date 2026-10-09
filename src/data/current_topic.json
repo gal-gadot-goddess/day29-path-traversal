@@ -1,7 +1,7 @@
 {
   "algorithm": "astar",
-  "title": "Neural Pathway Ascent",
-  "description": "Navigate the ascending neural pathways of a bio-mechanical brain, seeking the most efficient route to higher consciousness.",
+  "title": "Neural Cascade",
+  "description": "Navigate the fluctuating synaptic pathways of a hyper-efficient neural network. Find the quickest route for data to reach its destination.",
   "nodes": [
     {
       "id": "S",
@@ -20,28 +20,28 @@
     },
     {
       "id": "C",
-      "x": 300,
+      "x": 500,
       "y": 650
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 650
+      "x": 400,
+      "y": 800
     },
     {
       "id": "E",
-      "x": 500,
+      "x": 600,
       "y": 800
     },
     {
       "id": "F",
-      "x": 400,
+      "x": 500,
       "y": 950
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 1100
     }
   ],
   "edges": [
@@ -53,27 +53,22 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 6
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 8
+      "weight": 3
     },
     {
       "from": "B",
+      "to": "C",
+      "weight": 2
+    },
+    {
+      "from": "C",
       "to": "D",
-      "weight": 7
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
+      "weight": 6
     },
     {
       "from": "C",
@@ -82,38 +77,43 @@
     },
     {
       "from": "D",
-      "to": "E",
-      "weight": 6
+      "to": "F",
+      "weight": 4
     },
     {
       "from": "E",
       "to": "F",
-      "weight": 8
+      "weight": 3
     },
     {
-      "from": "E",
+      "from": "F",
       "to": "T",
       "weight": 7
     },
     {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "A",
-      "weight": 3
+      "from": "A",
+      "to": "B",
+      "weight": 8
     },
     {
       "from": "D",
-      "to": "B",
-      "weight": 4
+      "to": "E",
+      "weight": 10
     },
     {
-      "from": "F",
+      "from": "B",
+      "to": "D",
+      "weight": 9
+    },
+    {
+      "from": "A",
       "to": "E",
-      "weight": 3
+      "weight": 11
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 5
     }
   ]
 }
