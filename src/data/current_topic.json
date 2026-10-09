@@ -1,7 +1,7 @@
 {
   "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescent Trail",
-  "description": "Trace the shortest path of bioluminescent signals through a deep-sea trench network, avoiding dangerous currents.",
+  "title": "Subaquatic Data Stream",
+  "description": "Navigate the bioluminescent currents of a deep-sea trench to find the lost data core.",
   "nodes": [
     {
       "id": "S",
@@ -34,13 +34,8 @@
       "y": 900
     },
     {
-      "id": "F",
-      "x": 400,
-      "y": 1100
-    },
-    {
       "id": "T",
-      "x": 600,
+      "x": 500,
       "y": 1100
     }
   ],
@@ -48,22 +43,22 @@
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 2
+      "weight": 4
     },
     {
       "from": "A",
       "to": "E",
-      "weight": 5
+      "weight": 6
     },
     {
       "from": "B",
@@ -73,42 +68,37 @@
     {
       "from": "B",
       "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 5
+      "weight": 8
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 4
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
     }
   ]
 }
