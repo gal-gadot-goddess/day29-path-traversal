@@ -1,29 +1,33 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Glyphs",
-  "description": "Ancient glyphs pulse with bioluminescence.  Sort them by their energy levels to stabilize the arcane matrix.",
+  "algorithm": "quick_sort",
+  "title": "Cosmic Data Stream Alignment",
+  "description": "Aligning fragmented bioluminescent data streams from a collapsing nebula before they scatter into oblivion.",
   "data": [
-    72,
-    35,
     88,
-    41,
-    95,
-    29,
+    45,
+    92,
+    31,
+    76,
+    59,
     63,
-    50,
+    28,
+    99,
+    41,
     81,
-    47
+    37
   ],
   "labels": [
-    "Lumin S",
-    "Glow",
-    "Aura 7",
-    "Spark",
-    "Radiance",
-    "Glimmer",
-    "Shine",
-    "Glow 2",
-    "Aura 3",
-    "Flash"
+    "Stardust A",
+    "Nebula B",
+    "Comet C",
+    "Photon D",
+    "Plasma E",
+    "Aurora F",
+    "Galaxy G",
+    "Quasar H",
+    "Supernova I",
+    "Void J",
+    "Stellar K",
+    "Cosmic L"
   ]
 }
