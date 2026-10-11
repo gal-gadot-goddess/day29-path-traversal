@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Trench Network",
-  "description": "Explore the bioluminescent pathways of the Mariana Trench, finding the quickest route from the research sub to a newly discovered vent.",
+  "algorithm": "dfs",
+  "title": "Neural Ascent",
+  "description": "Navigate the intricate pathways of a bio-neural network, seeking the quickest signal route from input to output.",
   "nodes": [
     {
       "id": "S",
@@ -25,89 +25,99 @@
     },
     {
       "id": "D",
-      "x": 700,
+      "x": 500,
       "y": 650
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 800
+      "x": 700,
+      "y": 650
     },
     {
       "id": "F",
-      "x": 400,
-      "y": 950
+      "x": 450,
+      "y": 800
+    },
+    {
+      "id": "G",
+      "x": 550,
+      "y": 800
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 1000
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 5
+      "weight": 8
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "B",
       "to": "D",
       "weight": 6
     },
     {
       "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
       "to": "E",
-      "weight": 5
+      "weight": 9
     },
     {
       "from": "C",
       "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "G",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "G",
+      "weight": 6
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 10
+    },
+    {
+      "from": "G",
+      "to": "T",
       "weight": 8
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 9
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 3
+      "weight": 12
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 10
-    },
-    {
-      "from": "C",
-      "to": "D",
+      "to": "F",
       "weight": 15
     }
   ]
