@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Flux Alignment",
-  "description": "Align the flickering bioluminescent algae spores by their energy output to stabilize the deep-sea research station's power grid.",
-  "data": [
-    55,
-    32,
-    78,
-    21,
-    90,
-    45,
-    67,
-    88,
-    39,
-    72
+  "algorithm": "astar",
+  "title": "Deep Sea Trench Dive",
+  "description": "Navigate the crushing pressure and bioluminescent currents to reach the oceanic research pod.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 450,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 550,
+      "y": 600
+    },
+    {
+      "id": "C",
+      "x": 400,
+      "y": 750
+    },
+    {
+      "id": "D",
+      "x": 600,
+      "y": 850
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 1000
+    },
+    {
+      "id": "T",
+      "x": 450,
+      "y": 1150
+    }
   ],
-  "labels": [
-    "Spore A",
-    "Spore B",
-    "Spore C",
-    "Spore D",
-    "Spore E",
-    "Spore F",
-    "Spore G",
-    "Spore H",
-    "Spore I",
-    "Spore J"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 3
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 5
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 4
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
+    }
   ]
 }
