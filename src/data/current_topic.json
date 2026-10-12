@@ -1,124 +1,29 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Ascent",
-  "description": "Navigate the intricate pathways of a bio-neural network, seeking the quickest signal route from input to output.",
-  "nodes": [
-    {
-      "id": "S",
-      "x": 500,
-      "y": 350
-    },
-    {
-      "id": "A",
-      "x": 400,
-      "y": 500
-    },
-    {
-      "id": "B",
-      "x": 600,
-      "y": 500
-    },
-    {
-      "id": "C",
-      "x": 300,
-      "y": 650
-    },
-    {
-      "id": "D",
-      "x": 500,
-      "y": 650
-    },
-    {
-      "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
-      "x": 450,
-      "y": 800
-    },
-    {
-      "id": "G",
-      "x": 550,
-      "y": 800
-    },
-    {
-      "id": "T",
-      "x": 500,
-      "y": 1000
-    }
+  "algorithm": "bubble_sort",
+  "title": "Bioluminescent Flux Alignment",
+  "description": "Align the flickering bioluminescent algae spores by their energy output to stabilize the deep-sea research station's power grid.",
+  "data": [
+    55,
+    32,
+    78,
+    21,
+    90,
+    45,
+    67,
+    88,
+    39,
+    72
   ],
-  "edges": [
-    {
-      "from": "S",
-      "to": "A",
-      "weight": 5
-    },
-    {
-      "from": "S",
-      "to": "B",
-      "weight": 7
-    },
-    {
-      "from": "A",
-      "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 5
-    },
-    {
-      "from": "D",
-      "to": "G",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "G",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 10
-    },
-    {
-      "from": "G",
-      "to": "T",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 12
-    },
-    {
-      "from": "A",
-      "to": "F",
-      "weight": 15
-    }
+  "labels": [
+    "Spore A",
+    "Spore B",
+    "Spore C",
+    "Spore D",
+    "Spore E",
+    "Spore F",
+    "Spore G",
+    "Spore H",
+    "Spore I",
+    "Spore J"
   ]
 }
