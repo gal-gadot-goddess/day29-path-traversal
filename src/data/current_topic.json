@@ -1,29 +1,33 @@
 {
   "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Alignment",
-  "description": "Aligning quantum entangled particles to stabilize spacetime. The key particle dictates the order.",
+  "title": "Quantum Entanglement Calibration",
+  "description": "Calibrating quantum entanglement requires precise ordering of energy signatures. Let's sort these unstable quantum states!",
   "data": [
-    88,
-    32,
-    75,
-    50,
+    78,
+    34,
     92,
-    41,
-    68,
-    25,
+    55,
+    23,
+    81,
+    47,
+    66,
     99,
-    55
+    30,
+    72,
+    50
   ],
   "labels": [
-    "Qubit A",
-    "Qubit B",
-    "Qubit C",
-    "Qubit D",
-    "Qubit E",
-    "Qubit F",
-    "Qubit G",
-    "Qubit H",
-    "Qubit I",
-    "Qubit J"
+    "Qubit Alpha",
+    "Qubit Beta",
+    "Qubit Gamma",
+    "Qubit Delta",
+    "Qubit Epsilon",
+    "Qubit Zeta",
+    "Qubit Eta",
+    "Qubit Theta",
+    "Qubit Iota",
+    "Qubit Kappa",
+    "Qubit Lambda",
+    "Qubit Mu"
   ]
 }
