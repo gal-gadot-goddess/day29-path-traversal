@@ -1,42 +1,42 @@
 {
-  "algorithm": "dfs",
-  "title": "Cyberpunk Data Dive",
-  "description": "Navigate a grimy cyberpunk city's data network, tracing the fastest route through its wired underbelly.",
+  "algorithm": "astar",
+  "title": "Sub-Neuron Pathways",
+  "description": "Navigate the intricate dendritic branches of a bio-luminescent neuron, finding the fastest route for synaptic transmission.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 350
     },
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 700
+      "x": 450,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 700
+      "x": 550,
+      "y": 750
     },
     {
       "id": "E",
       "x": 500,
-      "y": 900
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1150
     }
   ],
   "edges": [
@@ -48,51 +48,46 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 6
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 3
+      "weight": 8
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 9
+      "to": "D",
+      "weight": 7
     },
     {
       "from": "B",
-      "to": "D",
+      "to": "C",
       "weight": 4
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 6
+      "to": "D",
+      "weight": 9
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 2
+      "weight": 10
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 8
+      "weight": 7
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 1
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 10
+      "weight": 5
     },
     {
       "from": "C",
-      "to": "D",
+      "to": "T",
       "weight": 15
     },
     {
@@ -101,9 +96,9 @@
       "weight": 12
     },
     {
-      "from": "C",
-      "to": "T",
-      "weight": 18
+      "from": "A",
+      "to": "B",
+      "weight": 10
     }
   ]
 }
