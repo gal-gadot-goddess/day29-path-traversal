@@ -1,33 +1,109 @@
 {
-  "algorithm": "quick_sort",
-  "title": "Quantum Entanglement Calibration",
-  "description": "Calibrating quantum entanglement requires precise ordering of energy signatures. Let's sort these unstable quantum states!",
-  "data": [
-    78,
-    34,
-    92,
-    55,
-    23,
-    81,
-    47,
-    66,
-    99,
-    30,
-    72,
-    50
+  "algorithm": "dfs",
+  "title": "Cyberpunk Data Dive",
+  "description": "Navigate a grimy cyberpunk city's data network, tracing the fastest route through its wired underbelly.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 350,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 650,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Qubit Alpha",
-    "Qubit Beta",
-    "Qubit Gamma",
-    "Qubit Delta",
-    "Qubit Epsilon",
-    "Qubit Zeta",
-    "Qubit Eta",
-    "Qubit Theta",
-    "Qubit Iota",
-    "Qubit Kappa",
-    "Qubit Lambda",
-    "Qubit Mu"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 10
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 18
+    }
   ]
 }
