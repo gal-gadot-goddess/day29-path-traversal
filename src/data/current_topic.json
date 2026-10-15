@@ -1,7 +1,7 @@
 {
-  "algorithm": "dfs",
-  "title": "Neural Net Synapse Flow",
-  "description": "Trace the signal pathway through a complex neural network, finding the fastest route from input to output.",
+  "algorithm": "bfs",
+  "title": "Deep Sea Data Flow",
+  "description": "Navigate the abyssal depths, tracing the shortest data transmission path through bioluminescent neural links.",
   "nodes": [
     {
       "id": "S",
@@ -20,33 +20,23 @@
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 650
+      "x": 350,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 650
+      "x": 650,
+      "y": 700
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 650
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 800
-    },
-    {
-      "id": "G",
-      "x": 600,
-      "y": 800
+      "x": 500,
+      "y": 850
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1050
     }
   ],
   "edges": [
@@ -58,67 +48,57 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 3
+      "weight": 7
     },
     {
-      "from": "A",
+      "from": "B",
       "to": "D",
       "weight": 6
     },
     {
-      "from": "B",
-      "to": "D",
-      "weight": 4
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
-    },
-    {
       "from": "C",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "G",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "G",
+      "to": "E",
       "weight": 3
     },
     {
-      "from": "F",
-      "to": "T",
-      "weight": 7
-    },
-    {
-      "from": "G",
-      "to": "T",
+      "from": "D",
+      "to": "E",
       "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "F",
-      "weight": 12
     },
     {
       "from": "E",
       "to": "T",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "D",
       "weight": 10
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 12
+    },
+    {
+      "from": "B",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 18
     }
   ]
 }
