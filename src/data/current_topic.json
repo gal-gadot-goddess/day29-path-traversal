@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Deep Sea Data Flow",
-  "description": "Navigate the abyssal depths, tracing the shortest data transmission path through bioluminescent neural links.",
+  "algorithm": "astar",
+  "title": "Deep Sea Trench Relay",
+  "description": "Navigate the bioluminescent network of a Mariana Trench research station, where data packets flow through pressure-resistant conduits.",
   "nodes": [
     {
       "id": "S",
@@ -10,33 +10,33 @@
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 450,
       "y": 500
     },
     {
       "id": "B",
-      "x": 600,
+      "x": 550,
       "y": 500
     },
     {
       "id": "C",
-      "x": 350,
+      "x": 400,
       "y": 700
     },
     {
       "id": "D",
-      "x": 650,
+      "x": 600,
       "y": 700
     },
     {
       "id": "E",
       "x": 500,
-      "y": 850
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1050
+      "y": 1100
     }
   ],
   "edges": [
@@ -48,12 +48,12 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 7
+      "weight": 8
     },
     {
       "from": "B",
@@ -63,42 +63,42 @@
     {
       "from": "C",
       "to": "E",
-      "weight": 3
+      "weight": 9
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 5
+      "weight": 10
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 8
+      "weight": 4
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 9
+      "weight": 15
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 10
-    },
-    {
-      "from": "A",
-      "to": "E",
       "weight": 12
     },
     {
-      "from": "B",
-      "to": "T",
-      "weight": 15
+      "from": "S",
+      "to": "E",
+      "weight": 20
     },
     {
       "from": "C",
       "to": "T",
       "weight": 18
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 16
     }
   ]
 }
