@@ -1,103 +1,118 @@
 {
   "algorithm": "bfs",
-  "title": "Deep Sea Bioluminescence",
-  "description": "Trace the path of light signals through a network of bioluminescent organisms on the ocean floor.",
+  "title": "Deep Sea Vent Network",
+  "description": "Explore the bioluminescent pathways of a deep-sea hydrothermal vent ecosystem, where nutrients spread outwards from the source.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 500
+      "x": 500,
+      "y": 600
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 300,
+      "y": 750
     },
     {
       "id": "C",
-      "x": 450,
-      "y": 650
+      "x": 700,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 550,
-      "y": 650
+      "x": 500,
+      "y": 900
     },
     {
       "id": "E",
-      "x": 500,
-      "y": 800
+      "x": 300,
+      "y": 1050
+    },
+    {
+      "id": "F",
+      "x": 700,
+      "y": 1050
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1000
+      "y": 1200
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 1
+      "weight": 5
     },
     {
-      "from": "S",
+      "from": "A",
       "to": "B",
-      "weight": 1
+      "weight": 8
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 1
+      "weight": 7
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 1
+      "weight": 6
     },
     {
       "from": "C",
-      "to": "E",
-      "weight": 1
+      "to": "D",
+      "weight": 5
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 1
+      "weight": 9
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 7
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 1
+      "weight": 10
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 2
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 2
+      "from": "F",
+      "to": "T",
+      "weight": 8
     },
     {
       "from": "S",
-      "to": "E",
-      "weight": 3
+      "to": "B",
+      "weight": 12
     },
     {
       "from": "A",
-      "to": "T",
-      "weight": 5
+      "to": "D",
+      "weight": 15
     },
     {
       "from": "B",
-      "to": "T",
+      "to": "F",
+      "weight": 11
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 13
+    },
+    {
+      "from": "E",
+      "to": "F",
       "weight": 5
     }
   ]
