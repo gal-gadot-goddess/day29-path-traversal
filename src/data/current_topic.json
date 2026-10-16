@@ -1,33 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Data Streams",
-  "description": "Aligning pulsing bioluminescent data streams by their energy signatures to optimize inter-dimensional communication.",
-  "data": [
-    55,
-    32,
-    88,
-    47,
-    76,
-    21,
-    95,
-    63,
-    40,
-    72,
-    29,
-    91
+  "algorithm": "bfs",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Trace the path of light signals through a network of bioluminescent organisms on the ocean floor.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 450,
+      "y": 650
+    },
+    {
+      "id": "D",
+      "x": 550,
+      "y": 650
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 800
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1000
+    }
   ],
-  "labels": [
-    "Stream Alpha",
-    "Stream Beta",
-    "Stream Gamma",
-    "Stream Delta",
-    "Stream Epsilon",
-    "Stream Zeta",
-    "Stream Eta",
-    "Stream Theta",
-    "Stream Iota",
-    "Stream Kappa",
-    "Stream Lambda",
-    "Stream Mu"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 1
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 1
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 1
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 1
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 1
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 1
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 2
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "B",
+      "to": "T",
+      "weight": 5
+    }
   ]
 }
