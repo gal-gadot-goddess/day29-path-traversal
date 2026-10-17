@@ -1,29 +1,104 @@
 {
-  "algorithm": "bubble_sort",
-  "title": "Bioluminescent Bloom Sort",
-  "description": "These exotic glowing flora need sorting by their light intensity to ensure the ecosystem's harmony.  Ascending intensity ensures a stable Lumina Bloom.",
-  "data": [
-    88,
-    34,
-    76,
-    52,
-    95,
-    29,
-    63,
-    41,
-    79,
-    58
+  "algorithm": "dijkstra",
+  "title": "Quantum Entanglement Grid",
+  "description": "Navigate the unstable quantum grid, where connections fluctuate. Find the most stable path from the singularity to the entanglement nexus.",
+  "nodes": [
+    {
+      "id": "S",
+      "x": 500,
+      "y": 350
+    },
+    {
+      "id": "A",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "id": "B",
+      "x": 600,
+      "y": 500
+    },
+    {
+      "id": "C",
+      "x": 350,
+      "y": 700
+    },
+    {
+      "id": "D",
+      "x": 650,
+      "y": 700
+    },
+    {
+      "id": "E",
+      "x": 500,
+      "y": 900
+    },
+    {
+      "id": "T",
+      "x": 500,
+      "y": 1100
+    }
   ],
-  "labels": [
-    "Aqua Shard",
-    "Sunpetal",
-    "Moonpetal",
-    "Gloom Bloom",
-    "Star Lily",
-    "Shadow Vine",
-    "Ember Flower",
-    "Azure Bud",
-    "Crimson Glow",
-    "Dawn Leaf"
+  "edges": [
+    {
+      "from": "S",
+      "to": "A",
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "B",
+      "weight": 8
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "weight": 10
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "T",
+      "weight": 15
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 12
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 11
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "weight": 9
+    }
   ]
 }
