@@ -48,3 +48,4 @@ venv/
 .venv/
 
 # Project Specific
+*.tsbuildinfo

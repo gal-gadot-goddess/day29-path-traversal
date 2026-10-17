@@ -58,11 +58,12 @@ async function run() {
     });
 
     const page = await browser.newPage();
-    await page.setViewport({ width: 1080, height: 1920 });
+    await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
 
-    console.log(`🔗 Navigating to ${VITE_URL}...`);
+    const targetUrl = VITE_URL.includes('?') ? `${VITE_URL}&mode=record` : `${VITE_URL}?mode=record`;
+    console.log(`🔗 Navigating to ${targetUrl}...`);
     try {
-        await page.goto(VITE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+        await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 60000 });
         console.log('✅ Page loaded.');
     } catch (err) {
         console.error('❌ Page load failed:', err.message);
@@ -74,7 +75,7 @@ async function run() {
     const recorder = new PuppeteerScreenRecorder(page, {
         fps: 60,
         videoFrame: { width: 1080, height: 1920 },
-        videoBitrate: 8000,
+        videoBitrate: 12000,
     });
 
     console.log('⏺️ Recording started...');
@@ -120,7 +121,7 @@ async function run() {
         }
         try {
             console.log(`[FFmpeg] Using ${ffmpegPath}`);
-            execSync(`"${ffmpegPath}" -y -i "${VIDEO_ONLY}" -i "${AUDIO_FILE}" -c:v copy -c:a aac -shortest "${FINAL_OUTPUT}"`);
+            execSync(`"${ffmpegPath}" -y -i "${VIDEO_ONLY}" -stream_loop -1 -i "${AUDIO_FILE}" -c:v copy -c:a aac -b:a 192k -shortest "${FINAL_OUTPUT}"`);
             console.log(`✅ FINAL VIDEO SAVED: ${FINAL_OUTPUT}`);
             if (fs.existsSync(VIDEO_ONLY)) fs.unlinkSync(VIDEO_ONLY);
         } catch (err) {
