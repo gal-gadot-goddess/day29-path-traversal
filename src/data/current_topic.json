@@ -1,42 +1,42 @@
 {
   "algorithm": "dijkstra",
-  "title": "Quantum Entanglement Grid",
-  "description": "Navigate the unstable quantum grid, where connections fluctuate. Find the most stable path from the singularity to the entanglement nexus.",
+  "title": "Deep Sea Bioluminescence",
+  "description": "Navigate the abyssal plains, finding the fastest bioluminescent trail from the research sub to the ancient artifact.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 600
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 600
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 700
+      "x": 300,
+      "y": 800
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 700
+      "x": 700,
+      "y": 800
     },
     {
       "id": "E",
       "x": 500,
-      "y": 900
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1100
+      "y": 1200
     }
   ],
   "edges": [
@@ -48,7 +48,7 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 8
+      "weight": 7
     },
     {
       "from": "A",
@@ -57,8 +57,8 @@
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 3
+      "to": "E",
+      "weight": 8
     },
     {
       "from": "B",
@@ -66,19 +66,24 @@
       "weight": 6
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "E",
-      "weight": 7
+      "weight": 9
     },
     {
-      "from": "D",
+      "from": "C",
       "to": "E",
       "weight": 4
     },
     {
+      "from": "D",
+      "to": "E",
+      "weight": 5
+    },
+    {
       "from": "E",
       "to": "T",
-      "weight": 9
+      "weight": 3
     },
     {
       "from": "C",
@@ -92,13 +97,8 @@
     },
     {
       "from": "A",
-      "to": "E",
-      "weight": 11
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 9
+      "to": "B",
+      "weight": 18
     }
   ]
 }
