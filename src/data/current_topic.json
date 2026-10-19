@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Neural Net Pathways",
-  "description": "Navigate the complex firing sequences of a neural network to find the fastest signal path.",
+  "algorithm": "dijkstra",
+  "title": "Neuron Flow Through Synapses",
+  "description": "Trace the fastest signal path through a complex neural network, where signal strength is the 'distance'.",
   "nodes": [
     {
       "id": "S",
@@ -11,44 +11,44 @@
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 550
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 550
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 650
+      "x": 350,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 800
+      "x": 650,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 800
+      "x": 500,
+      "y": 950
     },
     {
       "id": "T",
       "x": 500,
-      "y": 950
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "A",
@@ -56,49 +56,49 @@
       "weight": 4
     },
     {
+      "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
       "from": "B",
-      "to": "C",
+      "to": "D",
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "E",
       "weight": 6
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 2
+      "weight": 1
     },
     {
-      "from": "C",
+      "from": "D",
       "to": "E",
-      "weight": 7
+      "weight": 3
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 3
+      "weight": 4
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 5
+      "weight": 2
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "D",
       "to": "E",
       "weight": 9
-    },
-    {
-      "from": "S",
-      "to": "C",
-      "weight": 10
-    },
-    {
-      "from": "A",
-      "to": "T",
-      "weight": 15
     }
   ]
 }
