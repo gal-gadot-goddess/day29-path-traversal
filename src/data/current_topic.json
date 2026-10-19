@@ -1,36 +1,36 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neuron Flow Through Synapses",
-  "description": "Trace the fastest signal path through a complex neural network, where signal strength is the 'distance'.",
+  "algorithm": "astar",
+  "title": "Neural Ascent",
+  "description": "Navigate the firing pathways of a bio-luminescent neural network to reach the consciousness core.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 400
     },
     {
       "id": "A",
       "x": 400,
-      "y": 550
+      "y": 600
     },
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 600
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 750
+      "x": 500,
+      "y": 800
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 750
+      "x": 350,
+      "y": 950
     },
     {
       "id": "E",
-      "x": 500,
+      "x": 650,
       "y": 950
     },
     {
@@ -48,47 +48,42 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "C",
       "weight": 4
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 2
+      "to": "C",
+      "weight": 5
     },
     {
       "from": "B",
-      "to": "D",
+      "to": "C",
       "weight": 3
     },
     {
-      "from": "B",
-      "to": "E",
+      "from": "A",
+      "to": "D",
       "weight": 7
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "E",
       "weight": 6
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 1
+      "weight": 4
     },
     {
-      "from": "D",
+      "from": "C",
       "to": "E",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 4
+      "weight": 3
     },
     {
       "from": "E",
@@ -97,6 +92,11 @@
     },
     {
       "from": "A",
+      "to": "B",
+      "weight": 8
+    },
+    {
+      "from": "D",
       "to": "E",
       "weight": 9
     }
