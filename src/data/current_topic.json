@@ -1,94 +1,79 @@
 {
-  "algorithm": "bfs",
-  "title": "Cybernetic Underbelly",
-  "description": "Navigate the neon-drenched alleys of Neo-Kyoto to find the data cache before the system locks down.",
+  "algorithm": "dijkstra",
+  "title": "Deep Sea Bioluminescent Trails",
+  "description": "Navigate through the abyssal plains, connecting glowing hydrothermal vents and bioluminescent organisms to find the shortest path to the research submersible.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 300
+      "y": 380
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 500
+      "x": 420,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 500
+      "x": 580,
+      "y": 550
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 700
+      "x": 350,
+      "y": 720
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 700
+      "x": 650,
+      "y": 720
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 700
-    },
-    {
-      "id": "F",
-      "x": 400,
+      "x": 500,
       "y": 900
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 900
+      "x": 500,
+      "y": 1050
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 7
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 4
+      "weight": 5
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 6
+      "weight": 8
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "C",
-      "to": "F",
+      "to": "B",
       "weight": 4
     },
     {
-      "from": "D",
-      "to": "F",
-      "weight": 2
+      "from": "B",
+      "to": "D",
+      "weight": 6
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 6
+      "to": "E",
+      "weight": 7
     },
     {
       "from": "E",
@@ -96,19 +81,24 @@
       "weight": 3
     },
     {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 2
+      "from": "B",
+      "to": "E",
+      "weight": 12
     },
     {
       "from": "C",
       "to": "D",
-      "weight": 1
+      "weight": 15
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 14
+    },
+    {
+      "from": "S",
+      "to": "E",
+      "weight": 18
     }
   ]
 }
