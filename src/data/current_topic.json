@@ -1,49 +1,54 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Ascent",
-  "description": "Navigate the firing pathways of a bio-luminescent neural network to reach the consciousness core.",
+  "algorithm": "bfs",
+  "title": "Cybernetic Underbelly",
+  "description": "Navigate the neon-drenched alleys of Neo-Kyoto to find the data cache before the system locks down.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 300
     },
     {
       "id": "A",
       "x": 400,
-      "y": 600
+      "y": 500
     },
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 500
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 800
+      "x": 300,
+      "y": 700
     },
     {
       "id": "D",
-      "x": 350,
-      "y": 950
+      "x": 500,
+      "y": 700
     },
     {
       "id": "E",
-      "x": 650,
-      "y": 950
+      "x": 700,
+      "y": 700
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 900
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1150
+      "x": 600,
+      "y": 900
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
     },
     {
       "from": "S",
@@ -53,52 +58,57 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "C",
-      "weight": 3
+      "weight": 6
     },
     {
       "from": "A",
       "to": "D",
-      "weight": 7
+      "weight": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 5
     },
     {
       "from": "B",
       "to": "E",
-      "weight": 6
+      "weight": 7
     },
     {
       "from": "C",
-      "to": "D",
+      "to": "F",
       "weight": 4
     },
     {
-      "from": "C",
-      "to": "E",
-      "weight": 5
+      "from": "D",
+      "to": "F",
+      "weight": 2
     },
     {
       "from": "D",
       "to": "T",
-      "weight": 3
+      "weight": 6
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 2
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 5
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 8
+      "weight": 2
     },
     {
-      "from": "D",
-      "to": "E",
-      "weight": 9
+      "from": "C",
+      "to": "D",
+      "weight": 1
     }
   ]
 }
