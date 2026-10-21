@@ -1,7 +1,7 @@
 {
-  "algorithm": "bfs",
-  "title": "Neural Pathway Traverse",
-  "description": "Navigate the complex synaptic connections of a hyper-advanced neural network. Find the fastest signal path from sensory input to cognitive output.",
+  "algorithm": "dijkstra",
+  "title": "Neuron Jungle Trek",
+  "description": "Navigate the intricate pathways of a bio-luminescent neural network, seeking the most efficient signal route through dense synaptic clusters.",
   "nodes": [
     {
       "id": "S",
@@ -16,32 +16,32 @@
     {
       "id": "B",
       "x": 600,
-      "y": 550
+      "y": 600
     },
     {
       "id": "C",
       "x": 350,
-      "y": 700
+      "y": 750
     },
     {
       "id": "D",
       "x": 500,
-      "y": 700
+      "y": 800
     },
     {
       "id": "E",
       "x": 650,
-      "y": 700
+      "y": 900
     },
     {
       "id": "F",
       "x": 450,
-      "y": 850
+      "y": 1000
     },
     {
       "id": "T",
       "x": 550,
-      "y": 1000
+      "y": 1150
     }
   ],
   "edges": [
@@ -58,62 +58,57 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 4
+      "weight": 6
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 3
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 5
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "C",
       "to": "D",
       "weight": 9
     },
     {
-      "from": "A",
-      "to": "B",
-      "weight": 10
+      "from": "B",
+      "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 6
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 4
     },
     {
       "from": "F",
-      "to": "E",
+      "to": "T",
       "weight": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 10
+    },
+    {
+      "from": "B",
+      "to": "F",
+      "weight": 11
     }
   ]
 }
