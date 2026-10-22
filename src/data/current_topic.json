@@ -1,47 +1,37 @@
 {
-  "algorithm": "astar",
-  "title": "Neural Stream Ascent",
-  "description": "Navigate the branching pathways of a bio-luminescent neural network, seeking the highest point of synaptic transmission.",
+  "algorithm": "dfs",
+  "title": "Neuron Synapse Maze",
+  "description": "Navigate the intricate synaptic pathways of a bio-luminescent neural network, seeking the fastest route from sensory input to motor output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
-      "x": 400,
+      "x": 350,
       "y": 550
     },
     {
       "id": "B",
-      "x": 600,
+      "x": 650,
       "y": 550
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 700
+      "x": 350,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 700,
-      "y": 700
+      "x": 650,
+      "y": 750
     },
     {
       "id": "E",
       "x": 500,
-      "y": 850
-    },
-    {
-      "id": "F",
-      "x": 400,
-      "y": 1000
-    },
-    {
-      "id": "G",
-      "x": 600,
-      "y": 1000
+      "y": 950
     },
     {
       "id": "T",
@@ -63,12 +53,7 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 8
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 12
+      "weight": 4
     },
     {
       "from": "B",
@@ -76,49 +61,39 @@
       "weight": 6
     },
     {
-      "from": "B",
+      "from": "C",
+      "to": "E",
+      "weight": 3
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "A",
       "to": "E",
       "weight": 10
     },
     {
-      "from": "C",
-      "to": "F",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "G",
-      "weight": 5
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 7
-    },
-    {
-      "from": "E",
-      "to": "G",
-      "weight": 8
-    },
-    {
-      "from": "F",
+      "from": "B",
       "to": "T",
-      "weight": 4
+      "weight": 12
     },
     {
-      "from": "G",
-      "to": "T",
-      "weight": 3
-    },
-    {
-      "from": "C",
+      "from": "S",
       "to": "E",
       "weight": 15
-    },
-    {
-      "from": "D",
-      "to": "E",
-      "weight": 11
     }
   ]
 }
