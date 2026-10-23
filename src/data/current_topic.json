@@ -1,12 +1,12 @@
 {
   "algorithm": "dfs",
-  "title": "Deep Sea Bioluminescent Trails",
-  "description": "Explore the bioluminescent trails of deep-sea creatures, charting the shortest path through the abyssal plain.",
+  "title": "Cyberpunk Data Stream",
+  "description": "Navigate the neon-drenched data conduits of Neo-Kyoto to find the hidden encrypted packet. Each connection represents a data hop with varying latency.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
@@ -16,69 +16,79 @@
     {
       "id": "B",
       "x": 600,
-      "y": 600
+      "y": 550
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 700
+      "x": 300,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 400,
-      "y": 850
+      "x": 700,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 600,
-      "y": 900
+      "x": 500,
+      "y": 950
+    },
+    {
+      "id": "F",
+      "x": 400,
+      "y": 1150
     },
     {
       "id": "T",
-      "x": 500,
-      "y": 1050
+      "x": 600,
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "S",
       "to": "B",
-      "weight": 7
+      "weight": 5
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 10
+      "weight": 7
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 2
     },
     {
       "from": "B",
-      "to": "C",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 8
-    },
-    {
-      "from": "C",
       "to": "D",
       "weight": 4
     },
     {
+      "from": "B",
+      "to": "E",
+      "weight": 6
+    },
+    {
       "from": "C",
       "to": "E",
-      "weight": 5
+      "weight": 3
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 12
+      "to": "E",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 1
     },
     {
       "from": "E",
@@ -86,44 +96,19 @@
       "weight": 9
     },
     {
-      "from": "A",
-      "to": "S",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "S",
-      "weight": 7
+      "from": "F",
+      "to": "T",
+      "weight": 2
     },
     {
       "from": "C",
-      "to": "A",
+      "to": "F",
       "weight": 10
     },
     {
-      "from": "C",
-      "to": "B",
-      "weight": 6
-    },
-    {
       "from": "D",
-      "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "B",
-      "weight": 8
-    },
-    {
-      "from": "T",
-      "to": "D",
-      "weight": 12
-    },
-    {
-      "from": "T",
-      "to": "E",
-      "weight": 9
+      "to": "T",
+      "weight": 5
     }
   ]
 }
