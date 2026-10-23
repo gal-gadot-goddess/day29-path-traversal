@@ -1,99 +1,89 @@
 {
-  "algorithm": "dfs",
-  "title": "Submerged Data Stream",
-  "description": "Navigate the deep-sea trench's bioluminescent data currents to reach the lost archival station.",
+  "algorithm": "dijkstra",
+  "title": "Neural Net Ascent",
+  "description": "Navigate the cascading layers of a quantum neural network, finding the fastest data flow from input to output.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 380
     },
     {
       "id": "A",
-      "x": 400,
-      "y": 550
+      "x": 500,
+      "y": 530
     },
     {
       "id": "B",
-      "x": 600,
-      "y": 550
+      "x": 400,
+      "y": 680
     },
     {
       "id": "C",
-      "x": 300,
-      "y": 700
+      "x": 600,
+      "y": 680
     },
     {
       "id": "D",
       "x": 500,
-      "y": 700
+      "y": 830
     },
     {
       "id": "E",
-      "x": 700,
-      "y": 700
+      "x": 400,
+      "y": 980
     },
     {
       "id": "F",
-      "x": 400,
-      "y": 850
+      "x": 600,
+      "y": 980
     },
     {
       "id": "T",
-      "x": 600,
-      "y": 950
+      "x": 500,
+      "y": 1130
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 5
+      "weight": 3
     },
     {
-      "from": "S",
+      "from": "A",
       "to": "B",
-      "weight": 7
+      "weight": 5
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 3
-    },
-    {
-      "from": "A",
-      "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "B",
-      "to": "D",
       "weight": 4
     },
     {
       "from": "B",
-      "to": "E",
-      "weight": 8
+      "to": "D",
+      "weight": 6
     },
     {
       "from": "C",
-      "to": "F",
-      "weight": 2
-    },
-    {
-      "from": "D",
-      "to": "F",
+      "to": "D",
       "weight": 3
     },
     {
       "from": "D",
-      "to": "T",
-      "weight": 9
+      "to": "E",
+      "weight": 5
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "weight": 4
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 5
+      "weight": 7
     },
     {
       "from": "F",
@@ -102,13 +92,28 @@
     },
     {
       "from": "S",
-      "to": "D",
+      "to": "B",
       "weight": 10
     },
     {
       "from": "A",
-      "to": "B",
-      "weight": 5
+      "to": "D",
+      "weight": 8
+    },
+    {
+      "from": "B",
+      "to": "F",
+      "weight": 9
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "weight": 9
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 2
     }
   ]
 }
