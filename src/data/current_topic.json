@@ -1,47 +1,42 @@
 {
-  "algorithm": "astar",
-  "title": "Quantum Entanglement Paths",
-  "description": "Navigate the superposition of possibilities in a quantum processor, finding the fastest path through entangled qubits.",
+  "algorithm": "bfs",
+  "title": "Neural Net Synapse Hop",
+  "description": "Navigate the complex pathways of a neural network. Find the quickest route for information to reach its destination.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 300
     },
     {
       "id": "A",
-      "x": 650,
-      "y": 550
+      "x": 350,
+      "y": 500
     },
     {
       "id": "B",
+      "x": 650,
+      "y": 500
+    },
+    {
+      "id": "C",
       "x": 500,
       "y": 700
     },
     {
-      "id": "C",
-      "x": 350,
-      "y": 550
-    },
-    {
       "id": "D",
-      "x": 500,
-      "y": 850
+      "x": 300,
+      "y": 900
     },
     {
       "id": "E",
-      "x": 650,
-      "y": 1000
-    },
-    {
-      "id": "F",
-      "x": 350,
-      "y": 1000
+      "x": 700,
+      "y": 900
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1150
+      "y": 1100
     }
   ],
   "edges": [
@@ -52,13 +47,8 @@
     },
     {
       "from": "S",
-      "to": "C",
-      "weight": 7
-    },
-    {
-      "from": "A",
       "to": "B",
-      "weight": 6
+      "weight": 7
     },
     {
       "from": "A",
@@ -66,48 +56,53 @@
       "weight": 3
     },
     {
-      "from": "C",
-      "to": "B",
+      "from": "B",
+      "to": "C",
       "weight": 4
     },
     {
-      "from": "B",
+      "from": "C",
       "to": "D",
-      "weight": 8
+      "weight": 6
     },
     {
-      "from": "D",
+      "from": "C",
       "to": "E",
       "weight": 5
     },
     {
       "from": "D",
-      "to": "F",
-      "weight": 7
+      "to": "T",
+      "weight": 8
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 6
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "B",
-      "to": "T",
-      "weight": 15
+      "weight": 7
     },
     {
       "from": "A",
+      "to": "B",
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "A",
+      "weight": 2
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 1
+    },
+    {
+      "from": "E",
       "to": "D",
-      "weight": 10
+      "weight": 1
     },
     {
       "from": "C",
-      "to": "F",
+      "to": "S",
       "weight": 9
     }
   ]
