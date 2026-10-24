@@ -1,74 +1,79 @@
 {
-  "algorithm": "dijkstra",
-  "title": "Neural Net Ascent",
-  "description": "Navigate the cascading layers of a quantum neural network, finding the fastest data flow from input to output.",
+  "algorithm": "astar",
+  "title": "Quantum Entanglement Paths",
+  "description": "Navigate the superposition of possibilities in a quantum processor, finding the fastest path through entangled qubits.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 380
+      "y": 400
     },
     {
       "id": "A",
-      "x": 500,
-      "y": 530
+      "x": 650,
+      "y": 550
     },
     {
       "id": "B",
-      "x": 400,
-      "y": 680
+      "x": 500,
+      "y": 700
     },
     {
       "id": "C",
-      "x": 600,
-      "y": 680
+      "x": 350,
+      "y": 550
     },
     {
       "id": "D",
       "x": 500,
-      "y": 830
+      "y": 850
     },
     {
       "id": "E",
-      "x": 400,
-      "y": 980
+      "x": 650,
+      "y": 1000
     },
     {
       "id": "F",
-      "x": 600,
-      "y": 980
+      "x": 350,
+      "y": 1000
     },
     {
       "id": "T",
       "x": 500,
-      "y": 1130
+      "y": 1150
     }
   ],
   "edges": [
     {
       "from": "S",
       "to": "A",
-      "weight": 3
+      "weight": 5
+    },
+    {
+      "from": "S",
+      "to": "C",
+      "weight": 7
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 5
+      "weight": 6
     },
     {
       "from": "A",
       "to": "C",
+      "weight": 3
+    },
+    {
+      "from": "C",
+      "to": "B",
       "weight": 4
     },
     {
       "from": "B",
       "to": "D",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "D",
-      "weight": 3
+      "weight": 8
     },
     {
       "from": "D",
@@ -78,42 +83,32 @@
     {
       "from": "D",
       "to": "F",
-      "weight": 4
+      "weight": 7
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 7
+      "weight": 6
     },
     {
       "from": "F",
       "to": "T",
-      "weight": 3
+      "weight": 5
     },
     {
-      "from": "S",
-      "to": "B",
-      "weight": 10
+      "from": "B",
+      "to": "T",
+      "weight": 15
     },
     {
       "from": "A",
       "to": "D",
-      "weight": 8
-    },
-    {
-      "from": "B",
-      "to": "F",
-      "weight": 9
+      "weight": 10
     },
     {
       "from": "C",
-      "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "E",
       "to": "F",
-      "weight": 2
+      "weight": 9
     }
   ]
 }
