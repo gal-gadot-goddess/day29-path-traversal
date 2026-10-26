@@ -1,42 +1,42 @@
 {
-  "algorithm": "dfs",
-  "title": "Cyberpunk Neon Veins",
-  "description": "Navigate the pulsing data conduits of Neo-Kyoto, finding the fastest route through the electric arteries.",
+  "algorithm": "bfs",
+  "title": "Neural City Pathways",
+  "description": "Navigate the subconscious of a cyberpunk megacity's neural network, finding the fastest route through its interconnected thought nodes.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 200
     },
     {
       "id": "A",
-      "x": 500,
-      "y": 600
+      "x": 400,
+      "y": 400
     },
     {
       "id": "B",
-      "x": 300,
-      "y": 750
+      "x": 600,
+      "y": 400
     },
     {
       "id": "C",
-      "x": 700,
-      "y": 750
+      "x": 300,
+      "y": 600
     },
     {
       "id": "D",
-      "x": 500,
-      "y": 950
+      "x": 700,
+      "y": 600
     },
     {
       "id": "E",
-      "x": 300,
-      "y": 1050
+      "x": 500,
+      "y": 800
     },
     {
       "id": "T",
-      "x": 700,
-      "y": 1050
+      "x": 500,
+      "y": 1000
     }
   ],
   "edges": [
@@ -46,54 +46,69 @@
       "weight": 5
     },
     {
-      "from": "A",
+      "from": "S",
       "to": "B",
-      "weight": 8
+      "weight": 7
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 7
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "E",
+      "weight": 8
     },
     {
       "from": "B",
       "to": "D",
+      "weight": 4
+    },
+    {
+      "from": "B",
+      "to": "E",
       "weight": 6
     },
     {
       "from": "C",
-      "to": "D",
-      "weight": 9
+      "to": "E",
+      "weight": 5
     },
     {
       "from": "D",
       "to": "E",
-      "weight": 4
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 10
+      "weight": 9
     },
     {
       "from": "E",
       "to": "T",
-      "weight": 5
+      "weight": 2
     },
     {
-      "from": "S",
-      "to": "D",
-      "weight": 15
+      "from": "C",
+      "to": "A",
+      "weight": 3
     },
     {
-      "from": "B",
-      "to": "C",
-      "weight": 12
+      "from": "D",
+      "to": "B",
+      "weight": 4
     },
     {
-      "from": "A",
-      "to": "T",
-      "weight": 20
+      "from": "E",
+      "to": "A",
+      "weight": 8
+    },
+    {
+      "from": "E",
+      "to": "B",
+      "weight": 6
+    },
+    {
+      "from": "T",
+      "to": "E",
+      "weight": 2
     }
   ]
 }
