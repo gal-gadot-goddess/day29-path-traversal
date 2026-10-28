@@ -1,12 +1,12 @@
 {
-  "algorithm": "astar",
-  "title": "Quantum Datastream Weaver",
-  "description": "Navigate the intricate quantum entanglement pathways of a nascent AI.",
+  "algorithm": "dijkstra",
+  "title": "Neural Pathway Navigator",
+  "description": "Navigate the intricate pathways of a sentient neural network. Find the fastest route to activate the core consciousness.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 400
+      "y": 350
     },
     {
       "id": "A",
@@ -20,23 +20,18 @@
     },
     {
       "id": "C",
-      "x": 500,
-      "y": 700
+      "x": 350,
+      "y": 750
     },
     {
       "id": "D",
-      "x": 350,
-      "y": 850
+      "x": 650,
+      "y": 750
     },
     {
       "id": "E",
-      "x": 650,
-      "y": 850
-    },
-    {
-      "id": "F",
       "x": 500,
-      "y": 1000
+      "y": 950
     },
     {
       "id": "T",
@@ -58,42 +53,27 @@
     {
       "from": "A",
       "to": "C",
-      "weight": 8
+      "weight": 3
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "weight": 6
     },
     {
       "from": "B",
       "to": "C",
-      "weight": 6
+      "weight": 4
     },
     {
-      "from": "C",
+      "from": "B",
       "to": "D",
-      "weight": 10
+      "weight": 5
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 9
-    },
-    {
-      "from": "D",
-      "to": "F",
-      "weight": 12
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 11
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 5
-    },
-    {
-      "from": "A",
-      "to": "B",
-      "weight": 4
+      "weight": 8
     },
     {
       "from": "D",
@@ -101,19 +81,29 @@
       "weight": 3
     },
     {
-      "from": "S",
-      "to": "C",
-      "weight": 15
+      "from": "E",
+      "to": "T",
+      "weight": 4
     },
     {
       "from": "A",
-      "to": "D",
-      "weight": 13
+      "to": "B",
+      "weight": 2
     },
     {
-      "from": "B",
-      "to": "E",
-      "weight": 14
+      "from": "C",
+      "to": "D",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "C",
+      "weight": 7
+    },
+    {
+      "from": "E",
+      "to": "S",
+      "weight": 10
     }
   ]
 }
