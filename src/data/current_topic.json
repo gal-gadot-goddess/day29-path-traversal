@@ -1,32 +1,32 @@
 {
-  "algorithm": "dfs",
-  "title": "NeuraNet Cascade",
-  "description": "Navigate the cascading data streams of a cyberpunk neural network to find the quickest path to the core.",
+  "algorithm": "bfs",
+  "title": "Neural Pathways of Thought",
+  "description": "Navigate the intricate thought processes of a consciousness simulation. Each node represents a concept, and edges are the neural connections firing.",
   "nodes": [
     {
       "id": "S",
       "x": 500,
-      "y": 350
+      "y": 200
     },
     {
       "id": "A",
       "x": 400,
-      "y": 500
+      "y": 400
     },
     {
       "id": "B",
       "x": 600,
-      "y": 500
+      "y": 400
     },
     {
       "id": "C",
-      "x": 350,
-      "y": 650
+      "x": 300,
+      "y": 600
     },
     {
       "id": "D",
-      "x": 650,
-      "y": 650
+      "x": 700,
+      "y": 600
     },
     {
       "id": "E",
@@ -36,12 +36,12 @@
     {
       "id": "F",
       "x": 400,
-      "y": 950
+      "y": 1000
     },
     {
       "id": "T",
       "x": 600,
-      "y": 950
+      "y": 1000
     }
   ],
   "edges": [
@@ -53,62 +53,57 @@
     {
       "from": "S",
       "to": "B",
-      "weight": 5
+      "weight": 4
     },
     {
       "from": "A",
       "to": "C",
-      "weight": 4
-    },
-    {
-      "from": "A",
-      "to": "E",
-      "weight": 7
-    },
-    {
-      "from": "B",
-      "to": "D",
-      "weight": 2
-    },
-    {
-      "from": "B",
-      "to": "E",
-      "weight": 6
-    },
-    {
-      "from": "C",
-      "to": "F",
-      "weight": 8
-    },
-    {
-      "from": "D",
-      "to": "T",
-      "weight": 4
-    },
-    {
-      "from": "E",
-      "to": "F",
-      "weight": 3
-    },
-    {
-      "from": "E",
-      "to": "T",
       "weight": 5
-    },
-    {
-      "from": "F",
-      "to": "T",
-      "weight": 2
     },
     {
       "from": "A",
       "to": "B",
-      "weight": 10
+      "weight": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "weight": 3
     },
     {
       "from": "C",
       "to": "E",
-      "weight": 9
+      "weight": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "weight": 4
+    },
+    {
+      "from": "C",
+      "to": "F",
+      "weight": 7
+    },
+    {
+      "from": "D",
+      "to": "T",
+      "weight": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "weight": 2
+    },
+    {
+      "from": "E",
+      "to": "T",
+      "weight": 3
+    },
+    {
+      "from": "F",
+      "to": "T",
+      "weight": 4
     }
   ]
 }
